@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Support | ATechSolutions</title>
+  <link rel="icon" type="image/png" href="thumbnail.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request IT support from ATechSolutions. Remote and on-site help for home users and small businesses.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+    <div class="brand">
+        <img src="thumbnail.png" alt="ATechSolutions logo">
+    </div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Request Support</a>
+    </div>
+    </nav>
+  </header>
+
+  <!-- Page Intro -->
+  <section class="hero small">
+    <h1>Request Support</h1>
+    <p>
+      Tell us what’s going on and we’ll recommend the best next step.
+      If remote support is possible, we’ll start there to save you time and cost.
+    </p>
+  </section>
+
+  <!-- Contact Options -->
+  <section class="highlight">
+    <h2>Contact Options</h2>
+    <p>
+      Email: <a href="mailto:support@atechsolutions.org">support@atechsolutions.org</a>
+    </p>
+    <p class="small-note">
+      For faster help, use the request form below (it includes key details we’ll need).
+    </p>
+  </section>
+
+  <!-- Support Request Form -->
+  <section>
+    <h2>Support Request Form</h2>
+
+    <!--
+      Cloudflare Pages Forms:
+      - Keep method="POST"
+      - Keep data-static-form-name="support-request"
+      - After first submission, check Cloudflare Pages → your project → Forms
+      - Set email notifications to: support@atechsolutions.org
+    -->
+    <form method="POST" data-static-form-name="support-request">
+
+      <div class="form-grid">
+        <label>
+          Full Name *
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+
+        <label>
+          Email *
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+
+        <label>
+          Phone (optional)
+          <input type="tel" name="phone" autocomplete="tel">
+        </label>
+
+        <label>
+          Support Type *
+          <select name="support_type" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Home User</option>
+            <option>Small Business</option>
+          </select>
+        </label>
+
+        <label>
+          Preferred Service *
+          <select name="service_preference" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Remote Support</option>
+            <option>On-Site Support</option>
+            <option>Not Sure</option>
+          </select>
+        </label>
+
+        <label>
+          Urgency *
+          <select name="urgency" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Urgent (today)</option>
+            <option>Soon (1–3 days)</option>
+            <option>Flexible</option>
+          </select>
+        </label>
+      </div>
+
+      <label>
+        Device / System (optional)
+        <input type="text" name="device" placeholder="Example: Windows laptop, MacBook, desktop PC, printer, router">
+      </label>
+
+      <label>
+        Describe the issue *
+        <textarea name="issue" rows="7" placeholder="What’s happening? When did it start? Any error messages?" required></textarea>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" name="consent" required>
+        I consent to being contacted about this request. *
+      </label>
+
+      <button class="cta" type="submit">Send Request</button>
+
+      <p class="small-note">
+        Note: Please don’t include passwords. If remote access is needed, we’ll provide a secure method.
+      </p>
+    </form>
+  </section>
+
+  <!-- What Happens Next -->
+  <section class="cta-section">
+    <h2>What Happens Next</h2>
+    <ul>
+      <li>We review your request and reply with the recommended next step.</li>
+      <li>If the issue can be handled remotely, we’ll schedule a remote session.</li>
+      <li>If on-site is required, we’ll propose available appointment times.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 ATechSolutions</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
