@@ -16,9 +16,8 @@ html {
 }
 
 body {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* =========================
@@ -36,7 +35,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -67,14 +67,22 @@ li {
 ========================= */
 
 header {
-  padding: 1.25rem 0;
-  margin-bottom: 2rem;
+  padding: 1.25rem 1rem;
+  margin: 0 0 2rem 0;
+  background-color: #1f6fb2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* =========================
@@ -102,12 +110,17 @@ nav {
 nav a {
   margin-left: 1.25rem;
   text-decoration: none;
-  color: #374151;
+  color: #ffffff;
   font-weight: 500;
 }
 
+nav a.active {
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 0.25rem;
+}
+
 nav a:hover {
-  color: #1f6fb2; /* upgraded brand blue */
+  color: #e5e7eb;
 }
 
 /* =========================
@@ -115,20 +128,31 @@ nav a:hover {
 ========================= */
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero {
-  padding: 3rem 0 2.5rem;
+  padding: 4rem 1rem 3rem;
 }
 
 .hero.small {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   max-width: 60ch;
+  margin-bottom: 1.5rem;
 }
 
 .hero-logo {
@@ -149,12 +173,15 @@ section {
 .cta-section {
   background-color: #1d4ed8;
   color: #ffffff;
-  padding: 2.5rem;
+  padding: 3rem 2rem;
   border-radius: 0.75rem;
+  text-align: center;
 }
 
 .cta-section h2 {
   color: #ffffff;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
 }
 
 .cta-section p {
@@ -209,9 +236,22 @@ button.cta {
 
 .card {
   background-color: #ffffff;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
 }
 
 /* =========================
@@ -273,15 +313,66 @@ textarea {
 ========================= */
 
 footer {
-  margin: 3rem 0 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e5e7eb;
-  font-size: 0.9rem;
-  color: #4b5563;
+  background-color: #1f2933;
+  color: #e5e7eb;
+  padding: 3rem 1rem 1rem;
+  margin: 3rem 0 0 0;
 }
 
-footer a {
-  color: #1f6fb2; /* upgraded brand blue */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.footer-column p {
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 1rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.footer-bottom a {
+  color: #9ca3af;
 }
 
 /* =========================
@@ -295,6 +386,10 @@ footer a {
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
   }
 
   nav {
