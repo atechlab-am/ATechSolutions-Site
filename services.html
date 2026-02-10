@@ -9,6 +9,7 @@
 
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
 </head>
 
 <body>
@@ -24,203 +25,209 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Request Support</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="services.html" class="active" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav.contact">Request Support</a>
+      </div>
+
+      <div class="lang-toggle">
+        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+        <span class="separator">|</span>
+        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
       </div>
     </nav>
   </header>
 
   <section class="hero small">
-    <h1>Business IT Services</h1>
-    <p>
+    <h1 data-i18n="services.heroTitle">Business IT Services</h1>
+    <p data-i18n="services.heroText">
       Reliable, practical IT support for small and growing businesses.
       Structured services, clear scope, and transparent execution — remote when possible, on-site when needed.
     </p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <a class="cta" href="contact.html" data-i18n="services.heroCTA">Request Support</a>
   </section>
 
   <section class="highlight">
-    <h2>Core Business IT Services</h2>
-    <p>
+    <h2 data-i18n="services.coreTitle">Core Business IT Services</h2>
+    <p data-i18n="services.coreText">
       Choose a specific service below, or start with an IT Health Check if you want clarity before making changes.
     </p>
   </section>
 
   <section>
-    <h2>IT Health Check</h2>
-    <p>A high-level review of your IT environment to identify risks, gaps, and improvement opportunities.</p>
+    <h2 data-i18n="services.healthCheckTitle">IT Health Check</h2>
+    <p data-i18n="services.healthCheckText">A high-level review of your IT environment to identify risks, gaps, and improvement opportunities.</p>
     <ul>
-      <li>Review of computers and users</li>
-      <li>Email and domain configuration overview</li>
-      <li>Backup and security checks</li>
-      <li>Network and server visibility (if applicable)</li>
-      <li>Clear recommendations and next steps</li>
+      <li data-i18n="services.healthCheckLi1">Review of computers and users</li>
+      <li data-i18n="services.healthCheckLi2">Email and domain configuration overview</li>
+      <li data-i18n="services.healthCheckLi3">Backup and security checks</li>
+      <li data-i18n="services.healthCheckLi4">Network and server visibility (if applicable)</li>
+      <li data-i18n="services.healthCheckLi5">Clear recommendations and next steps</li>
     </ul>
   </section>
 
   <section class="highlight">
-    <h2>Professional Email &amp; Custom Domains</h2>
-    <p>Set up or improve business email using your domain (example@yourcompany.com).</p>
+    <h2 data-i18n="services.emailTitle">Professional Email & Custom Domains</h2>
+    <p data-i18n="services.emailText">Set up or improve business email using your domain (example@yourcompany.com).</p>
     <ul>
-      <li>Domain setup or review</li>
-      <li>Microsoft 365 or Google Workspace configuration</li>
-      <li>Secure mailbox setup</li>
-      <li>Professional structure for users and departments</li>
-      <li>Guidance on best practices</li>
+      <li data-i18n="services.emailLi1">Domain setup or review</li>
+      <li data-i18n="services.emailLi2">Microsoft 365 or Google Workspace configuration</li>
+      <li data-i18n="services.emailLi3">Secure mailbox setup</li>
+      <li data-i18n="services.emailLi4">Professional structure for users and departments</li>
+      <li data-i18n="services.emailLi5">Guidance on best practices</li>
     </ul>
   </section>
 
   <section>
-    <h2>Email Migration</h2>
-    <p>Move existing email data safely to a new platform or domain with minimal disruption.</p>
+    <h2 data-i18n="services.migrationTitle">Email Migration</h2>
+    <p data-i18n="services.migrationText">Move existing email data safely to a new platform or domain with minimal disruption.</p>
     <ul>
-      <li>Mailbox migration (emails, folders, contacts)</li>
-      <li>Validation after migration</li>
-      <li>Minimal disruption to users</li>
-      <li>Clear communication and timing</li>
+      <li data-i18n="services.migrationLi1">Mailbox migration (emails, folders, contacts)</li>
+      <li data-i18n="services.migrationLi2">Validation after migration</li>
+      <li data-i18n="services.migrationLi3">Minimal disruption to users</li>
+      <li data-i18n="services.migrationLi4">Clear communication and timing</li>
     </ul>
   </section>
 
   <section class="highlight">
-    <h2>Windows 11 Compatibility Assessment</h2>
-    <p>Determine whether existing computers can safely upgrade from Windows 10 to Windows 11.</p>
+    <h2 data-i18n="services.win11AssessTitle">Windows 11 Compatibility Assessment</h2>
+    <p data-i18n="services.win11AssessText">Determine whether existing computers can safely upgrade from Windows 10 to Windows 11.</p>
     <ul>
-      <li>Hardware compatibility review</li>
-      <li>Risk assessment</li>
-      <li>Upgrade vs replacement recommendations</li>
-      <li>Clear upgrade path</li>
+      <li data-i18n="services.win11AssessLi1">Hardware compatibility review</li>
+      <li data-i18n="services.win11AssessLi2">Risk assessment</li>
+      <li data-i18n="services.win11AssessLi3">Upgrade vs replacement recommendations</li>
+      <li data-i18n="services.win11AssessLi4">Clear upgrade path</li>
     </ul>
-    <p class="small-note">Helps businesses plan for Windows 10 end of support.</p>
+    <p class="small-note" data-i18n="services.win11AssessNote">Helps businesses plan for Windows 10 end of support.</p>
   </section>
 
   <section>
-    <h2>Windows 11 Upgrade Services</h2>
-    <p>Upgrade eligible computers to Windows 11 or prepare replacement systems.</p>
+    <h2 data-i18n="services.win11UpgradeTitle">Windows 11 Upgrade Services</h2>
+    <p data-i18n="services.win11UpgradeText">Upgrade eligible computers to Windows 11 or prepare replacement systems.</p>
     <ul>
-      <li>In-place upgrades (where supported)</li>
-      <li>Validation after upgrade</li>
-      <li>New PC setup if replacement is required</li>
-      <li>Minimal disruption approach</li>
+      <li data-i18n="services.win11UpgradeLi1">In-place upgrades (where supported)</li>
+      <li data-i18n="services.win11UpgradeLi2">Validation after upgrade</li>
+      <li data-i18n="services.win11UpgradeLi3">New PC setup if replacement is required</li>
+      <li data-i18n="services.win11UpgradeLi4">Minimal disruption approach</li>
     </ul>
   </section>
 
   <section class="highlight">
-    <h2>New PC Setup &amp; Data Migration</h2>
-    <p>Prepare new computers so users can work immediately.</p>
+    <h2 data-i18n="services.newPCTitle">New PC Setup & Data Migration</h2>
+    <p data-i18n="services.newPCText">Prepare new computers so users can work immediately.</p>
     <ul>
-      <li>Device configuration</li>
-      <li>Essential application setup</li>
-      <li>Approved data transfer</li>
-      <li>Validation and handover</li>
+      <li data-i18n="services.newPCLi1">Device configuration</li>
+      <li data-i18n="services.newPCLi2">Essential application setup</li>
+      <li data-i18n="services.newPCLi3">Approved data transfer</li>
+      <li data-i18n="services.newPCLi4">Validation and handover</li>
     </ul>
-    <p class="small-note">Ideal for new hires or hardware replacements.</p>
+    <p class="small-note" data-i18n="services.newPCNote">Ideal for new hires or hardware replacements.</p>
   </section>
 
   <section>
-    <h2>Network Services</h2>
+    <h2 data-i18n="services.networkTitle">Network Services</h2>
     <div class="services">
       <div class="card">
-        <h3>Basic Network Setup</h3>
-        <p>Initial setup of routers, switches, and Wi-Fi for small offices.</p>
+        <h3 data-i18n="services.basicNetworkTitle">Basic Network Setup</h3>
+        <p data-i18n="services.basicNetworkText">Initial setup of routers, switches, and Wi-Fi for small offices.</p>
         <ul>
-          <li>Internet and Wi-Fi configuration</li>
-          <li>Secure network setup</li>
-          <li>Device connectivity validation</li>
+          <li data-i18n="services.basicNetworkLi1">Internet and Wi-Fi configuration</li>
+          <li data-i18n="services.basicNetworkLi2">Secure network setup</li>
+          <li data-i18n="services.basicNetworkLi3">Device connectivity validation</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Advanced Network Setup</h3>
-        <p>Designed for growing businesses with more complex needs.</p>
+        <h3 data-i18n="services.advancedNetworkTitle">Advanced Network Setup</h3>
+        <p data-i18n="services.advancedNetworkText">Designed for growing businesses with more complex needs.</p>
         <ul>
-          <li>Multiple access points</li>
-          <li>Network segmentation</li>
-          <li>Security improvements</li>
-          <li>Documentation</li>
+          <li data-i18n="services.advancedNetworkLi1">Multiple access points</li>
+          <li data-i18n="services.advancedNetworkLi2">Network segmentation</li>
+          <li data-i18n="services.advancedNetworkLi3">Security improvements</li>
+          <li data-i18n="services.advancedNetworkLi4">Documentation</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Network Assessment</h3>
-        <p>A review of your existing network to identify issues and improvement opportunities.</p>
+        <h3 data-i18n="services.networkAssessTitle">Network Assessment</h3>
+        <p data-i18n="services.networkAssessText">A review of your existing network to identify issues and improvement opportunities.</p>
       </div>
     </div>
   </section>
 
   <section class="highlight">
-    <h2>Backup Setup &amp; Verification</h2>
-    <p>Ensure business data is being backed up correctly.</p>
+    <h2 data-i18n="services.backupTitle">Backup Setup & Verification</h2>
+    <p data-i18n="services.backupText">Ensure business data is being backed up correctly.</p>
     <ul>
-      <li>Backup solution setup (cloud, local, or hybrid)</li>
-      <li>Verification that backups are running</li>
-      <li>Clear documentation of what is protected</li>
+      <li data-i18n="services.backupLi1">Backup solution setup (cloud, local, or hybrid)</li>
+      <li data-i18n="services.backupLi2">Verification that backups are running</li>
+      <li data-i18n="services.backupLi3">Clear documentation of what is protected</li>
     </ul>
-    <p class="small-note">Backup monitoring and recovery testing are available as separate services.</p>
+    <p class="small-note" data-i18n="services.backupNote">Backup monitoring and recovery testing are available as separate services.</p>
   </section>
 
   <section>
-    <h2>Server Services</h2>
+    <h2 data-i18n="services.serverTitle">Server Services</h2>
     <ul>
-      <li><strong>Server Health Check:</strong> structured review of server health, risks, and lifecycle.</li>
-      <li><strong>Server Maintenance &amp; Storage Work:</strong> approved maintenance (updates, storage changes, hardware work) during scheduled windows.</li>
+      <li data-i18n="services.serverLi1"><strong>Server Health Check:</strong> structured review of server health, risks, and lifecycle.</li>
+      <li data-i18n="services.serverLi2"><strong>Server Maintenance & Storage Work:</strong> approved maintenance (updates, storage changes, hardware work) during scheduled windows.</li>
     </ul>
   </section>
 
   <section class="highlight">
-    <h2>Hourly IT Support</h2>
-    <p>On-demand technical support for day-to-day issues.</p>
+    <h2 data-i18n="services.hourlySupportTitle">Hourly IT Support</h2>
+    <p data-i18n="services.hourlySupportText">On-demand technical support for day-to-day issues.</p>
     <ul>
-      <li>Remote or on-site support</li>
-      <li>Transparent hourly billing</li>
-      <li>Clear boundaries and documentation</li>
+      <li data-i18n="services.hourlySupportLi1">Remote or on-site support</li>
+      <li data-i18n="services.hourlySupportLi2">Transparent hourly billing</li>
+      <li data-i18n="services.hourlySupportLi3">Clear boundaries and documentation</li>
     </ul>
   </section>
 
   <section>
-    <h2>IT Consulting</h2>
-    <p>Independent guidance to help you make informed IT decisions.</p>
+    <h2 data-i18n="services.consultingTitle">IT Consulting</h2>
+    <p data-i18n="services.consultingText">Independent guidance to help you make informed IT decisions.</p>
     <ul>
-      <li>Technology planning</li>
-      <li>Upgrade and purchasing advice</li>
-      <li>Second opinions</li>
-      <li>Strategy and roadmap discussions</li>
+      <li data-i18n="services.consultingLi1">Technology planning</li>
+      <li data-i18n="services.consultingLi2">Upgrade and purchasing advice</li>
+      <li data-i18n="services.consultingLi3">Second opinions</li>
+      <li data-i18n="services.consultingLi4">Strategy and roadmap discussions</li>
     </ul>
   </section>
 
   <section class="cta-section">
-    <h2>Ready to get started?</h2>
-    <p>Tell us what you’re trying to achieve and we’ll recommend the best next step.</p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <h2 data-i18n="services.ctaTitle">Ready to get started?</h2>
+    <p data-i18n="services.ctaText">Tell us what you're trying to achieve and we'll recommend the best next step.</p>
+    <a class="cta" href="contact.html" data-i18n="services.ctaCTA">Request Support</a>
   </section>
 
   <footer>
     <div class="footer-content">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p>Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
       </div>
 
       <div class="footer-column">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
+      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 

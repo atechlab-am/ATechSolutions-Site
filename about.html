@@ -9,6 +9,7 @@
   <meta name="description" content="Learn about ATechSolutions — reliable IT support for home users and small businesses. Clear communication, honest advice, and practical solutions.">
 
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
 </head>
 
 <body>
@@ -25,19 +26,25 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html" class="active">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Request Support</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" class="active" data-i18n="nav.about">About</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav.contact">Request Support</a>
+      </div>
+
+      <div class="lang-toggle">
+        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+        <span class="separator">|</span>
+        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
       </div>
     </nav>
   </header>
 
   <!-- Page Intro -->
   <section class="hero small">
-    <h1>About ATechSolutions</h1>
-    <p>
+    <h1 data-i18n="about.heroTitle">About ATechSolutions</h1>
+    <p data-i18n="about.heroText">
       Straightforward IT support for people who just want their technology to work.
       We focus on clear communication, practical solutions, and honest advice.
     </p>
@@ -45,43 +52,43 @@
 
   <!-- Mission -->
   <section>
-    <h2>Our Approach</h2>
-    <p>
-      Technology problems are stressful — especially when you’re under time pressure or don’t know what changed.
-      Our job is to make it simple: understand the issue, explain the options, fix what’s broken, and help prevent it from happening again.
+    <h2 data-i18n="about.approachTitle">Our Approach</h2>
+    <p data-i18n="about.approachText">
+      Technology problems are stressful — especially when you're under time pressure or don't know what changed.
+      Our job is to make it simple: understand the issue, explain the options, fix what's broken, and help prevent it from happening again.
     </p>
 
     <ul>
-      <li><strong>Plain language:</strong> no jargon, no confusion.</li>
-      <li><strong>Honest guidance:</strong> fix what matters — skip what doesn’t.</li>
-      <li><strong>Security-minded:</strong> basic best practices built into every job.</li>
-      <li><strong>Respect for your time:</strong> remote-first when possible, on-site when needed.</li>
+      <li data-i18n="about.approachLi1"><strong>Plain language:</strong> no jargon, no confusion.</li>
+      <li data-i18n="about.approachLi2"><strong>Honest guidance:</strong> fix what matters — skip what doesn't.</li>
+      <li data-i18n="about.approachLi3"><strong>Security-minded:</strong> basic best practices built into every job.</li>
+      <li data-i18n="about.approachLi4"><strong>Respect for your time:</strong> remote-first when possible, on-site when needed.</li>
     </ul>
   </section>
 
   <!-- Who We Help -->
   <section class="highlight">
-    <h2>Who We Help</h2>
+    <h2 data-i18n="about.whoTitle">Who We Help</h2>
     <div class="services">
       <div class="card">
-        <h3>Home Users</h3>
-        <p>
-          If your computer is slow, storage is full, email won’t work, or files went missing —
-          we’ll troubleshoot it, explain what happened, and get you back up and running.
+        <h3 data-i18n="about.homeTitle">Home Users</h3>
+        <p data-i18n="about.homeText">
+          If your computer is slow, storage is full, email won't work, or files went missing —
+          we'll troubleshoot it, explain what happened, and get you back up and running.
         </p>
       </div>
 
       <div class="card">
-        <h3>Small Businesses</h3>
-        <p>
+        <h3 data-i18n="about.businessTitle">Small Businesses</h3>
+        <p data-i18n="about.businessText">
           We support small teams with Microsoft 365, professional email, device setup,
           basic security, and reliable day-to-day troubleshooting.
         </p>
       </div>
 
       <div class="card">
-        <h3>Remote & On-Site</h3>
-        <p>
+        <h3 data-i18n="about.remoteTitle">Remote & On-Site</h3>
+        <p data-i18n="about.remoteText">
           Many problems can be fixed remotely to save time and money.
           For hardware installs or hands-on issues, on-site service is available by appointment.
         </p>
@@ -91,22 +98,22 @@
 
   <!-- What You Can Expect -->
   <section>
-    <h2>What You Can Expect</h2>
+    <h2 data-i18n="about.expectTitle">What You Can Expect</h2>
     <ul>
-      <li><strong>Clear scope:</strong> we’ll confirm what we’re doing before we start.</li>
-      <li><strong>Transparent billing:</strong> hourly for support work unless otherwise agreed.</li>
-      <li><strong>Practical solutions:</strong> we prioritize reliability over flashy tools.</li>
-      <li><strong>Documentation:</strong> when helpful, we note what was done and what to watch for.</li>
+      <li data-i18n="about.expectLi1"><strong>Clear scope:</strong> we'll confirm what we're doing before we start.</li>
+      <li data-i18n="about.expectLi2"><strong>Transparent billing:</strong> hourly for support work unless otherwise agreed.</li>
+      <li data-i18n="about.expectLi3"><strong>Practical solutions:</strong> we prioritize reliability over flashy tools.</li>
+      <li data-i18n="about.expectLi4"><strong>Documentation:</strong> when helpful, we note what was done and what to watch for.</li>
     </ul>
   </section>
 
   <!-- CTA -->
   <section class="cta-section">
-    <h2>Have a Question or Need Support?</h2>
-    <p>
-      Tell us what’s going on and we’ll recommend the best next step.
+    <h2 data-i18n="about.ctaTitle">Have a Question or Need Support?</h2>
+    <p data-i18n="about.ctaText">
+      Tell us what's going on and we'll recommend the best next step.
     </p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <a class="cta" href="contact.html" data-i18n="about.ctaCTA">Request Support</a>
   </section>
 
   <!-- Footer -->
@@ -114,27 +121,27 @@
     <div class="footer-content">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p>Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
       </div>
 
       <div class="footer-column">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
+      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 

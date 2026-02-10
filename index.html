@@ -9,6 +9,7 @@
 
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
 </head>
 
 <body>
@@ -24,69 +25,75 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Request Support</a>
+        <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav.contact">Request Support</a>
+      </div>
+
+      <div class="lang-toggle">
+        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+        <span class="separator">|</span>
+        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
       </div>
     </nav>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Practical IT Support<br>for Small Businesses</h1>
-    <p>
+    <h1 data-i18n="index.heroTitle">Practical IT Support<br>for Small Businesses</h1>
+    <p data-i18n="index.heroText">
       ATechSolutions provides structured, reliable IT services for small and growing teams.
       Clear scope, honest recommendations, and support that scales with your business.
     </p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <a class="cta" href="contact.html" data-i18n="index.heroCTA">Request Support</a>
   </section>
 
   <!-- What We Help With -->
   <section class="highlight">
-    <h2>What We Help With</h2>
+    <h2 data-i18n="index.helpTitle">What We Help With</h2>
     <div class="services">
       <div class="card">
-        <h3>IT Health Checks</h3>
-        <p>
+        <h3 data-i18n="index.card1Title">IT Health Checks</h3>
+        <p data-i18n="index.card1Text">
           A clear snapshot of your current IT environment, risks, and improvement opportunities —
           ideal if you want clarity before making changes.
         </p>
       </div>
 
       <div class="card">
-        <h3>Business Email & Microsoft 365</h3>
-        <p>
+        <h3 data-i18n="index.card2Title">Business Email & Microsoft 365</h3>
+        <p data-i18n="index.card2Text">
           Professional email, domains, and user setup with secure, best-practice configuration.
         </p>
       </div>
 
       <div class="card">
-        <h3>Windows 11 Planning & Upgrades</h3>
-        <p>
+        <h3 data-i18n="index.card3Title">Windows 11 Planning & Upgrades</h3>
+        <p data-i18n="index.card3Text">
           Compatibility assessments, upgrade planning, and system replacements ahead of
           Windows 10 end of support.
         </p>
       </div>
 
       <div class="card">
-        <h3>Networks & Infrastructure</h3>
-        <p>
+        <h3 data-i18n="index.card4Title">Networks & Infrastructure</h3>
+        <p data-i18n="index.card4Text">
           Secure network setup, assessments, and improvements for offices that need reliability.
         </p>
       </div>
 
       <div class="card">
-        <h3>Backups & Data Protection</h3>
-        <p>
+        <h3 data-i18n="index.card5Title">Backups & Data Protection</h3>
+        <p data-i18n="index.card5Text">
           Backup setup and verification so business data is protected and recoverable.
         </p>
       </div>
 
       <div class="card">
-        <h3>Hourly IT Support</h3>
-        <p>
+        <h3 data-i18n="index.card6Title">Hourly IT Support</h3>
+        <p data-i18n="index.card6Text">
           On-demand remote or on-site support for day-to-day technical issues.
         </p>
       </div>
@@ -95,41 +102,41 @@
 
   <!-- How We Work -->
   <section>
-    <h2>How We Work</h2>
-    <p>
+    <h2 data-i18n="index.howWeWorkTitle">How We Work</h2>
+    <p data-i18n="index.howWeWorkText">
       We focus on practical solutions that fit your business — not unnecessary tools or complexity.
     </p>
     <ul>
-      <li><strong>Assess first:</strong> understand your environment before making changes</li>
-      <li><strong>Clear scope:</strong> you know what’s being done and why</li>
-      <li><strong>Remote-first:</strong> faster resolution when possible</li>
-      <li><strong>On-site when needed:</strong> hands-on support for infrastructure and hardware</li>
-      <li><strong>Documented outcomes:</strong> clarity after the work is complete</li>
+      <li data-i18n="index.howWeWorkLi1"><strong>Assess first:</strong> understand your environment before making changes</li>
+      <li data-i18n="index.howWeWorkLi2"><strong>Clear scope:</strong> you know what's being done and why</li>
+      <li data-i18n="index.howWeWorkLi3"><strong>Remote-first:</strong> faster resolution when possible</li>
+      <li data-i18n="index.howWeWorkLi4"><strong>On-site when needed:</strong> hands-on support for infrastructure and hardware</li>
+      <li data-i18n="index.howWeWorkLi5"><strong>Documented outcomes:</strong> clarity after the work is complete</li>
     </ul>
   </section>
 
   <!-- Who This Is For -->
   <section class="highlight">
-    <h2>Who We Work With</h2>
-    <p>
+    <h2 data-i18n="index.whoWeWorkTitle">Who We Work With</h2>
+    <p data-i18n="index.whoWeWorkText">
       ATechSolutions is a good fit for organizations that:
     </p>
     <ul>
-      <li>Have 1–50 users</li>
-      <li>Rely on Microsoft 365 or cloud services</li>
-      <li>Don’t need full-time internal IT staff</li>
-      <li>Want reliable support without long-term contracts</li>
+      <li data-i18n="index.whoWeWorkLi1">Have 1–50 users</li>
+      <li data-i18n="index.whoWeWorkLi2">Rely on Microsoft 365 or cloud services</li>
+      <li data-i18n="index.whoWeWorkLi3">Don't need full-time internal IT staff</li>
+      <li data-i18n="index.whoWeWorkLi4">Want reliable support without long-term contracts</li>
     </ul>
   </section>
 
   <!-- Primary CTA -->
   <section class="cta-section">
-    <h2>Not Sure Where to Start?</h2>
-    <p>
+    <h2 data-i18n="index.ctaTitle">Not Sure Where to Start?</h2>
+    <p data-i18n="index.ctaText">
       Many clients begin with an IT Health Check to get a clear picture of their environment
       and next steps.
     </p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <a class="cta" href="contact.html" data-i18n="index.ctaCTA">Request Support</a>
   </section>
 
   <!-- Footer -->
@@ -137,27 +144,27 @@
     <div class="footer-content">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p>Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
       </div>
 
       <div class="footer-column">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
+      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 

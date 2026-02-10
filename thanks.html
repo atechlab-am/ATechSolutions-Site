@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
 </head>
 
 <body>
@@ -23,48 +24,54 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Request Support</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav.contact">Request Support</a>
+      </div>
+
+      <div class="lang-toggle">
+        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+        <span class="separator">|</span>
+        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
       </div>
     </nav>
   </header>
 
   <section class="hero small">
-    <h1>Thanks — we got it.</h1>
-    <p>
-      Your request has been submitted successfully. We’ll reply as soon as possible.
+    <h1 data-i18n="thanks.heroTitle">Thanks — we got it.</h1>
+    <p data-i18n="thanks.heroText">
+      Your request has been submitted successfully. We'll reply as soon as possible.
     </p>
-    <a class="cta" href="index.html">Back to Home</a>
+    <a class="cta" href="index.html" data-i18n="thanks.ctaButton">Back to Home</a>
   </section>
 
   <footer>
     <div class="footer-content">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p>Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
       </div>
 
       <div class="footer-column">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
+      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 

@@ -114,6 +114,36 @@ nav {
   margin: 0 auto;
 }
 
+.lang-toggle {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.lang-toggle button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.lang-toggle button:hover {
+  opacity: 0.8;
+}
+
+.lang-toggle button.active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lang-toggle .separator {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* =========================
    Brand / Logo (UPGRADE)
 ========================= */

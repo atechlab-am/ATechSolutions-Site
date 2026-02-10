@@ -9,6 +9,7 @@
   <meta name="description" content="Request IT support from ATechSolutions. Remote and on-site help for home users and small businesses.">
 
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
 </head>
 
 <body>
@@ -25,38 +26,44 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html" class="active">Request Support</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" class="active" data-i18n="nav.contact">Request Support</a>
+      </div>
+
+      <div class="lang-toggle">
+        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+        <span class="separator">|</span>
+        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
       </div>
     </nav>
   </header>
 
   <!-- Page Intro -->
   <section class="hero small">
-    <h1>Request Support</h1>
-    <p>
-      Tell us what’s going on and we’ll recommend the best next step.
-      If remote support is possible, we’ll start there to save you time and cost.
+    <h1 data-i18n="contact.heroTitle">Request Support</h1>
+    <p data-i18n="contact.heroText">
+      Tell us what's going on and we'll recommend the best next step.
+      If remote support is possible, we'll start there to save you time and cost.
     </p>
   </section>
 
   <!-- Contact Options -->
   <section class="highlight">
-    <h2>Contact Options</h2>
+    <h2 data-i18n="contact.optionsTitle">Contact Options</h2>
     <p>
-      Email: <a href="mailto:support@atechsolutions.org">support@atechsolutions.org</a>
+      <span data-i18n="contact.email">Email:</span> <a href="mailto:support@atechsolutions.org" data-i18n="contact.emailAddress">support@atechsolutions.org</a>
     </p>
-    <p class="small-note">
-      For faster help, use the request form below (it includes key details we’ll need).
+    <p class="small-note" data-i18n="contact.emailNote">
+      For faster help, use the request form below (it includes key details we'll need).
     </p>
   </section>
 
   <!-- Support Request Form -->
   <section>
-    <h2>Support Request Form</h2>
+    <h2 data-i18n="contact.formTitle">Support Request Form</h2>
 
     <form method="POST" action="https://formspree.io/f/xlgwdgda">
       <!-- Redirect after successful submit -->
@@ -67,80 +74,80 @@
 
       <div class="form-grid">
         <label>
-          Full Name *
+          <span data-i18n="contact.nameLabel">Full Name *</span>
           <input type="text" name="name" autocomplete="name" required>
         </label>
 
         <label>
-          Email *
+          <span data-i18n="contact.emailLabel">Email *</span>
           <input type="email" name="email" autocomplete="email" required>
         </label>
 
         <label>
-          Phone (optional)
+          <span data-i18n="contact.phoneLabel">Phone (optional)</span>
           <input type="tel" name="phone" autocomplete="tel">
         </label>
 
         <label>
-          Support Type *
+          <span data-i18n="contact.typeLabel">Support Type *</span>
           <select name="support_type" required>
-            <option value="" selected disabled>Select one</option>
-            <option>Home User</option>
-            <option>Small Business</option>
+            <option value="" selected disabled data-i18n="contact.typeOption1">Select one</option>
+            <option data-i18n="contact.typeOption2">Home User</option>
+            <option data-i18n="contact.typeOption3">Small Business</option>
           </select>
         </label>
 
         <label>
-          Preferred Service *
+          <span data-i18n="contact.serviceLabel">Preferred Service *</span>
           <select name="service_preference" required>
-            <option value="" selected disabled>Select one</option>
-            <option>Remote Support</option>
-            <option>On-Site Support</option>
-            <option>Not Sure</option>
+            <option value="" selected disabled data-i18n="contact.serviceOption1">Select one</option>
+            <option data-i18n="contact.serviceOption2">Remote Support</option>
+            <option data-i18n="contact.serviceOption3">On-Site Support</option>
+            <option data-i18n="contact.serviceOption4">Not Sure</option>
           </select>
         </label>
 
         <label>
-          Urgency *
+          <span data-i18n="contact.urgencyLabel">Urgency *</span>
           <select name="urgency" required>
-            <option value="" selected disabled>Select one</option>
-            <option>Urgent (today)</option>
-            <option>Soon (1–3 days)</option>
-            <option>Flexible</option>
+            <option value="" selected disabled data-i18n="contact.urgencyOption1">Select one</option>
+            <option data-i18n="contact.urgencyOption2">Urgent (today)</option>
+            <option data-i18n="contact.urgencyOption3">Soon (1–3 days)</option>
+            <option data-i18n="contact.urgencyOption4">Flexible</option>
           </select>
         </label>
       </div>
 
       <label>
-        Device / System (optional)
-        <input type="text" name="device" placeholder="Example: Windows laptop, MacBook, desktop PC, printer, router">
+        <span data-i18n="contact.deviceLabel">Device / System (optional)</span>
+        <input type="text" name="device" data-i18n="contact.devicePlaceholder" placeholder="Example: Windows laptop, MacBook, desktop PC, printer, router">
       </label>
 
       <label>
-        Describe the issue *
-        <textarea name="issue" rows="7" placeholder="What’s happening? When did it start? Any error messages?" required></textarea>
+        <span data-i18n="contact.issueLabel">Describe the issue *</span>
+        <textarea name="issue" rows="7" data-i18n="contact.issuePlaceholder" placeholder="What's happening? When did it start? Any error messages?" required></textarea>
       </label>
 
       <label class="checkbox">
         <input type="checkbox" name="consent" required>
-        I consent to being contacted about this request. *
+        <span data-i18n="contact.consentLabel">I consent to being contacted about this request. *</span>
       </label>
 
-      <button class="cta" type="submit">Send Request</button>
+      <button class="cta" type="submit" data-i18n="contact.submitButton">Send Request</button>
 
-      <p class="small-note">
-        Note: Please don’t include passwords. If remote access is needed, we’ll provide a secure method.
+      <p class="small-note" data-i18n="contact.formNote">
+        Note: Please don't include passwords. If remote access is needed, we'll provide a secure method.
       </p>
     </form>
   </section>
 
   <!-- What Happens Next -->
   <section class="cta-section">
-    <h2>What Happens Next</h2>
+    <h2 data-i18n="contact.nextTitle">What Happens Next</h2>
     <ul>
-      <li>We review your request and reply with the recommended next step.</li>
-      <li>If the issue can be handled remotely, we’ll schedule a remote session.</li>
-      <li>If on-site is required, we’ll propose available appointment times.</li>
+      <li data-i18n="contact.nextLi1">We review your request and reply with the recommended next step.</li>
+      <li data-i18n="contact.nextLi2">If the issue can be handled remotely, we'll schedule a remote session.</li>
+      <li data-i18n="contact.nextLi3">If on-site is required, we'll propose available appointment times.</li>
     </ul>
   </section>
 
@@ -149,27 +156,27 @@
     <div class="footer-content">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p>Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
       </div>
 
       <div class="footer-column">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
+      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 

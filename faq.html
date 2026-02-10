@@ -9,6 +9,7 @@
 
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js"></script>
 </head>
 
 <body>
@@ -24,165 +25,171 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="faq.html" class="active">FAQ</a>
-        <a href="contact.html">Request Support</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="faq.html" class="active" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" data-i18n="nav.contact">Request Support</a>
+      </div>
+
+      <div class="lang-toggle">
+        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
+        <span class="separator">|</span>
+        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
       </div>
     </nav>
   </header>
 
   <section class="hero small">
-    <h1>FAQ</h1>
-    <p>
+    <h1 data-i18n="faq.heroTitle">FAQ</h1>
+    <p data-i18n="faq.heroText">
       Quick answers to common questions about our services, process, and support options.
-      If you don’t see your question here, send a request and we’ll help.
+      If you don't see your question here, send a request and we'll help.
     </p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <a class="cta" href="contact.html" data-i18n="faq.heroCTA">Request Support</a>
   </section>
 
   <section class="highlight">
-    <h2>Getting Started</h2>
+    <h2 data-i18n="faq.startTitle">Getting Started</h2>
 
-    <h3>How do we start?</h3>
-    <p>
-      Send a request using our contact form. We’ll review the details and recommend the best next step —
+    <h3 data-i18n="faq.q1">How do we start?</h3>
+    <p data-i18n="faq.a1">
+      Send a request using our contact form. We'll review the details and recommend the best next step —
       often starting with remote support or an IT Health Check.
     </p>
 
-    <h3>Do you offer an IT Health Check?</h3>
-    <p>
+    <h3 data-i18n="faq.q2">Do you offer an IT Health Check?</h3>
+    <p data-i18n="faq.a2">
       Yes. Many clients start with an IT Health Check to identify risks, gaps, and priorities before making changes.
-      It’s a structured way to plan upgrades, security, backups, and infrastructure decisions.
+      It's a structured way to plan upgrades, security, backups, and infrastructure decisions.
     </p>
 
-    <h3>Do you support home users too?</h3>
-    <p>
-      Yes. We support home users and small businesses. If your request is business-related, choose “Small Business”
+    <h3 data-i18n="faq.q3">Do you support home users too?</h3>
+    <p data-i18n="faq.a3">
+      Yes. We support home users and small businesses. If your request is business-related, choose "Small Business"
       in the form so we can respond appropriately.
     </p>
   </section>
 
   <section>
-    <h2>Remote vs On-Site</h2>
+    <h2 data-i18n="faq.remoteTitle">Remote vs On-Site</h2>
 
-    <h3>Do you provide remote support?</h3>
-    <p>
+    <h3 data-i18n="faq.q4">Do you provide remote support?</h3>
+    <p data-i18n="faq.a4">
       Yes. Many issues can be resolved remotely, which is usually faster and more cost-effective.
-      We’ll recommend remote support when it makes sense.
+      We'll recommend remote support when it makes sense.
     </p>
 
-    <h3>When is on-site support required?</h3>
-    <p>
+    <h3 data-i18n="faq.q5">When is on-site support required?</h3>
+    <p data-i18n="faq.a5">
       On-site service is typically needed for hardware installs, physical network work, cabling, Wi-Fi access point placement,
-      and issues that can’t be reproduced remotely.
+      and issues that can't be reproduced remotely.
     </p>
   </section>
 
   <section class="highlight">
-    <h2>Billing & Scope</h2>
+    <h2 data-i18n="faq.billingTitle">Billing & Scope</h2>
 
-    <h3>Do you bill hourly?</h3>
-    <p>
+    <h3 data-i18n="faq.q6">Do you bill hourly?</h3>
+    <p data-i18n="faq.a6">
       Most support work is billed hourly unless a project scope is defined in advance. We keep scope clear and avoid surprises.
     </p>
 
-    <h3>Do you offer fixed-price projects?</h3>
-    <p>
-      Yes, for clearly defined services (for example: migrations, new PC setups, or network installs). We’ll confirm the scope
+    <h3 data-i18n="faq.q7">Do you offer fixed-price projects?</h3>
+    <p data-i18n="faq.a7">
+      Yes, for clearly defined services (for example: migrations, new PC setups, or network installs). We'll confirm the scope
       and expectations before starting.
     </p>
 
-    <h3>Will you start work without approval?</h3>
-    <p>
+    <h3 data-i18n="faq.q8">Will you start work without approval?</h3>
+    <p data-i18n="faq.a8">
       No. If additional work is needed outside the original request, we discuss it before proceeding.
     </p>
   </section>
 
   <section>
-    <h2>Microsoft 365, Email & Domains</h2>
+    <h2 data-i18n="faq.emailTitle">Microsoft 365, Email & Domains</h2>
 
-    <h3>Can you set up professional email with our domain?</h3>
-    <p>
+    <h3 data-i18n="faq.q9">Can you set up professional email with our domain?</h3>
+    <p data-i18n="faq.a9">
       Yes. We can configure business email and domain settings using Microsoft 365 or Google Workspace, depending on your needs.
     </p>
 
-    <h3>Can you migrate email from another provider?</h3>
-    <p>
+    <h3 data-i18n="faq.q10">Can you migrate email from another provider?</h3>
+    <p data-i18n="faq.a10">
       Yes. We handle email migrations with a focus on minimizing downtime and validating mail flow after the move.
     </p>
   </section>
 
   <section class="highlight">
-    <h2>Windows 11 & New PC Setup</h2>
+    <h2 data-i18n="faq.win11Title">Windows 11 & New PC Setup</h2>
 
-    <h3>Can you check if our computers can upgrade to Windows 11?</h3>
-    <p>
+    <h3 data-i18n="faq.q11">Can you check if our computers can upgrade to Windows 11?</h3>
+    <p data-i18n="faq.a11">
       Yes. We offer Windows 11 compatibility assessments so you can plan upgrades or replacements before Windows 10 end of support.
     </p>
 
-    <h3>Do you set up new computers and move data?</h3>
-    <p>
+    <h3 data-i18n="faq.q12">Do you set up new computers and move data?</h3>
+    <p data-i18n="faq.a12">
       Yes. We can set up new PCs and migrate approved user data so your team can work immediately.
     </p>
   </section>
 
   <section>
-    <h2>Backups & Security</h2>
+    <h2 data-i18n="faq.securityTitle">Backups & Security</h2>
 
-    <h3>Do you set up backups?</h3>
-    <p>
-      Yes. We can set up and verify backups (cloud, local, or hybrid) and document what’s protected.
+    <h3 data-i18n="faq.q13">Do you set up backups?</h3>
+    <p data-i18n="faq.a13">
+      Yes. We can set up and verify backups (cloud, local, or hybrid) and document what's protected.
       Ongoing monitoring and recovery testing can be added if needed.
     </p>
 
-    <h3>Will you ask for passwords?</h3>
-    <p>
+    <h3 data-i18n="faq.q14">Will you ask for passwords?</h3>
+    <p data-i18n="faq.a14">
       No. Please do not send passwords by email or through the website form.
-      If access is required, we’ll use a secure method and you remain in control.
+      If access is required, we'll use a secure method and you remain in control.
     </p>
 
-    <h3>How do you handle remote access?</h3>
-    <p>
+    <h3 data-i18n="faq.q15">How do you handle remote access?</h3>
+    <p data-i18n="faq.a15">
       Remote sessions are performed with your permission and can be ended by you at any time. We aim for least-privilege access
       and use temporary access wherever possible.
     </p>
   </section>
 
   <section class="cta-section">
-    <h2>Still have questions?</h2>
-    <p>
-      Send a request with a quick summary of what you need and we’ll recommend the best next step.
+    <h2 data-i18n="faq.ctaTitle">Still have questions?</h2>
+    <p data-i18n="faq.ctaText">
+      Send a request with a quick summary of what you need and we'll recommend the best next step.
     </p>
-    <a class="cta" href="contact.html">Request Support</a>
+    <a class="cta" href="contact.html" data-i18n="faq.ctaCTA">Request Support</a>
   </section>
 
   <footer>
     <div class="footer-content">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p>Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
       </div>
 
       <div class="footer-column">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
+      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 
