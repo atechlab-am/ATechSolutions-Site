@@ -624,6 +624,9 @@ function switchLanguage(lang) {
   currentLang = lang;
   document.documentElement.lang = lang;
 
+  // Save language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+
   // Update active state on language buttons
   document.querySelectorAll('.lang-toggle button').forEach(btn => {
     btn.classList.remove('active');
@@ -649,5 +652,7 @@ function switchLanguage(lang) {
 
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
-  switchLanguage('en');
+  // Check for saved language preference, default to 'en' if none found
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  switchLanguage(savedLang);
 });
