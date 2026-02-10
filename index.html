@@ -2,95 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ATechSolutions | IT Support for Home & Small Business</title>
-  <link rel="icon" type="image/png" href="thumbnail.png">
+  <title>ATechSolutions | Business IT Services & Support</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ATechSolutions provides reliable IT support for home users and small businesses. Remote and on-site technical services you can trust.">
+  <meta name="description" content="Structured IT services for small and growing businesses. Health checks, professional email, Windows 11 planning, networks, backups, and reliable IT support.">
 
+  <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- Header -->
   <header>
     <nav>
       <div class="brand">
-        <img src="thumbnail.png" alt="ATechSolutions logo">
+        <img src="logo.png" alt="ATechSolutions logo">
       </div>
 
-      <div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
         <a href="contact.html">Request Support</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <img src="logo.png" alt="ATechSolutions" class="hero-logo">
-    <h1>Reliable IT Support,<br>Without the Headaches</h1>
+    <h1>Practical IT Support<br>for Small Businesses</h1>
     <p>
-      Professional technical support for home users and small businesses.
-      Remote assistance or on-site help when you need it.
+      ATechSolutions provides structured, reliable IT services for small and growing teams.
+      Clear scope, honest recommendations, and support that scales with your business.
     </p>
     <a class="cta" href="contact.html">Request Support</a>
   </section>
 
-  <!-- Services Overview -->
-  <section>
-    <h2>What We Do</h2>
-
+  <!-- What We Help With -->
+  <section class="highlight">
+    <h2>What We Help With</h2>
     <div class="services">
       <div class="card">
-        <span class="card-icon">💻</span>
-        <h3>Home IT Support</h3>
+        <h3>IT Health Checks</h3>
         <p>
-          Slow computers, storage issues, software problems, backups,
-          and general troubleshooting — explained in plain language.
+          A clear snapshot of your current IT environment, risks, and improvement opportunities —
+          ideal if you want clarity before making changes.
         </p>
       </div>
 
       <div class="card">
-        <span class="card-icon">🏢</span>
-        <h3>Small Business IT</h3>
+        <h3>Business Email & Microsoft 365</h3>
         <p>
-          Email setup, Microsoft 365, device configuration, security basics,
-          and ongoing technical support for small teams.
+          Professional email, domains, and user setup with secure, best-practice configuration.
         </p>
       </div>
 
       <div class="card">
-        <span class="card-icon">🌐</span>
-        <h3>Remote & On-Site</h3>
+        <h3>Windows 11 Planning & Upgrades</h3>
         <p>
-          Fast remote support when possible, on-site service when required.
-          Clear pricing and no unnecessary upselling.
+          Compatibility assessments, upgrade planning, and system replacements ahead of
+          Windows 10 end of support.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Networks & Infrastructure</h3>
+        <p>
+          Secure network setup, assessments, and improvements for offices that need reliability.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Backups & Data Protection</h3>
+        <p>
+          Backup setup and verification so business data is protected and recoverable.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Hourly IT Support</h3>
+        <p>
+          On-demand remote or on-site support for day-to-day technical issues.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section class="highlight">
-    <h2>Why ATechSolutions?</h2>
+  <!-- How We Work -->
+  <section>
+    <h2>How We Work</h2>
+    <p>
+      We focus on practical solutions that fit your business — not unnecessary tools or complexity.
+    </p>
     <ul>
-      <li>Independent, local IT support</li>
-      <li>Clear communication — no jargon</li>
-      <li>Honest advice and transparent pricing</li>
-      <li>Focused on fixing problems, not selling hardware</li>
+      <li><strong>Assess first:</strong> understand your environment before making changes</li>
+      <li><strong>Clear scope:</strong> you know what’s being done and why</li>
+      <li><strong>Remote-first:</strong> faster resolution when possible</li>
+      <li><strong>On-site when needed:</strong> hands-on support for infrastructure and hardware</li>
+      <li><strong>Documented outcomes:</strong> clarity after the work is complete</li>
     </ul>
   </section>
 
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <h2>Need Help With a Technical Issue?</h2>
+  <!-- Who This Is For -->
+  <section class="highlight">
+    <h2>Who We Work With</h2>
     <p>
-      Describe the problem and we’ll let you know the best next step —
-      remote support or on-site service.
+      ATechSolutions is a good fit for organizations that:
+    </p>
+    <ul>
+      <li>Have 1–50 users</li>
+      <li>Rely on Microsoft 365 or cloud services</li>
+      <li>Don’t need full-time internal IT staff</li>
+      <li>Want reliable support without long-term contracts</li>
+    </ul>
+  </section>
+
+  <!-- Primary CTA -->
+  <section class="cta-section">
+    <h2>Not Sure Where to Start?</h2>
+    <p>
+      Many clients begin with an IT Health Check to get a clear picture of their environment
+      and next steps.
     </p>
     <a class="cta" href="contact.html">Request Support</a>
   </section>
@@ -123,6 +160,27 @@
       <p>© 2026 ATechSolutions | <a href="privacy.html">Privacy Policy</a></p>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
 
 </body>
 </html>
