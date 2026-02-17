@@ -52,7 +52,10 @@ const translations = {
       whoWeWorkLi4: "Want reliable support without long-term contracts",
       ctaTitle: "Not Sure Where to Start?",
       ctaText: "Many clients begin with an IT Health Check to get a clear picture of their environment and next steps.",
-      ctaCTA: "Request Support"
+      ctaCTA: "Request Support",
+      partnershipsTitle: "Strategic Cloud Partnerships",
+      partnershipsText: "ATechSolutions is a Microsoft AI Cloud Partner and a Sherweb Partner, delivering secure Microsoft 365 and cloud solutions for small businesses.",
+      partnershipsDesc: "Through our partnerships, we provide licensed Microsoft solutions, expert deployment, and ongoing management — all backed by trusted global providers."
     },
     fr: {
       heroTitle: "Support informatique pratique<br>pour les petites entreprises",
@@ -86,7 +89,10 @@ const translations = {
       whoWeWorkLi4: "Veulent un support fiable sans contrats à long terme",
       ctaTitle: "Vous ne savez pas par où commencer?",
       ctaText: "De nombreux clients commencent par une vérification de l'état informatique pour avoir une image claire de leur environnement et des prochaines étapes.",
-      ctaCTA: "Demander de l'aide"
+      ctaCTA: "Demander de l'aide",
+      partnershipsTitle: "Partenariats Cloud Stratégiques",
+      partnershipsText: "ATechSolutions est partenaire Microsoft AI Cloud et partenaire Sherweb, fournissant des solutions Microsoft 365 et cloud sécurisées aux petites entreprises.",
+      partnershipsDesc: "Grâce à nos partenariats, nous fournissons des solutions Microsoft sous licence, un déploiement expert et une gestion continue, tout soutenus par des fournisseurs mondiaux de confiance."
     }
   },
 
@@ -601,6 +607,8 @@ const translations = {
     en: {
       companyDesc: "Reliable IT support for home users and small businesses.",
       quickLinks: "Quick Links",
+      partnerships: "Partnerships",
+      partnershipsText: "Microsoft AI Cloud Partner & Sherweb Partner",
       contact: "Contact",
       email: "Email:",
       copyright: "© 2026 ATechSolutions",
@@ -609,6 +617,8 @@ const translations = {
     fr: {
       companyDesc: "Support informatique fiable pour les particuliers et les petites entreprises.",
       quickLinks: "Liens rapides",
+      partnerships: "Partenariats",
+      partnershipsText: "Partenaire Microsoft AI Cloud & Partenaire Sherweb",
       contact: "Contact",
       email: "Courriel:",
       copyright: "© 2026 ATechSolutions",
