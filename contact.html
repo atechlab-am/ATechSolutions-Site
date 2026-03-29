@@ -2,200 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Request Support | ATechSolutions</title>
-  <link rel="icon" type="image/png" href="thumbnail.png">
-
+  <title data-i18n-text="contactPage.heroTitle">Request IT Service | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Request IT support from ATechSolutions. Remote and on-site help for home users and small businesses.">
-
+  <meta name="description" data-i18n-content="contactPage.heroText" content="Request IT support or get a quote for managed IT services, Microsoft 365 support, network setup, backup planning, and cloud services in Deux-Montagnes, Laval, and Montreal.">
+  <link rel="canonical" href="https://atechsolutions.org/contact.html">
+  <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="translations.js"></script>
 </head>
-
 <body>
-
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="brand">
-        <img src="logo.png" alt="ATechSolutions logo">
-      </div>
-
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+  <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
+      <a class="brand" href="index.html" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
+        <img src="logo.png" alt="ATechSolutions managed IT services logo">
+        <span class="brand-copy">
+          <strong>ATechSolutions</strong>
+          <span data-i18n="contactPage.brandTag">Managed IT for Quebec businesses</span>
+        </span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" data-i18n-aria-label="ui.toggleMenu" aria-expanded="false" aria-controls="site-navigation">
         <span class="hamburger"></span>
       </button>
-
-      <div class="nav-links">
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <a href="services.html" data-i18n="nav.services">Services</a>
-        <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
-        <a href="contact.html" class="active" data-i18n="nav.contact">Request Support</a>
-      </div>
-
-      <div class="lang-toggle">
-        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
-        <span class="separator">|</span>
-        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
+      <div class="nav-panel" id="site-navigation">
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+          <a href="contact.html" class="active" data-i18n="nav.contact">Request IT Service</a>
+        </div>
+        <div class="nav-meta">
+          <div class="lang-toggle">
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')">EN</button>
+            <span class="separator">|</span>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')">FR</button>
+          </div>
+          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+        </div>
       </div>
     </nav>
   </header>
 
-  <!-- Page Intro -->
-  <section class="hero small">
-    <h1 data-i18n="contact.heroTitle">Request Support</h1>
-    <p data-i18n="contact.heroText">
-      Tell us what's going on and we'll recommend the best next step.
-      If remote support is possible, we'll start there to save you time and cost.
-    </p>
-  </section>
+  <main id="main-content">
+    <section class="hero reveal">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="contactPage.heroEyebrow">Contact ATechSolutions</span>
+          <h1 data-i18n="contactPage.heroTitle">Request support or get a quote</h1>
+          <p data-i18n="contactPage.heroText">Use this page to submit an incident support request or request pricing for managed IT services, Microsoft 365 support, network infrastructure work, backup planning, or cloud services.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact-form" data-i18n="contactPage.openForm">Open the Form</a>
+            <a class="button button-secondary" href="mailto:support@atechsolutions.org" data-i18n="contactPage.emailSupport">Email Support</a>
+          </div>
+        </div>
 
-  <!-- Contact Options -->
-  <section class="highlight">
-    <h2 data-i18n="contact.optionsTitle">Contact Options</h2>
-    <p>
-      <span data-i18n="contact.email">Email:</span> <a href="mailto:support@atechsolutions.org" data-i18n="contact.emailAddress">support@atechsolutions.org</a>
-    </p>
-    <p class="small-note" data-i18n="contact.emailNote">
-      For faster help, use the request form below (it includes key details we'll need).
-    </p>
-  </section>
+        <div class="hero-support">
+          <div class="hero-card">
+            <h2 data-i18n="contactPage.detailsTitle">Contact details</h2>
+            <ul class="hero-list">
+              <li data-i18n="contactPage.detailsLi1">Email: support@atechsolutions.org</li>
+              <li data-i18n="contactPage.detailsLi2">Service area: Deux-Montagnes, Laval, Montreal</li>
+              <li data-i18n="contactPage.detailsLi3">Business inquiries reviewed within 1 business day</li>
+              <li data-i18n="contactPage.detailsLi4">Remote-first support with on-site availability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Support Request Form -->
-  <section>
-    <h2 data-i18n="contact.formTitle">Support Request Form</h2>
-
-    <form method="POST" action="https://formspree.io/f/xlgwdgda">
-      <!-- Redirect after successful submit -->
-      <input type="hidden" name="_next" value="https://atechsolutions.org/thank-you.html">
-
-      <!-- Optional: subject line in your inbox -->
-      <input type="hidden" name="_subject" value="New Support Request - ATechSolutions">
-
-      <div class="form-grid">
-        <label>
-          <span data-i18n="contact.nameLabel">Full Name *</span>
-          <input type="text" name="name" autocomplete="name" required>
-        </label>
-
-        <label>
-          <span data-i18n="contact.emailLabel">Email *</span>
-          <input type="email" name="email" autocomplete="email" required>
-        </label>
-
-        <label>
-          <span data-i18n="contact.phoneLabel">Phone (optional)</span>
-          <input type="tel" name="phone" autocomplete="tel">
-        </label>
-
-        <label>
-          <span data-i18n="contact.typeLabel">Support Type *</span>
-          <select name="support_type" required>
-            <option value="" selected disabled data-i18n="contact.typeOption1">Select one</option>
-            <option data-i18n="contact.typeOption2">Home User</option>
-            <option data-i18n="contact.typeOption3">Small Business</option>
-          </select>
-        </label>
-
-        <label>
-          <span data-i18n="contact.serviceLabel">Preferred Service *</span>
-          <select name="service_preference" required>
-            <option value="" selected disabled data-i18n="contact.serviceOption1">Select one</option>
-            <option data-i18n="contact.serviceOption2">Remote Support</option>
-            <option data-i18n="contact.serviceOption3">On-Site Support</option>
-            <option data-i18n="contact.serviceOption4">Not Sure</option>
-          </select>
-        </label>
-
-        <label>
-          <span data-i18n="contact.urgencyLabel">Urgency *</span>
-          <select name="urgency" required>
-            <option value="" selected disabled data-i18n="contact.urgencyOption1">Select one</option>
-            <option data-i18n="contact.urgencyOption2">Urgent (today)</option>
-            <option data-i18n="contact.urgencyOption3">Soon (1–3 days)</option>
-            <option data-i18n="contact.urgencyOption4">Flexible</option>
-          </select>
-        </label>
+    <section class="reveal">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="contactPage.pathEyebrow">Choose your path</span>
+        <h2 class="section-title" data-i18n="contactPage.pathTitle">Separate support and quote requests</h2>
+        <p class="section-subtitle" data-i18n="contactPage.pathSubtitle">Select the path that matches your priority so intake and response can be handled efficiently.</p>
       </div>
 
-      <label>
-        <span data-i18n="contact.deviceLabel">Device / System (optional)</span>
-        <input type="text" name="device" data-i18n="contact.devicePlaceholder" placeholder="Example: Windows laptop, MacBook, desktop PC, printer, router">
-      </label>
+      <div class="quote-grid">
+        <article class="contact-card" data-request-card="support">
+          <h3 data-i18n="cta.requestService">Request IT Service</h3>
+          <p data-i18n="contactPage.supportCardText">Use this option for active incidents, user-impacting issues, downtime, and urgent troubleshooting needs.</p>
+          <button class="button button-primary" type="button" data-request-button="support" data-i18n="contactPage.selectSupportRequest">Select Support Request</button>
+        </article>
 
-      <label>
-        <span data-i18n="contact.issueLabel">Describe the issue *</span>
-        <textarea name="issue" rows="7" data-i18n="contact.issuePlaceholder" placeholder="What's happening? When did it start? Any error messages?" required></textarea>
-      </label>
+        <article class="contact-card" data-request-card="quote">
+          <h3 data-i18n="cta.requestService">Request IT Service</h3>
+          <p data-i18n="contactPage.quoteCardText">Use this option for managed IT services, Microsoft 365 support, network setup, configuration improvements, backup, and cloud projects.</p>
+          <button class="button button-primary" type="button" data-request-button="quote" data-i18n="contactPage.selectQuoteRequest">Select Quote Request</button>
+        </article>
+      </div>
+    </section>
 
-      <label class="checkbox">
-        <input type="checkbox" name="consent" required>
-        <span data-i18n="contact.consentLabel">I consent to being contacted about this request. *</span>
-      </label>
+    <section class="contact-layout reveal" id="contact-form">
+      <div class="form-shell">
+        <div class="section-header compact">
+          <span class="eyebrow" data-i18n="contactPage.formEyebrow">Request form</span>
+          <h2 data-i18n="contactPage.formTitle">Tell us what you need</h2>
+          <p class="request-status" data-request-selection data-i18n="contactPage.selectionSupport">Support request selected</p>
+        </div>
 
-      <button class="cta" type="submit" data-i18n="contact.submitButton">Send Request</button>
+        <form method="POST" action="https://formspree.io/f/xlgwdgda">
+          <input type="hidden" name="_next" value="https://atechsolutions.org/thanks.html">
+          <input type="hidden" name="_subject" value="New Website Inquiry - ATechSolutions">
+          <input type="hidden" name="request_type_selection" value="support">
 
-      <p class="small-note" data-i18n="contact.formNote">
-        Note: Please don't include passwords. If remote access is needed, we'll provide a secure method.
-      </p>
-    </form>
-  </section>
+          <div class="form-grid">
+            <label>
+              <span data-i18n="contactPage.labelName">Name *</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span data-i18n="contactPage.labelCompany">Company *</span>
+              <input type="text" name="company" autocomplete="organization" required>
+            </label>
+            <label>
+              <span data-i18n="contactPage.labelEmail">Email *</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span data-i18n="contactPage.labelPhone">Phone</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+          </div>
 
-  <!-- What Happens Next -->
-  <section class="cta-section">
-    <h2 data-i18n="contact.nextTitle">What Happens Next</h2>
-    <ul>
-      <li data-i18n="contact.nextLi1">We review your request and reply with the recommended next step.</li>
-      <li data-i18n="contact.nextLi2">If the issue can be handled remotely, we'll schedule a remote session.</li>
-      <li data-i18n="contact.nextLi3">If on-site is required, we'll propose available appointment times.</li>
-    </ul>
-  </section>
+          <label>
+            <span data-i18n="contactPage.labelMessage">Message *</span>
+            <textarea name="message" data-i18n="contactPage.messagePlaceholder" placeholder="Tell us about the issue, project, or business need. Include the service you need help with, your location, and any deadlines if relevant." required></textarea>
+          </label>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
+          <label class="checkbox">
+            <input type="checkbox" name="consent" required>
+            <span data-i18n="contactPage.consentText">I consent to being contacted about this request.</span>
+          </label>
+
+          <div class="cta-actions">
+            <button class="button button-primary" type="submit" data-i18n="contactPage.submitButton">Send Request</button>
+          </div>
+
+          <p class="small-note" data-i18n="contactPage.formNote">Please do not include passwords. If remote access is required, ATechSolutions will provide a secure method.</p>
+        </form>
+      </div>
+
+      <div class="contact-panel">
+        <article class="info-card">
+          <div class="section-header compact">
+            <span class="eyebrow" data-i18n="contactPage.panelSupportEyebrow">Support request</span>
+            <h2 data-i18n="contactPage.panelSupportTitle">Best for urgent issues</h2>
+          </div>
+          <p data-i18n="contactPage.panelSupportText">Choose this path when your business is blocked, email is not flowing correctly, Microsoft 365 access is failing, network issues are affecting operations, or you need fast IT support.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="section-header compact">
+            <span class="eyebrow" data-i18n="contactPage.panelQuoteEyebrow">Quote request</span>
+            <h2 data-i18n="contactPage.panelQuoteTitle">Best for planned work</h2>
+          </div>
+          <p data-i18n="contactPage.panelQuoteText">Use this path for managed IT services, Microsoft 365 support, cloud services, network setup, configuration hardening, or backup and disaster recovery planning.</p>
+        </article>
+
+        <article class="support-note">
+          <div class="section-header compact">
+            <span class="eyebrow" data-i18n="contactPage.panelAreaEyebrow">Service area</span>
+            <h2 data-i18n="contactPage.panelAreaTitle">Quebec coverage</h2>
+          </div>
+          <p data-i18n="contactPage.panelAreaText">Serving small businesses in Deux-Montagnes, Laval, and Montreal, with remote support available for many service requests.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top reveal is-visible">
+      <div>
+        <h2 data-i18n="contactPage.footerTopTitle">Need to move quickly?</h2>
+        <p data-i18n="contactPage.footerTopText">Select the request type that matches your situation and submit the form. We will review and route your request based on urgency and scope.</p>
+      </div>
+      <div class="footer-actions">
+        <a class="button button-primary" href="#contact-form" data-i18n="contactPage.openForm">Open the Form</a>
+        <a class="button button-secondary" href="mailto:support@atechsolutions.org" data-i18n="contactPage.emailSupport">Email Support</a>
+      </div>
+    </div>
+
+    <div class="footer-grid">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="contactPage.footerCompanyText">Managed IT, Microsoft 365 support, network setup, backup, and cloud services.</p>
       </div>
-
       <div class="footer-column">
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="services.html" data-i18n="nav.services">Services</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request IT Service</a></li>
         </ul>
       </div>
-
+      <div class="footer-column">
+        <h4 data-i18n="contactPage.areasTitle">Service Areas</h4>
+        <ul>
+          <li data-i18n="contactPage.area1">Deux-Montagnes</li>
+          <li data-i18n="contactPage.area2">Laval</li>
+          <li data-i18n="contactPage.area3">Montreal</li>
+        </ul>
+      </div>
       <div class="footer-column">
         <h4 data-i18n="footer.contact">Contact</h4>
-        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:support@atechsolutions.org">support@atechsolutions.org</a></p>
+        <p data-i18n="contactPage.footerContactNote">Business inquiry response target: within 1 business day.</p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
+      <p><span data-year></span> ATechSolutions</p>
+      <p><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 
-  <script>
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (mobileMenuToggle) {
-      mobileMenuToggle.addEventListener('click', () => {
-        mobileMenuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-      });
-    }
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
-  </script>
-
+  <script src="translations.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

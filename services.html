@@ -2,251 +2,235 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Business IT Services | ATechSolutions</title>
-
+  <title data-i18n-text="servicesPage.heroTitle">Managed IT Services, Microsoft 365, Networking | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Business IT services for small and growing teams: health checks, professional email, migrations, Windows 11 planning, networks, backups, servers, and hourly support.">
-
+  <meta name="description" data-i18n-content="servicesPage.heroText" content="Managed IT services, Microsoft 365 support, network setup, backup, disaster recovery, and on-site or remote IT support for businesses in Laval, Montreal, and Deux-Montagnes.">
+  <link rel="canonical" href="https://atechsolutions.org/services.html">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="translations.js"></script>
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <div class="brand">
-        <img src="logo.png" alt="ATechSolutions logo">
-      </div>
-
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+  <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
+      <a class="brand" href="index.html" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
+        <img src="logo.png" alt="ATechSolutions managed IT services logo">
+        <span class="brand-copy">
+          <strong>ATechSolutions</strong>
+          <span data-i18n="servicesPage.brandTag">Managed IT for Quebec businesses</span>
+        </span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" data-i18n-aria-label="ui.toggleMenu" aria-expanded="false" aria-controls="site-navigation">
         <span class="hamburger"></span>
       </button>
-
-      <div class="nav-links">
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <a href="services.html" class="active" data-i18n="nav.services">Services</a>
-        <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
-        <a href="contact.html" data-i18n="nav.contact">Request Support</a>
-      </div>
-
-      <div class="lang-toggle">
-        <button data-lang="en" class="active" onclick="switchLanguage('en')">EN</button>
-        <span class="separator">|</span>
-        <button data-lang="fr" onclick="switchLanguage('fr')">FR</button>
+      <div class="nav-panel" id="site-navigation">
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="services.html" class="active" data-i18n="nav.services">Services</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+          <a href="contact.html" data-i18n="nav.contact">Request IT Service</a>
+        </div>
+        <div class="nav-meta">
+          <div class="lang-toggle">
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')">EN</button>
+            <span class="separator">|</span>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')">FR</button>
+          </div>
+          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+        </div>
       </div>
     </nav>
   </header>
 
-  <section class="hero small">
-    <h1 data-i18n="services.heroTitle">Business IT Services</h1>
-    <p data-i18n="services.heroText">
-      Reliable, practical IT support for small and growing businesses.
-      Structured services, clear scope, and transparent execution — remote when possible, on-site when needed.
-    </p>
-    <a class="cta" href="contact.html" data-i18n="services.heroCTA">Request Support</a>
-  </section>
+  <main id="main-content">
+    <section class="hero reveal">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="servicesPage.heroEyebrow">Service Catalog</span>
+          <h1 data-i18n="servicesPage.heroTitle">Managed IT Services for Quebec Small Businesses</h1>
+          <p data-i18n="servicesPage.heroText">ATechSolutions delivers managed IT services, Microsoft 365 support, networking and infrastructure operations, and backup readiness for businesses in Deux-Montagnes, Laval, and Montreal.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+          </div>
+        </div>
 
-  <section class="highlight">
-    <h2 data-i18n="services.coreTitle">Core Business IT Services</h2>
-    <p data-i18n="services.coreText">
-      Choose a specific service below, or start with an IT Health Check if you want clarity before making changes.
-    </p>
-  </section>
+        <div class="hero-support">
+          <div class="hero-card">
+            <h2 data-i18n="servicesPage.profileTitle">Typical Engagement Profile</h2>
+            <ul class="hero-list">
+              <li data-i18n="servicesPage.profileLi1">Small businesses without a full internal IT department</li>
+              <li data-i18n="servicesPage.profileLi2">Teams running Microsoft 365 and cloud-based workflows</li>
+              <li data-i18n="servicesPage.profileLi3">Offices planning network upgrades or infrastructure refreshes</li>
+              <li data-i18n="servicesPage.profileLi4">Organizations improving configuration standards and backup maturity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2 data-i18n="services.healthCheckTitle">IT Health Check</h2>
-    <p data-i18n="services.healthCheckText">A high-level review of your IT environment to identify risks, gaps, and improvement opportunities.</p>
-    <ul>
-      <li data-i18n="services.healthCheckLi1">Review of computers and users</li>
-      <li data-i18n="services.healthCheckLi2">Email and domain configuration overview</li>
-      <li data-i18n="services.healthCheckLi3">Backup and security checks</li>
-      <li data-i18n="services.healthCheckLi4">Network and server visibility (if applicable)</li>
-      <li data-i18n="services.healthCheckLi5">Clear recommendations and next steps</li>
-    </ul>
-  </section>
-
-  <section class="highlight">
-    <h2 data-i18n="services.emailTitle">Professional Email & Custom Domains</h2>
-    <p data-i18n="services.emailText">Set up or improve business email using your domain (example@yourcompany.com).</p>
-    <ul>
-      <li data-i18n="services.emailLi1">Domain setup or review</li>
-      <li data-i18n="services.emailLi2">Microsoft 365 or Google Workspace configuration</li>
-      <li data-i18n="services.emailLi3">Secure mailbox setup</li>
-      <li data-i18n="services.emailLi4">Professional structure for users and departments</li>
-      <li data-i18n="services.emailLi5">Guidance on best practices</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 data-i18n="services.migrationTitle">Email Migration</h2>
-    <p data-i18n="services.migrationText">Move existing email data safely to a new platform or domain with minimal disruption.</p>
-    <ul>
-      <li data-i18n="services.migrationLi1">Mailbox migration (emails, folders, contacts)</li>
-      <li data-i18n="services.migrationLi2">Validation after migration</li>
-      <li data-i18n="services.migrationLi3">Minimal disruption to users</li>
-      <li data-i18n="services.migrationLi4">Clear communication and timing</li>
-    </ul>
-  </section>
-
-  <section class="highlight">
-    <h2 data-i18n="services.win11AssessTitle">Windows 11 Compatibility Assessment</h2>
-    <p data-i18n="services.win11AssessText">Determine whether existing computers can safely upgrade from Windows 10 to Windows 11.</p>
-    <ul>
-      <li data-i18n="services.win11AssessLi1">Hardware compatibility review</li>
-      <li data-i18n="services.win11AssessLi2">Risk assessment</li>
-      <li data-i18n="services.win11AssessLi3">Upgrade vs replacement recommendations</li>
-      <li data-i18n="services.win11AssessLi4">Clear upgrade path</li>
-    </ul>
-    <p class="small-note" data-i18n="services.win11AssessNote">Helps businesses plan for Windows 10 end of support.</p>
-  </section>
-
-  <section>
-    <h2 data-i18n="services.win11UpgradeTitle">Windows 11 Upgrade Services</h2>
-    <p data-i18n="services.win11UpgradeText">Upgrade eligible computers to Windows 11 or prepare replacement systems.</p>
-    <ul>
-      <li data-i18n="services.win11UpgradeLi1">In-place upgrades (where supported)</li>
-      <li data-i18n="services.win11UpgradeLi2">Validation after upgrade</li>
-      <li data-i18n="services.win11UpgradeLi3">New PC setup if replacement is required</li>
-      <li data-i18n="services.win11UpgradeLi4">Minimal disruption approach</li>
-    </ul>
-  </section>
-
-  <section class="highlight">
-    <h2 data-i18n="services.newPCTitle">New PC Setup & Data Migration</h2>
-    <p data-i18n="services.newPCText">Prepare new computers so users can work immediately.</p>
-    <ul>
-      <li data-i18n="services.newPCLi1">Device configuration</li>
-      <li data-i18n="services.newPCLi2">Essential application setup</li>
-      <li data-i18n="services.newPCLi3">Approved data transfer</li>
-      <li data-i18n="services.newPCLi4">Validation and handover</li>
-    </ul>
-    <p class="small-note" data-i18n="services.newPCNote">Ideal for new hires or hardware replacements.</p>
-  </section>
-
-  <section>
-    <h2 data-i18n="services.networkTitle">Network Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3 data-i18n="services.basicNetworkTitle">Basic Network Setup</h3>
-        <p data-i18n="services.basicNetworkText">Initial setup of routers, switches, and Wi-Fi for small offices.</p>
-        <ul>
-          <li data-i18n="services.basicNetworkLi1">Internet and Wi-Fi configuration</li>
-          <li data-i18n="services.basicNetworkLi2">Secure network setup</li>
-          <li data-i18n="services.basicNetworkLi3">Device connectivity validation</li>
-        </ul>
+    <section class="reveal">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="servicesPage.catalogEyebrow">Service catalog</span>
+        <h2 class="section-title" data-i18n="servicesPage.catalogTitle">Scope, outcomes, and business fit by service</h2>
+        <p class="section-subtitle" data-i18n="servicesPage.catalogSubtitle">Select a service area to review operational scope, best-fit use case, and expected delivery outcomes.</p>
       </div>
 
-      <div class="card">
-        <h3 data-i18n="services.advancedNetworkTitle">Advanced Network Setup</h3>
-        <p data-i18n="services.advancedNetworkText">Designed for growing businesses with more complex needs.</p>
-        <ul>
-          <li data-i18n="services.advancedNetworkLi1">Multiple access points</li>
-          <li data-i18n="services.advancedNetworkLi2">Network segmentation</li>
-          <li data-i18n="services.advancedNetworkLi3">Security improvements</li>
-          <li data-i18n="services.advancedNetworkLi4">Documentation</li>
-        </ul>
-      </div>
+      <nav class="service-nav" aria-label="Service sections" data-i18n-aria-label="servicesPage.serviceNavLabel">
+        <a href="#managed-it" data-i18n="servicesPage.navManaged">Managed IT</a>
+        <a href="#m365-cloud" data-i18n="servicesPage.navM365">Microsoft 365 / Cloud</a>
+        <a href="#networking" data-i18n="servicesPage.navNetworking">Networking</a>
+        <a href="#backup" data-i18n="servicesPage.navBackup">Backup &amp; Recovery</a>
+        <a href="#support" data-i18n="servicesPage.navSupport">Remote &amp; On-Site</a>
+      </nav>
 
-      <div class="card">
-        <h3 data-i18n="services.networkAssessTitle">Network Assessment</h3>
-        <p data-i18n="services.networkAssessText">A review of your existing network to identify issues and improvement opportunities.</p>
+      <div class="service-grid">
+        <article class="service-detail" id="managed-it">
+          <h2 data-i18n="servicesPage.managedTitle">Managed IT Services</h2>
+          <p data-i18n="servicesPage.managedText">Operational IT support for businesses that need stable systems, predictable response, and accountable day-to-day technical management.</p>
+          <p class="service-audience" data-i18n="servicesPage.managedAudience">Best for: Teams that rely on external IT for daily operations and user support.</p>
+          <ul class="service-checklist">
+            <li data-i18n="servicesPage.managedLi1">Incident handling and recurring issue reduction</li>
+            <li data-i18n="servicesPage.managedLi2">Endpoint oversight and lifecycle planning</li>
+            <li data-i18n="servicesPage.managedLi3">Vendor coordination and escalation management</li>
+            <li data-i18n="servicesPage.managedLi4">Operational planning aligned to continuity priorities</li>
+          </ul>
+          <a class="button button-primary" href="contact.html" data-i18n="servicesPage.managedCta">Request IT Service</a>
+        </article>
+
+        <article class="service-detail" id="m365-cloud">
+          <h2 data-i18n="servicesPage.m365Title">Microsoft 365 &amp; Cloud Services</h2>
+          <p data-i18n="servicesPage.m365Text">Microsoft 365 support and cloud administration for secure collaboration, cleaner tenant structure, and controlled access management.</p>
+          <p class="service-audience" data-i18n="servicesPage.m365Audience">Best for: Businesses standardizing Microsoft 365 and cloud workflows.</p>
+          <ul class="service-checklist">
+            <li data-i18n="servicesPage.m365Li1">Microsoft 365 support and administration</li>
+            <li data-i18n="servicesPage.m365Li2">Email migration, domain, and mailbox transitions</li>
+            <li data-i18n="servicesPage.m365Li3">Identity controls, MFA, and access governance</li>
+            <li data-i18n="servicesPage.m365Li4">Cloud services planning for reliability and growth</li>
+          </ul>
+          <a class="button button-primary" href="contact.html" data-i18n="servicesPage.m365Cta">Request IT Service</a>
+        </article>
+
+        <article class="service-detail" id="networking">
+          <h2 data-i18n="servicesPage.networkTitle">Networking &amp; Infrastructure</h2>
+          <p data-i18n="servicesPage.networkText">Network setup and infrastructure services focused on performance, secure connectivity, and dependable office operations.</p>
+          <p class="service-audience" data-i18n="servicesPage.networkAudience">Best for: Offices upgrading connectivity, Wi-Fi coverage, or core infrastructure.</p>
+          <ul class="service-checklist">
+            <li data-i18n="servicesPage.networkLi1">Network setup and office connectivity planning</li>
+            <li data-i18n="servicesPage.networkLi2">Firewall, switching, and wireless optimization</li>
+            <li data-i18n="servicesPage.networkLi3">Performance troubleshooting and infrastructure cleanup</li>
+            <li data-i18n="servicesPage.networkLi4">On-site technical execution for physical environments</li>
+          </ul>
+          <a class="button button-primary" href="contact.html" data-i18n="servicesPage.networkCta">Request IT Service</a>
+        </article>
+
+        <article class="service-detail" id="backup">
+          <h2 data-i18n="servicesPage.backupTitle">Backup &amp; Disaster Recovery</h2>
+          <p data-i18n="servicesPage.backupText">Backup and disaster recovery services that validate protection scope, improve restore confidence, and reduce recovery uncertainty.</p>
+          <p class="service-audience" data-i18n="servicesPage.backupAudience">Best for: Businesses requiring documented recovery readiness for key systems.</p>
+          <ul class="service-checklist">
+            <li data-i18n="servicesPage.backupLi1">Backup configuration review and verification</li>
+            <li data-i18n="servicesPage.backupLi2">Coverage assessment for priority systems and data</li>
+            <li data-i18n="servicesPage.backupLi3">Recovery expectation and runbook documentation</li>
+            <li data-i18n="servicesPage.backupLi4">Business continuity alignment for restore scenarios</li>
+          </ul>
+          <a class="button button-primary" href="contact.html" data-i18n="servicesPage.backupCta">Request IT Service</a>
+        </article>
+
+        <article class="service-detail" id="support">
+          <h2 data-i18n="servicesPage.supportTitle">Remote &amp; On-Site Support</h2>
+          <p data-i18n="servicesPage.supportText">Responsive technical support for active incidents, planned changes, user onboarding, and on-site execution when required.</p>
+          <p class="service-audience" data-i18n="servicesPage.supportAudience">Best for: Teams needing immediate troubleshooting or scheduled technical assistance.</p>
+          <ul class="service-checklist">
+            <li data-i18n="servicesPage.supportLi1">Remote support for rapid incident response</li>
+            <li data-i18n="servicesPage.supportLi2">On-site support for infrastructure and hardware tasks</li>
+            <li data-i18n="servicesPage.supportLi3">User support for staff and business stakeholders</li>
+            <li data-i18n="servicesPage.supportLi4">Flexible delivery for projects and escalations</li>
+          </ul>
+          <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band reveal">
+      <div>
+        <h2 data-i18n="servicesPage.ctaTitle">Not sure where to start?</h2>
+        <p data-i18n="servicesPage.ctaText">Most small businesses begin with either an incident support request or a scoped quote request for managed IT, Microsoft 365, networking, or backup and recovery work.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="split-grid">
+        <article class="info-card">
+          <div class="section-header compact">
+            <span class="eyebrow" data-i18n="servicesPage.areaEyebrow">Service areas</span>
+            <h2 data-i18n="servicesPage.areaTitle">Coverage for Quebec small businesses</h2>
+          </div>
+          <p data-i18n="servicesPage.areaText">ATechSolutions supports businesses in Deux-Montagnes, Laval, and Montreal, including offices that need on-site networking work, Microsoft 365 support, or structured remote IT assistance.</p>
+        </article>
+        <article class="info-card">
+          <div class="section-header compact">
+            <span class="eyebrow" data-i18n="servicesPage.secondaryEyebrow">Secondary audience</span>
+            <h2 data-i18n="servicesPage.secondaryTitle">Home-user support remains available</h2>
+          </div>
+          <p data-i18n="servicesPage.secondaryText">Business services are the primary focus, but home users can still use the support request flow for remote help or scheduled on-site work.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top reveal is-visible">
+      <div>
+        <h2 data-i18n="servicesPage.footerTopTitle">Ready for a clearer IT plan?</h2>
+        <p data-i18n="servicesPage.footerTopText">Use the quote flow for project or managed-service pricing, or request direct support if your team is currently blocked.</p>
+      </div>
+      <div class="footer-actions">
+        <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
       </div>
     </div>
-  </section>
 
-  <section class="highlight">
-    <h2 data-i18n="services.backupTitle">Backup Setup & Verification</h2>
-    <p data-i18n="services.backupText">Ensure business data is being backed up correctly.</p>
-    <ul>
-      <li data-i18n="services.backupLi1">Backup solution setup (cloud, local, or hybrid)</li>
-      <li data-i18n="services.backupLi2">Verification that backups are running</li>
-      <li data-i18n="services.backupLi3">Clear documentation of what is protected</li>
-    </ul>
-    <p class="small-note" data-i18n="services.backupNote">Backup monitoring and recovery testing are available as separate services.</p>
-  </section>
-
-  <section>
-    <h2 data-i18n="services.serverTitle">Server Services</h2>
-    <ul>
-      <li data-i18n="services.serverLi1"><strong>Server Health Check:</strong> structured review of server health, risks, and lifecycle.</li>
-      <li data-i18n="services.serverLi2"><strong>Server Maintenance & Storage Work:</strong> approved maintenance (updates, storage changes, hardware work) during scheduled windows.</li>
-    </ul>
-  </section>
-
-  <section class="highlight">
-    <h2 data-i18n="services.hourlySupportTitle">Hourly IT Support</h2>
-    <p data-i18n="services.hourlySupportText">On-demand technical support for day-to-day issues.</p>
-    <ul>
-      <li data-i18n="services.hourlySupportLi1">Remote or on-site support</li>
-      <li data-i18n="services.hourlySupportLi2">Transparent hourly billing</li>
-      <li data-i18n="services.hourlySupportLi3">Clear boundaries and documentation</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 data-i18n="services.consultingTitle">IT Consulting</h2>
-    <p data-i18n="services.consultingText">Independent guidance to help you make informed IT decisions.</p>
-    <ul>
-      <li data-i18n="services.consultingLi1">Technology planning</li>
-      <li data-i18n="services.consultingLi2">Upgrade and purchasing advice</li>
-      <li data-i18n="services.consultingLi3">Second opinions</li>
-      <li data-i18n="services.consultingLi4">Strategy and roadmap discussions</li>
-    </ul>
-  </section>
-
-  <section class="cta-section">
-    <h2 data-i18n="services.ctaTitle">Ready to get started?</h2>
-    <p data-i18n="services.ctaText">Tell us what you're trying to achieve and we'll recommend the best next step.</p>
-    <a class="cta" href="contact.html" data-i18n="services.ctaCTA">Request Support</a>
-  </section>
-
-  <footer>
-    <div class="footer-content">
+    <div class="footer-grid">
       <div class="footer-column">
         <h4>ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Reliable IT support for home users and small businesses.</p>
+        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="servicesPage.footerCompanyText">Managed IT services, Microsoft 365 support, networking, cloud services, and backup readiness.</p>
       </div>
-
       <div class="footer-column">
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="services.html" data-i18n="nav.services">Services</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Request Support</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Request IT Service</a></li>
         </ul>
       </div>
-
+      <div class="footer-column">
+        <h4 data-i18n="servicesPage.coverageTitle">Coverage</h4>
+        <ul>
+          <li data-i18n="servicesPage.coverageLi1">Deux-Montagnes IT support</li>
+          <li data-i18n="servicesPage.coverageLi2">Laval IT services</li>
+          <li data-i18n="servicesPage.coverageLi3">Montreal IT support</li>
+        </ul>
+      </div>
       <div class="footer-column">
         <h4 data-i18n="footer.contact">Contact</h4>
-        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@atechsolutions.org">info@atechsolutions.org</a></p>
+        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:support@atechsolutions.org">support@atechsolutions.org</a></p>
+        <p data-i18n="servicesPage.footerContactNote">New business inquiries: reply target within 1 business day.</p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p><span data-i18n="footer.copyright">© 2026 ATechSolutions</span> | <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
+      <p><span data-year></span> ATechSolutions</p>
+      <p><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
 
-  <script>
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (mobileMenuToggle) {
-      mobileMenuToggle.addEventListener('click', () => {
-        mobileMenuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-      });
-    }
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
-  </script>
-
+  <script src="translations.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>
