@@ -2,327 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="indexPage.heroTitle">Managed IT Services for Quebec SMBs | ATechSolutions</title>
+  <title data-i18n-text="indexPage.metaTitle">ATechSolutions | IT Help for Small Offices</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="indexPage.heroSubheadline" content="ATechSolutions provides managed IT services, Microsoft 365 support, network setup, backup and disaster recovery, and cloud services for small businesses in Deux-Montagnes, Laval, and Montreal.">
+  <meta name="description" data-i18n-content="indexPage.metaDescription" content="ATechSolutions helps small offices with setup, repairs, email, network, backups, and ongoing support in Sainte-Marthe-sur-le-Lac and nearby towns.">
   <link rel="canonical" href="https://atechsolutions.org/">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "ATechSolutions",
-      "url": "https://atechsolutions.org",
-      "email": "support@atechsolutions.org",
-      "description": "Managed IT services, IT support, Microsoft 365 support, network setup, backup, and cloud services for small businesses in Deux-Montagnes, Laval, and Montreal.",
-      "areaServed": ["Deux-Montagnes", "Laval", "Montreal"],
-      "serviceType": [
-        "Managed IT services",
-        "IT support",
-        "Microsoft 365 support",
-        "Network setup",
-        "Cloud services",
-        "Backup and disaster recovery"
-      ]
-    }
-  </script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
+
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
       <a class="brand" href="index.html" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
-        <img src="logo.png" alt="ATechSolutions managed IT services logo">
+        <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
-          <strong>ATechSolutions</strong>
-          <span data-i18n="indexPage.brandTag">Managed IT for Quebec SMBs</span>
+          <strong data-i18n="footer.businessName">ATechSolutions</strong>
+          <span data-i18n="nav.brandTag">Local IT support for small offices</span>
         </span>
       </a>
+
+      <a class="nav-phone nav-phone-static" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+
       <button class="mobile-menu-toggle" aria-label="Toggle menu" data-i18n-aria-label="ui.toggleMenu" aria-expanded="false" aria-controls="site-navigation">
         <span class="hamburger"></span>
       </button>
+
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <a href="index.html" class="active" data-i18n="nav.home">Home</a>
           <a href="services.html" data-i18n="nav.services">Services</a>
           <a href="about.html" data-i18n="nav.about">About</a>
           <a href="faq.html" data-i18n="nav.faq">FAQ</a>
-          <a href="contact.html" data-i18n="nav.contact">Request IT Service</a>
+          <a href="local.html" data-i18n="nav.serviceArea">Service Area</a>
         </div>
         <div class="nav-meta">
+          <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
           <div class="lang-toggle">
-            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')">EN</button>
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
             <span class="separator">|</span>
-            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')">FR</button>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
           </div>
-          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
         </div>
       </div>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="hero reveal hero-premium">
+    <section class="hero reveal home-hero">
       <div class="hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow" data-i18n="indexPage.heroEyebrow">Managed IT for Quebec Small Businesses</span>
-          <h1 data-i18n="indexPage.heroTitle">Managed IT, Infrastructure, and Microsoft 365 Support for Quebec SMBs</h1>
-          <p class="hero-subheadline" data-i18n="indexPage.heroSubheadline">ATechSolutions helps small businesses reduce downtime and keep systems stable with accountable IT support, Microsoft 365 administration, and network infrastructure management.</p>
+          <h1 data-i18n="indexPage.heroTitle">IT help for small offices, without the runaround.</h1>
+          <p class="hero-subheadline" data-i18n="indexPage.heroSubheadline">We set up, fix, and maintain your computers, email, network, and backups so your team can keep working.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+            <a class="button button-primary" href="contact.html" data-i18n="indexPage.getHelpNow">Get Help Now</a>
+            <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
           </div>
-          <p class="hero-cta-note" data-i18n="indexPage.heroNote"><strong>Response target:</strong> within 1 business day for new business requests.</p>
-          <div class="hero-trust">
-            <span data-i18n="indexPage.trust1">Managed IT and infrastructure</span>
-            <span data-i18n="indexPage.trust2">Microsoft 365 and cloud services</span>
-            <span data-i18n="indexPage.trust3">Montreal, Laval, Deux-Montagnes coverage</span>
-          </div>
-        </div>
-
-        <div class="hero-support">
-          <figure class="hero-visual">
-            <img src="images/hero.png" alt="IT infrastructure server rack" width="640" height="420" loading="eager" fetchpriority="high" decoding="async">
-          </figure>
-          <div class="hero-card">
-            <p class="hero-card-kicker" data-i18n="indexPage.serviceDeskKicker">Service desk</p>
-            <h2 data-i18n="indexPage.serviceDeskTitle">Service Desk and Project Delivery</h2>
-            <ul class="hero-list">
-              <li data-i18n="indexPage.serviceDeskLi1">Structured intake for incidents, upgrades, and project work</li>
-              <li data-i18n="indexPage.serviceDeskLi2">Remote-first triage with on-site execution when needed</li>
-              <li data-i18n="indexPage.serviceDeskLi3">Clear scope, priorities, and communication from start to finish</li>
-            </ul>
-            <p class="hero-cta-note" data-i18n="indexPage.serviceDeskNote">Use the request options below to route incidents and project requests correctly.</p>
-          </div>
+          <p class="hero-cta-note" data-i18n="indexPage.responseNote">Most requests get a reply within 1 business day.</p>
         </div>
       </div>
+    </section>
 
-      <div class="stats-grid hero-stats">
-        <article class="stat-card">
-          <strong data-i18n="indexPage.stat1Title">Managed IT</strong>
-          <p data-i18n="indexPage.stat1Text">Support for endpoints, users, and core business platforms.</p>
+    <section class="reveal trust-bar-section">
+      <div class="trust-bar">
+        <span data-i18n="indexPage.trust1">Local team in Quebec</span>
+        <span data-i18n="indexPage.trust2">Bilingual service (EN/FR)</span>
+        <span data-i18n="indexPage.trust3">Clear pricing</span>
+        <span data-i18n="indexPage.trust4">Remote and on-site support</span>
+        <span data-i18n="indexPage.trust5">No long contracts</span>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.problemsTitle">Problems we solve</h2>
+      </div>
+      <div class="cards-grid three-col-grid">
+        <article class="service-card"><p data-i18n="indexPage.problem1">"Our computers are slow and keep crashing."</p></article>
+        <article class="service-card"><p data-i18n="indexPage.problem2">"Email is unreliable and hard to manage."</p></article>
+        <article class="service-card"><p data-i18n="indexPage.problem3">"Wi-Fi is weak in half the office."</p></article>
+        <article class="service-card"><p data-i18n="indexPage.problem4">"We have no real backup plan."</p></article>
+        <article class="service-card"><p data-i18n="indexPage.problem5">"Nobody knows if our IT is secure."</p></article>
+        <article class="service-card"><p data-i18n="indexPage.problem6">"We need fast help when something breaks."</p></article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.servicesTitle">Services</h2>
+      </div>
+      <div class="cards-grid three-col-grid price-grid">
+        <article class="service-card">
+          <h3 data-i18n="indexPage.service1Title">Computer Setup &amp; Repair</h3>
+          <p data-i18n="indexPage.service1Price">from $150</p>
         </article>
-        <article class="stat-card">
-          <strong data-i18n="indexPage.stat2Title">Microsoft 365</strong>
-          <p data-i18n="indexPage.stat2Text">Tenant administration, identity controls, and migration execution.</p>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.service2Title">Professional Email &amp; Domain</h3>
+          <p data-i18n="indexPage.service2Price">from $200 + $40/user</p>
         </article>
-        <article class="stat-card">
-          <strong data-i18n="indexPage.stat3Title">Infrastructure</strong>
-          <p data-i18n="indexPage.stat3Text">Network setup, secure connectivity, and resilient office infrastructure.</p>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.service3Title">Network &amp; Wi-Fi Setup</h3>
+          <p data-i18n="indexPage.service3Price">from $250</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.service4Title">Data Backup Setup</h3>
+          <p data-i18n="indexPage.service4Price">from $400</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.service5Title">IT Health Check</h3>
+          <p data-i18n="indexPage.service5Price">from $250</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.service6Title">Hourly Support</h3>
+          <p data-i18n="indexPage.service6Price">from $110/hr</p>
         </article>
       </div>
     </section>
 
     <section class="reveal">
-      <div class="section-header">
-        <span class="eyebrow" data-i18n="indexPage.coreEyebrow">Core services</span>
-        <h2 class="section-title" data-i18n="indexPage.coreTitle">Technical services aligned to business continuity</h2>
-        <p class="section-subtitle" data-i18n="indexPage.coreSubtitle">Services designed for dependable operations, controlled risk, and clear technical ownership.</p>
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.plansTitle">Monthly support plans</h2>
       </div>
-      <div class="cards-grid cards-grid-five">
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-              <rect x="4" y="4" width="16" height="6" rx="1.5"></rect>
-              <rect x="4" y="14" width="16" height="6" rx="1.5"></rect>
-              <circle cx="8" cy="7" r="1"></circle>
-              <circle cx="8" cy="17" r="1"></circle>
-            </svg>
-          </span>
-          <h3 data-i18n="indexPage.coreCard1Title">Managed IT Services</h3>
-          <p data-i18n="indexPage.coreCard1Text">Day-to-day support, endpoint governance, vendor coordination, and operational planning.</p>
+      <div class="cards-grid three-col-grid plans-grid">
+        <article class="service-card plan-card">
+          <h3 data-i18n="indexPage.plan1Title">Starter</h3>
+          <p class="plan-price" data-i18n="indexPage.plan1Price">$150/month</p>
+          <p data-i18n="indexPage.plan1Info">1 hour support, solo/home office</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M4 15h16"></path>
-              <path d="M7 15V8a5 5 0 0 1 10 0v7"></path>
-              <circle cx="12" cy="18" r="2"></circle>
-            </svg>
-          </span>
-          <h3 data-i18n="indexPage.coreCard2Title">Microsoft 365 / Cloud Services</h3>
-          <p data-i18n="indexPage.coreCard2Text">Microsoft 365 administration, identity controls, secure collaboration, licensing, and cloud migrations.</p>
+        <article class="service-card plan-card popular-plan">
+          <span class="plan-badge" data-i18n="indexPage.popular">Most Popular</span>
+          <h3 data-i18n="indexPage.plan2Title">Small Business</h3>
+          <p class="plan-price" data-i18n="indexPage.plan2Price">$300/month</p>
+          <p data-i18n="indexPage.plan2Info">2 hours support, 2-5 users</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-              <circle cx="5" cy="12" r="2"></circle>
-              <circle cx="19" cy="6" r="2"></circle>
-              <circle cx="19" cy="18" r="2"></circle>
-              <path d="M7 12h8"></path>
-              <path d="M17.5 7.5L13 11"></path>
-              <path d="M17.5 16.5L13 13"></path>
-            </svg>
-          </span>
-          <h3 data-i18n="indexPage.coreCard3Title">Networking &amp; Infrastructure</h3>
-          <p data-i18n="indexPage.coreCard3Text">Network setup, firewall and switching, wireless optimization, and infrastructure upgrades.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M4 7h16"></path>
-              <path d="M4 12h16"></path>
-              <path d="M4 17h16"></path>
-              <path d="M9 4v16"></path>
-            </svg>
-          </span>
-          <h3 data-i18n="indexPage.coreCard4Title">Backup &amp; Disaster Recovery</h3>
-          <p data-i18n="indexPage.coreCard4Text">Backup architecture, restore testing, incident readiness, and documented recovery procedures.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M4 6h16v10H8l-4 4z"></path>
-              <path d="M9 10h6"></path>
-              <path d="M9 13h4"></path>
-            </svg>
-          </span>
-          <h3 data-i18n="indexPage.coreCard5Title">Remote &amp; On-Site Support</h3>
-          <p data-i18n="indexPage.coreCard5Text">Remote support with on-site execution for escalations, onboarding, and infrastructure change work.</p>
+        <article class="service-card plan-card">
+          <h3 data-i18n="indexPage.plan3Title">Growing Business</h3>
+          <p class="plan-price" data-i18n="indexPage.plan3Price">$500/month</p>
+          <p data-i18n="indexPage.plan3Info">4 hours support, 5-15 users</p>
         </article>
       </div>
     </section>
 
     <section class="reveal">
-      <div class="why-layout">
-        <div class="why-content">
-          <div class="section-header">
-            <span class="eyebrow" data-i18n="indexPage.whyEyebrow">Why choose us</span>
-            <h2 class="section-title" data-i18n="indexPage.whyTitle">A technical partner built for real SMB operations</h2>
-            <p class="section-subtitle" data-i18n="indexPage.whySubtitle">Built for owners who need clear priorities, stable systems, and accountable execution.</p>
-          </div>
-          <div class="split-grid">
-            <article class="info-card">
-              <h3 data-i18n="indexPage.whyCard1Title">Continuity first</h3>
-              <p data-i18n="indexPage.whyCard1Text">Our recommendations focus on uptime, productivity, and measurable service outcomes.</p>
-            </article>
-            <article class="info-card">
-              <h3 data-i18n="indexPage.whyCard2Title">Integrated technical scope</h3>
-              <p data-i18n="indexPage.whyCard2Text">Endpoint support, network operations, cloud services, and access controls are managed as one system.</p>
-            </article>
-            <article class="info-card">
-              <h3 data-i18n="indexPage.whyCard3Title">Operational accountability</h3>
-              <p data-i18n="indexPage.whyCard3Text">You get direct communication, defined next steps, and realistic delivery timelines.</p>
-            </article>
-            <article class="info-card">
-              <h3 data-i18n="indexPage.whyCard4Title">Local service coverage</h3>
-              <p data-i18n="indexPage.whyCard4Text">Consistent service delivery across Montreal, Laval, and Deux-Montagnes.</p>
-            </article>
-          </div>
-        </div>
-        <figure class="why-visual">
-          <img src="images/technician.png" alt="IT technician working on server and network infrastructure" width="620" height="760" loading="lazy" decoding="async">
-        </figure>
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.whoTitle">Who we help</h2>
+      </div>
+      <div class="cards-grid three-col-grid">
+        <article class="service-card"><p data-i18n="indexPage.who1">Dental and medical clinics</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who2">Accounting firms</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who3">Notaries</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who4">Real estate agencies</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who5">Physiotherapy clinics</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who6">Professional offices</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who7">Home offices</p></article>
+        <article class="service-card"><p data-i18n="indexPage.who8">Growing small teams</p></article>
       </div>
     </section>
 
-    <section class="reveal">
-      <div class="section-header">
-        <span class="eyebrow" data-i18n="indexPage.testimonialsEyebrow">Testimonials</span>
-        <h2 class="section-title" data-i18n="indexPage.testimonialsTitle">What clients report after engagement</h2>
-        <p class="section-subtitle" data-i18n="indexPage.testimonialsSubtitle">Representative feedback from SMB organizations across our Quebec coverage area.</p>
-      </div>
-      <div class="testimonials-grid testimonials-grid-three">
-        <article class="quote-card">
-          <blockquote data-i18n="indexPage.testimonial1Quote">“ATechSolutions stabilized our Microsoft 365 environment and gave us a clear support process our team can rely on.”</blockquote>
-          <cite data-i18n="indexPage.testimonial1Cite">Professional services firm, Laval</cite>
-        </article>
-        <article class="quote-card">
-          <blockquote data-i18n="indexPage.testimonial2Quote">“Their network setup and secure configuration recommendations reduced recurring interruptions across our office.”</blockquote>
-          <cite data-i18n="indexPage.testimonial2Cite">Operations team, Montreal</cite>
-        </article>
-        <article class="quote-card">
-          <blockquote data-i18n="indexPage.testimonial3Quote">“We moved from reactive break-fix work to managed IT services with documented priorities each quarter.”</blockquote>
-          <cite data-i18n="indexPage.testimonial3Cite">SMB owner, Deux-Montagnes</cite>
-        </article>
-      </div>
-    </section>
-
-    <section class="reveal contact-conversion" id="request-options">
-      <div class="section-header">
-        <span class="eyebrow" data-i18n="indexPage.startEyebrow">Start here</span>
-        <h2 class="section-title" data-i18n="indexPage.startTitle">Choose the fastest path for your business request</h2>
-        <p class="section-subtitle" data-i18n="indexPage.startSubtitle">Use one request path for active incidents, planned projects, and ongoing managed IT services.</p>
-      </div>
-      <div class="split-grid request-grid">
-        <article class="contact-card">
-          <h3 data-i18n="indexPage.requestCard1Title">Urgent or Active Issues</h3>
-          <p data-i18n="indexPage.requestCard1Text">For issues affecting users, connectivity, Microsoft 365, or critical workflows.</p>
-          <ul class="subtle-list">
-            <li data-i18n="indexPage.requestCard1Li1">Best for incident response and active troubleshooting</li>
-            <li data-i18n="indexPage.requestCard1Li2">Remote-first with on-site escalation when required</li>
-            <li data-i18n="indexPage.requestCard1Li3">Coverage for Laval, Montreal, and Deux-Montagnes businesses</li>
-          </ul>
-          <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
-        </article>
-        <article class="contact-card">
-          <h3 data-i18n="indexPage.requestCard2Title">Planned Projects and Ongoing Service</h3>
-          <p data-i18n="indexPage.requestCard2Text">For managed IT onboarding, infrastructure upgrades, cloud migrations, and reliability planning.</p>
-          <ul class="subtle-list">
-            <li data-i18n="indexPage.requestCard2Li1">Best for planning, budgeting, and service onboarding</li>
-            <li data-i18n="indexPage.requestCard2Li2">Defined scope with phased recommendations</li>
-            <li data-i18n="indexPage.requestCard2Li3">Built for small business owners and office managers</li>
-          </ul>
-          <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="cta-band reveal final-cta">
+    <section class="cta-band reveal final-cta home-cta">
       <div>
-        <h2 data-i18n="indexPage.finalCtaTitle">Ready for a more reliable IT operating model?</h2>
-        <p data-i18n="indexPage.finalCtaText">Partner with ATechSolutions for managed IT, Microsoft 365, infrastructure, backup readiness, and cloud support across Montreal, Laval, and Deux-Montagnes.</p>
+        <h2 data-i18n="indexPage.finalCtaTitle">Need reliable IT support for your office?</h2>
+        <p data-i18n="indexPage.finalCtaText">Tell us what is not working and we will recommend the fastest next step.</p>
       </div>
       <div class="cta-actions">
-        <a class="button button-primary" href="contact.html" data-i18n="cta.requestService">Request IT Service</a>
+        <a class="button button-primary" href="contact.html" data-i18n="indexPage.getHelpNow">Get Help Now</a>
+        <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
       </div>
+      <p class="cta-meta" data-i18n="indexPage.ctaMeta">Email: amartins@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Saint-Eustache, Deux-Montagnes, Boisbriand, Rosemere</p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-top reveal is-visible">
-      <div>
-        <h2 data-i18n="indexPage.footerTopTitle">Professional managed IT support for Quebec small businesses</h2>
-        <p data-i18n="indexPage.footerTopText">Managed IT, Microsoft 365, infrastructure, backup readiness, and cloud support delivered with clear operational accountability.</p>
-      </div>
-      <p data-i18n="indexPage.footerTopContact">Contact: <a href="mailto:support@atechsolutions.org">support@atechsolutions.org</a> | New business inquiries reviewed within 1 business day.</p>
-    </div>
-
     <div class="footer-grid">
       <div class="footer-column">
-        <h4>ATechSolutions</h4>
+        <h4 data-i18n="footer.businessName">ATechSolutions</h4>
         <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
-        <p data-i18n="indexPage.footerCompanyText">Serving Deux-Montagnes, Laval, and Montreal with managed IT and infrastructure support.</p>
+        <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
+        <p><a href="mailto:amartins@atechsolutions.org" data-i18n="footer.emailDisplay">amartins@atechsolutions.org</a></p>
       </div>
       <div class="footer-column">
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
-          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="services.html" data-i18n="nav.services">Services</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
           <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Request IT Service</a></li>
+          <li><a href="contact.html" data-i18n="cta.contactUs">Contact Us</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h4 data-i18n="indexPage.footerCoreTitle">Core Services</h4>
-        <ul>
-          <li data-i18n="indexPage.footerCoreLi1">Managed IT services</li>
-          <li data-i18n="indexPage.footerCoreLi2">Microsoft 365 support</li>
-          <li data-i18n="indexPage.footerCoreLi3">Network setup</li>
-          <li data-i18n="indexPage.footerCoreLi4">Backup and disaster recovery</li>
-          <li data-i18n="indexPage.footerCoreLi5">Cloud services</li>
-        </ul>
+        <h4 data-i18n="footer.serviceAreaTitle">Service Area</h4>
+        <p data-i18n="footer.serviceAreaText">Sainte-Marthe-sur-le-Lac, Saint-Eustache, Deux-Montagnes, Boisbriand, Rosemère and surrounding areas.</p>
       </div>
       <div class="footer-column">
-        <h4 data-i18n="footer.contact">Contact</h4>
-        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:support@atechsolutions.org">support@atechsolutions.org</a></p>
-        <p data-i18n="indexPage.footerContactNote">Response target: within 1 business day for new business inquiries.</p>
+        <h4 data-i18n="footer.contactTitle">Contact</h4>
+        <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
+        <p><a href="mailto:amartins@atechsolutions.org" data-i18n="footer.emailDisplay">amartins@atechsolutions.org</a></p>
+        <p data-i18n="footer.responseNote">We respond within 1 business day.</p>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <p><span data-year></span> ATechSolutions</p>
+      <p><span data-year></span> <span data-i18n="footer.businessName">ATechSolutions</span></p>
       <p><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
     </div>
   </footer>
