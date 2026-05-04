@@ -196,6 +196,7 @@ const translations = {
       faq: "FAQ",
       contact: "Request IT Service",
       serviceArea: "Service Area",
+      bookTime: "Book a Time",
       brandTag: "Local IT support for small offices",
       phoneDisplay: "(514) 826-5351"
     },
@@ -207,6 +208,7 @@ const translations = {
       faq: "FAQ",
       contact: "Demander un service TI",
       serviceArea: "Zone de service",
+      bookTime: "Réserver un moment",
       brandTag: "Support TI local pour petits bureaux",
       phoneDisplay: "(514) 826-5351"
     }
@@ -658,6 +660,47 @@ const translations = {
       sendingButton: "Envoi en cours...",
       successMessage: "Votre message a bien été envoyé. On vous répondra en moins d'un jour ouvrable.",
       errorMessage: "Impossible d'envoyer votre message. Veuillez nous appeler au (514) 826-5351.",
+    }
+  },
+
+  bookingSection: {
+    en: {
+      metaTitle: "Book a Time | ATechSolutions",
+      metaDescription: "Schedule a remote support session, IT health check, or on-site visit with ATechSolutions. Available 7 days a week, 9am–8pm.",
+      heroTitle: "Book a Time",
+      heroSubtitle: "Pick the type of appointment you need and choose a time directly in your calendar.",
+      label: "Book Online",
+      title: "Schedule a Time That Works for You",
+      subtitle: "Pick the type of appointment you need and choose a time directly in your calendar. Available 7 days a week, 9am–8pm.",
+      remoteTitle: "Remote Support Session",
+      remoteDesc: "For computer issues, Wi-Fi problems, software setup, and general troubleshooting — resolved remotely.",
+      remoteDuration: "45 minutes",
+      healthTitle: "IT Health Check",
+      healthDesc: "A structured review of your computers, email, network, and backups with a clear written report and recommendations.",
+      healthDuration: "90 minutes",
+      onsiteTitle: "On-Site Visit",
+      onsiteDesc: "For hardware setup, network installation, or anything that requires being physically present at your home or office.",
+      onsiteDuration: "60 minutes",
+      bookThis: "Book this session",
+    },
+    fr: {
+      metaTitle: "Réserver un moment | ATechSolutions",
+      metaDescription: "Planifiez une session de support à distance, un bilan informatique ou une visite sur place avec ATechSolutions. Disponible 7 jours sur 7, de 9h à 20h.",
+      heroTitle: "Réserver un moment",
+      heroSubtitle: "Choisissez le type de rendez-vous dont vous avez besoin et sélectionnez un moment directement dans votre calendrier.",
+      label: "Réserver en ligne",
+      title: "Planifiez un moment qui vous convient",
+      subtitle: "Choisissez le type de rendez-vous dont vous avez besoin et sélectionnez un moment directement dans votre calendrier. Disponible 7 jours sur 7, de 9h à 20h.",
+      remoteTitle: "Session de support à distance",
+      remoteDesc: "Pour les problèmes informatiques, les problèmes Wi-Fi, la configuration de logiciels et le dépannage général — résolu à distance.",
+      remoteDuration: "45 minutes",
+      healthTitle: "Bilan informatique",
+      healthDesc: "Un examen structuré de vos ordinateurs, courriels, réseau et sauvegardes avec un rapport écrit clair et des recommandations.",
+      healthDuration: "90 minutes",
+      onsiteTitle: "Visite sur place",
+      onsiteDesc: "Pour la configuration de matériel, l'installation réseau ou tout ce qui nécessite une présence physique à votre domicile ou bureau.",
+      onsiteDuration: "60 minutes",
+      bookThis: "Réserver cette session",
     }
   },
 

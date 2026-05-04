@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home IT Support | ATechSolutions</title>
+  <title data-i18n-text="bookingSection.metaTitle">Book a Time | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Friendly local IT support for home users across the North Shore and Laurentians.">
-  <link rel="canonical" href="https://www.atechsolutions.org/residential.html">
+  <meta name="description" data-i18n-content="bookingSection.metaDescription" content="Schedule a remote support session, IT health check, or on-site visit with ATechSolutions. Available 7 days a week, 9am–8pm.">
+  <link rel="canonical" href="https://www.atechsolutions.org/booking.html">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home-page residential-page">
+<body class="home-page booking-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
 
   <header class="site-header">
@@ -31,117 +31,34 @@
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
           <a href="services.html" data-i18n="nav.services">Services</a>
-          <a href="residential.html" class="active" data-i18n="nav.homeUsers">Home Users</a>
+          <a href="residential.html" data-i18n="nav.homeUsers">Home Users</a>
           <a href="about.html" data-i18n="nav.about">About</a>
           <a href="faq.html" data-i18n="nav.faq">FAQ</a>
           <a href="local.html" data-i18n="nav.serviceArea">Service Area</a>
-          <a href="booking.html" data-i18n="nav.bookTime">Book a Time</a>
-          </div>
-          <div class="nav-meta">
-            <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
-            <div class="lang-toggle">
-              <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
-              <span class="separator">|</span>
-              <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
-            </div>
-            <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
-          </div>
+          <a href="booking.html" class="active" data-i18n="nav.bookTime">Book a Time</a>
         </div>
-      </nav>
-    </header>
-
-    <main id="main-content">
-      <section class="hero reveal home-hero residential-hero">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1>Tech problems at home? We come to you.</h1>
-          <p class="hero-subheadline">Friendly local IT support for home users across the North Shore &amp; Laurentians. No jargon, no surprise bills.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="contact.html">Get Help Now</a>
-            <a class="button button-secondary" href="tel:+15148265351">Call (514) 826-5351</a>
+        <div class="nav-meta">
+          <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+          <div class="lang-toggle">
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
+            <span class="separator">|</span>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
           </div>
-          <p class="hero-cta-note">Most requests get a reply within 1 business day.</p>
+          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <section class="reveal">
-      <div class="section-header compact">
-        <h2 class="section-title">What we help with</h2>
-      </div>
-      <div class="cards-grid three-col-grid">
-        <article class="service-card">
-          <h3>Computer repairs &amp; troubleshooting</h3>
-          <p>Freezing, crashing, or not turning on.</p>
-        </article>
-        <article class="service-card">
-          <h3>Slow computer tune-up</h3>
-          <p>Speed up a sluggish machine and make it usable again.</p>
-        </article>
-        <article class="service-card">
-          <h3>New PC setup &amp; data transfer</h3>
-          <p>Move your files, apps, and settings to your new device.</p>
-        </article>
-        <article class="service-card">
-          <h3>Wi-Fi &amp; home network setup</h3>
-          <p>Router configuration and coverage issues solved.</p>
-        </article>
-        <article class="service-card">
-          <h3>Printer &amp; peripheral setup</h3>
-          <p>Printers, scanners, and external drives working properly.</p>
-        </article>
-        <article class="service-card">
-          <h3>Windows 11 upgrade &amp; setup</h3>
-          <p>Safe upgrade from Windows 10 with your data preserved.</p>
-        </article>
-        <article class="service-card">
-          <h3>Smart home &amp; router setup</h3>
-          <p>Connected devices, mesh networks, and stable connectivity.</p>
-        </article>
-        <article class="service-card">
-          <h3>Home data backup setup</h3>
-          <p>Protect your photos and documents from data loss.</p>
-        </article>
-      </div>
-    </section>
+  <main id="main-content">
 
-    <section class="reveal">
-      <div class="section-header compact">
-        <h2 class="section-title">Simple, honest pricing</h2>
-      </div>
-      <article class="service-card residential-pricing-card">
-        <ul class="subtle-list">
-          <li>Starting from $85/hr</li>
-          <li>Remote or on-site, same rate</li>
-          <li>Billed in 15-minute increments</li>
-          <li>No contracts, no monthly fees</li>
-          <li>On-site visits have a flat travel fee based on distance</li>
-          <li>Invoiced after the work is done</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="reveal">
-      <div class="section-header compact">
-        <h2 class="section-title">How it works</h2>
-      </div>
-      <div class="cards-grid four-col-grid">
-        <article class="service-card">
-          <h3>1. Call or email us</h3>
-          <p>Describe your issue. No technical knowledge needed.</p>
-        </article>
-        <article class="service-card">
-          <h3>2. We connect remotely or come to you</h3>
-          <p>Most issues are fixed remotely in minutes.</p>
-        </article>
-        <article class="service-card">
-          <h3>3. We fix it and explain what happened</h3>
-          <p>Plain language, no jargon.</p>
-        </article>
-        <article class="service-card">
-          <h3>4. You pay only for time spent</h3>
-          <p>Starting from $85/hr, billed in 15-minute increments.</p>
-        </article>
+    <section class="hero reveal home-hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 data-i18n="bookingSection.heroTitle">Book a Time</h1>
+          <p class="hero-subheadline" data-i18n="bookingSection.heroSubtitle">Pick the type of appointment you need and choose a time directly in your calendar.</p>
+          <p class="hero-cta-note">Available 7 days a week, 9am–8pm. No account required.</p>
+        </div>
       </div>
     </section>
 
@@ -219,15 +136,15 @@
 
     <section class="cta-band reveal final-cta home-cta">
       <div>
-        <h2>Ready to get your tech working again?</h2>
-        <p>Call or email and tell us what is not working. We will guide you to the fastest next step.</p>
+        <h2 data-i18n="indexPage.finalCtaTitle">Need reliable IT support for your office?</h2>
+        <p data-i18n="indexPage.finalCtaText">Tell us what is not working and we will recommend the fastest next step.</p>
       </div>
       <div class="cta-actions">
-        <a class="button button-primary" href="tel:+15148265351">Call (514) 826-5351</a>
-        <a class="button button-secondary" href="mailto:amartins@atechsolutions.org">Email amartins@atechsolutions.org</a>
+        <a class="button button-primary" href="contact.html" data-i18n="indexPage.getHelpNow">Get Help Now</a>
+        <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
       </div>
-      <p class="cta-meta">Service area: Sainte-Marthe-sur-le-Lac, Saint-Eustache, Deux-Montagnes, Boisbriand, Rosemere and surrounding areas.</p>
     </section>
+
   </main>
 
   <footer class="footer">

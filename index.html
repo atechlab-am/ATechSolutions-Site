@@ -35,25 +35,26 @@
           <a href="about.html" data-i18n="nav.about">About</a>
           <a href="faq.html" data-i18n="nav.faq">FAQ</a>
           <a href="local.html" data-i18n="nav.serviceArea">Service Area</a>
-        </div>
-        <div class="nav-meta">
-          <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
-          <div class="lang-toggle">
-            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
-            <span class="separator">|</span>
-            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
+          <a href="booking.html" data-i18n="nav.bookTime">Book a Time</a>
           </div>
-          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
+          <div class="nav-meta">
+            <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+            <div class="lang-toggle">
+              <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
+              <span class="separator">|</span>
+              <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
+            </div>
+            <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main id="main-content">
-    <section class="hero reveal home-hero">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1 data-i18n="indexPage.heroTitle">IT help for small offices, without the runaround.</h1>
+    <main id="main-content">
+      <section class="hero reveal home-hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 data-i18n="indexPage.heroTitle">IT help for small offices, without the runaround.</h1>
           <p class="hero-subheadline" data-i18n="indexPage.heroSubheadline">We set up, fix, and maintain your computers, email, network, and backups so your team can keep working.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="contact.html" data-i18n="indexPage.getHelpNow">Get Help Now</a>
@@ -169,6 +170,78 @@
         <article class="service-card"><p data-i18n="indexPage.who7">Home offices</p></article>
         <article class="service-card"><p data-i18n="indexPage.who8">Growing small teams</p></article>
       </div>
+    </section>
+
+    <section class="booking-section reveal">
+      <p class="section-label" data-i18n="bookingSection.label">Book Online</p>
+      <h2 data-i18n="bookingSection.title">Schedule a Time That Works for You</h2>
+      <p class="booking-sub" data-i18n="bookingSection.subtitle">Pick the type of appointment you need and choose a time directly in your calendar. Available 7 days a week, 9am–8pm.</p>
+
+      <div class="booking-cards">
+
+        <a class="booking-card" href="https://calendly.com/amartins-atechsolutions/remote-support-session" target="_blank" rel="noopener">
+          <div class="booking-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="3" width="20" height="14" rx="2" stroke="#F4A623" stroke-width="1.8"/>
+              <path d="M8 21h8M12 17v4" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="bookingSection.remoteTitle">Remote Support Session</h3>
+          <p data-i18n="bookingSection.remoteDesc">For computer issues, Wi-Fi problems, software setup, and general troubleshooting — resolved remotely.</p>
+          <span class="duration">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#F4A623" stroke-width="1.3"/><path d="M8 5v3.5l2 2" stroke="#F4A623" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <span data-i18n="bookingSection.remoteDuration">45 minutes</span>
+          </span>
+          <span class="book-link">
+            <span data-i18n="bookingSection.bookThis">Book this session</span>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#1A56A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+
+        <a class="booking-card" href="https://calendly.com/amartins-atechsolutions/it-health-check" target="_blank" rel="noopener">
+          <div class="booking-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12l2 2 4-4" stroke="#F4A623" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z" stroke="white" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3 data-i18n="bookingSection.healthTitle">IT Health Check</h3>
+          <p data-i18n="bookingSection.healthDesc">A structured review of your computers, email, network, and backups with a clear written report and recommendations.</p>
+          <span class="duration">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#F4A623" stroke-width="1.3"/><path d="M8 5v3.5l2 2" stroke="#F4A623" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <span data-i18n="bookingSection.healthDuration">90 minutes</span>
+          </span>
+          <span class="book-link">
+            <span data-i18n="bookingSection.bookThis">Book this session</span>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#1A56A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+
+        <a class="booking-card" href="https://calendly.com/amartins-atechsolutions/on-site-visit" target="_blank" rel="noopener">
+          <div class="booking-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="10" r="3" stroke="#F4A623" stroke-width="1.8"/>
+              <path d="M12 3C8.13 3 5 6.13 5 10c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="white" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3 data-i18n="bookingSection.onsiteTitle">On-Site Visit</h3>
+          <p data-i18n="bookingSection.onsiteDesc">For hardware setup, network installation, or anything that requires being physically present at your home or office.</p>
+          <span class="duration">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#F4A623" stroke-width="1.3"/><path d="M8 5v3.5l2 2" stroke="#F4A623" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <span data-i18n="bookingSection.onsiteDuration">60 minutes</span>
+          </span>
+          <span class="book-link">
+            <span data-i18n="bookingSection.bookThis">Book this session</span>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#1A56A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+
+      </div>
+
+      <p class="booking-note">
+        Not sure which to pick? Just <a href="tel:+15148265351">call us</a> or
+        <a href="contact.html">send a message</a> and we'll point you in the right direction.
+      </p>
     </section>
 
     <section class="cta-band reveal final-cta home-cta">
