@@ -300,7 +300,7 @@ const translations = {
       who8: "Growing small teams",
       finalCtaTitle: "Need reliable IT support for your office?",
       finalCtaText: "Tell us what is not working and we will recommend the fastest next step.",
-      ctaMeta: "Email: amartins@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemere, and neighboring boroughs"
+      ctaMeta: "Email: info@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemere, and neighboring boroughs"
     },
     fr: {
       metaTitle: "ATechSolutions | Support TI pour petits bureaux",
@@ -362,7 +362,7 @@ const translations = {
       who8: "Petites équipes en croissance",
       finalCtaTitle: "Besoin d'un support TI fiable pour votre bureau ?",
       finalCtaText: "Expliquez ce qui ne fonctionne pas et on vous propose la prochaine étape la plus rapide.",
-      ctaMeta: "Courriel : amartins@atechsolutions.org | Zone de service : Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines"
+      ctaMeta: "Courriel : info@atechsolutions.org | Zone de service : Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines"
     }
   },
 
@@ -525,7 +525,7 @@ const translations = {
       metaTitle: "Get in Touch | ATechSolutions",
       metaDescription: "Contact ATechSolutions for residential and business IT support. We respond within 1 business day, with remote support available anywhere in Quebec.",
       phoneDisplay: "(514) 826-5351",
-      emailDisplay: "amartins@atechsolutions.org",
+      emailDisplay: "info@atechsolutions.org",
       emailSupport: "Email Support",
       heroTitle: "Get in Touch",
       heroSubtitle: "We respond within 1 business day. Remote support available anywhere in Quebec.",
@@ -595,7 +595,7 @@ const translations = {
       metaTitle: "Contactez-nous | ATechSolutions",
       metaDescription: "Contactez ATechSolutions pour du support TI résidentiel et d'affaires. Réponse en moins d'un jour ouvrable, avec support à distance partout au Québec.",
       phoneDisplay: "(514) 826-5351",
-      emailDisplay: "amartins@atechsolutions.org",
+      emailDisplay: "info@atechsolutions.org",
       emailSupport: "Contacter le support",
       heroTitle: "Contactez-nous",
       heroSubtitle: "On répond en moins d'un jour ouvrable. Support à distance disponible partout au Québec.",
@@ -760,7 +760,7 @@ const translations = {
       step4Body: "Starting from $85/hr, billed in 15-minute increments.",
       ctaTitle: "Ready to get your tech working again?",
       ctaText: "Call or email and tell us what is not working. We will guide you to the fastest next step.",
-      emailButton: "Email amartins@atechsolutions.org",
+      emailButton: "Email info@atechsolutions.org",
       ctaMeta: "Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemere, and neighboring boroughs.",
     },
     fr: {
@@ -806,7 +806,7 @@ const translations = {
       step4Body: "À partir de 85 $/h, facturé par tranches de 15 minutes.",
       ctaTitle: "Prêt à remettre votre technologie en état ?",
       ctaText: "Appelez-nous ou écrivez-nous pour expliquer ce qui ne fonctionne pas. Nous vous guiderons vers la solution la plus rapide.",
-      emailButton: "Envoyer un courriel à amartins@atechsolutions.org",
+      emailButton: "Envoyer un courriel à info@atechsolutions.org",
       ctaMeta: "Zone de service : Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines.",
     }
   },
@@ -1692,7 +1692,7 @@ const translations = {
       residentialSupportNote: "Residential on-site support is also available throughout the same service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs.",
       ctaTitle: "Ready to work with a local IT provider?",
       ctaBody: "Get in touch today. We serve Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs.",
-      ctaMeta: "Email: amartins@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs",
+      ctaMeta: "Email: info@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs",
     },
     fr: {
       metaTitle: "Support informatique Saint-Eustache & Deux-Montagnes | ATechSolutions",
@@ -1734,7 +1734,7 @@ const translations = {
       residentialSupportNote: "Le support résidentiel sur place est aussi offert dans la même zone de service : Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines.",
       ctaTitle: "Prêt à travailler avec un fournisseur informatique local ?",
       ctaBody: "Contactez-nous aujourd'hui. Nous desservons Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines.",
-      ctaMeta: "Courriel : amartins@atechsolutions.org | Zone de service : Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines"
+      ctaMeta: "Courriel : info@atechsolutions.org | Zone de service : Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines"
     }
   },
 
@@ -1750,7 +1750,7 @@ const translations = {
       contactTitle: "Contact",
       email: "Email:",
       phoneDisplay: "(514) 826-5351",
-      emailDisplay: "amartins@atechsolutions.org",
+      emailDisplay: "info@atechsolutions.org",
       serviceAreaTitle: "Service Area",
       serviceAreaText: "Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère and neighboring boroughs.",
       responseNote: "We respond within 1 business day.",
@@ -1767,7 +1767,7 @@ const translations = {
       contactTitle: "Contact",
       email: "Courriel:",
       phoneDisplay: "(514) 826-5351",
-      emailDisplay: "amartins@atechsolutions.org",
+      emailDisplay: "info@atechsolutions.org",
       serviceAreaTitle: "Zone de service",
       serviceAreaText: "Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère et les municipalités voisines.",
       responseNote: "Nous répondons dans un délai de 1 jour ouvrable.",
