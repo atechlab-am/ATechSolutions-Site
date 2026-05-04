@@ -103,14 +103,23 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.02,
+      rootMargin: '0px 0px -20px 0px'
     }
   );
 
   document.querySelectorAll('.reveal').forEach((element) => {
     observer.observe(element);
   });
+
+  // Fallback: if any reveal blocks never intersect (short pages, edge viewport sizes),
+  // make sure they still become visible instead of staying hidden.
+  window.setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.is-visible)').forEach((element) => {
+      element.classList.add('is-visible');
+      observer.unobserve(element);
+    });
+  }, 900);
 
   document.querySelectorAll('[data-year]').forEach((element) => {
     element.textContent = new Date().getFullYear();
