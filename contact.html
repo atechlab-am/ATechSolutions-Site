@@ -397,18 +397,7 @@
             throw new Error('Request failed');
           }
 
-          form.reset();
-          renderServiceOptions('');
-
-          // Reset Turnstile widget
-          if (typeof turnstile !== 'undefined') {
-            turnstile.reset();
-          }
-
-          showStatus(
-            getText('contactPage.successMessage', "Your message has been sent. We'll get back to you within 1 business day."),
-            'success'
-          );
+          window.location.href = '/thanks';
 
         } catch (error) {
           showStatus(
