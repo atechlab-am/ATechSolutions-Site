@@ -8,15 +8,16 @@
   <link rel="canonical" href="https://www.atechsolutions.org/contact.html">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-94YGNYY9HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-94YGNYY9HZ');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-94YGNYY9HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-94YGNYY9HZ');
+  </script>
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body class="home-page contact-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
@@ -45,22 +46,22 @@
           <a href="faq.html" data-i18n="nav.faq">FAQ</a>
           <a href="local.html" data-i18n="nav.serviceArea">Service Area</a>
           <a href="booking.html" data-i18n="nav.bookTime">Book a Time</a>
-          </div>
-          <div class="nav-meta">
-            <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
-            <div class="lang-toggle">
-              <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
-              <span class="separator">|</span>
-              <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
-            </div>
-            <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
-          </div>
         </div>
-      </nav>
-    </header>
+        <div class="nav-meta">
+          <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+          <div class="lang-toggle">
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
+            <span class="separator">|</span>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
+          </div>
+          <a class="nav-cta nav-cta-solid" href="contact.html" data-i18n="cta.contactUs">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main id="main-content">
-      <section class="reveal contact-section-shell">
+  <main id="main-content">
+    <section class="reveal contact-section-shell">
       <div class="contact-section">
         <h1 data-i18n="contactPage.heroTitle">Get in Touch</h1>
         <p class="subtitle" data-i18n="contactPage.heroSubtitle">We respond within 1 business day. Remote support available anywhere in Quebec.</p>
@@ -120,6 +121,11 @@
           <div class="form-group">
             <label for="message" data-i18n="contactPage.messageLabel">Message</label>
             <textarea id="message" name="message" placeholder="Briefly describe what's going on..." data-i18n="contactPage.messagePlaceholder" required></textarea>
+          </div>
+
+          <!-- Cloudflare Turnstile widget -->
+          <div class="form-group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADMHd3IVo_GGivCA" data-theme="light"></div>
           </div>
 
           <button type="submit" class="submit-btn" id="contact-submit" data-i18n="contactPage.submitButton">Send Message</button>
@@ -271,15 +277,13 @@
         ]
       };
 
-      const form = document.getElementById('contact-form');
-      const clientType = document.getElementById('client-type');
-      const service = document.getElementById('service');
+      const form         = document.getElementById('contact-form');
+      const clientType   = document.getElementById('client-type');
+      const service      = document.getElementById('service');
       const submitButton = document.getElementById('contact-submit');
-      const status = document.getElementById('contact-status');
+      const status       = document.getElementById('contact-status');
 
-      if (!form || !clientType || !service || !submitButton || !status) {
-        return;
-      }
+      if (!form || !clientType || !service || !submitButton || !status) return;
 
       function getText(key, fallback) {
         if (typeof getI18nValue === 'function') {
@@ -300,7 +304,6 @@
 
       function renderServiceOptions(selectedType, selectedValue = '') {
         service.innerHTML = '';
-
         const placeholder = document.createElement('option');
         placeholder.value = '';
         placeholder.disabled = true;
@@ -330,10 +333,7 @@
       }
 
       function patchLanguageSwitch() {
-        if (typeof window.switchLanguage !== 'function' || window.__contactSwitchPatched) {
-          return;
-        }
-
+        if (typeof window.switchLanguage !== 'function' || window.__contactSwitchPatched) return;
         const originalSwitchLanguage = window.switchLanguage;
         window.switchLanguage = function patchedSwitchLanguage(lang) {
           originalSwitchLanguage(lang);
@@ -358,6 +358,16 @@
           return;
         }
 
+        // Get Turnstile token
+        const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value;
+        if (!turnstileToken) {
+          showStatus(
+            getText('contactPage.turnstileError', 'Please complete the security check before submitting.'),
+            'error'
+          );
+          return;
+        }
+
         hideStatus();
         submitButton.disabled = true;
         submitButton.textContent = getText('contactPage.sendingButton', 'Sending...');
@@ -370,21 +380,18 @@
               Accept: 'application/json'
             },
             body: JSON.stringify({
-              name: document.getElementById('name').value.trim(),
-              email: document.getElementById('email').value.trim(),
-              phone: document.getElementById('phone').value.trim(),
-              clientType: clientType.value,
-              service: service.value,
-              message: document.getElementById('message').value.trim()
+              name:           document.getElementById('name').value.trim(),
+              email:          document.getElementById('email').value.trim(),
+              phone:          document.getElementById('phone').value.trim(),
+              clientType:     clientType.value,
+              service:        service.value,
+              message:        document.getElementById('message').value.trim(),
+              turnstileToken: turnstileToken
             })
           });
 
           let result = null;
-          try {
-            result = await response.json();
-          } catch (error) {
-            result = null;
-          }
+          try { result = await response.json(); } catch (e) { result = null; }
 
           if (!response.ok || (result && result.success === false)) {
             throw new Error('Request failed');
@@ -392,10 +399,17 @@
 
           form.reset();
           renderServiceOptions('');
+
+          // Reset Turnstile widget
+          if (typeof turnstile !== 'undefined') {
+            turnstile.reset();
+          }
+
           showStatus(
             getText('contactPage.successMessage', "Your message has been sent. We'll get back to you within 1 business day."),
             'success'
           );
+
         } catch (error) {
           showStatus(
             getText('contactPage.errorMessage', 'Could not send your message. Please call us at (514) 826-5351.'),
