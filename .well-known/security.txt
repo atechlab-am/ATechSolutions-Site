@@ -1,0 +1,4 @@
+Contact: mailto:info@atechsolutions.org
+Expires: 2030-05-11T00:00:00Z
+Preferred-Languages: en, fr
+Canonical: https://www.atechsolutions.org/.well-known/security.txt
