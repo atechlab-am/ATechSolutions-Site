@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="indexPage.metaTitle">ATechSolutions | IT Help for Small Offices</title>
+  <title data-i18n-text="indexPage.metaTitle">ATechSolutions | Local IT Support for Small Businesses in Greater Montreal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="indexPage.metaDescription" content="ATechSolutions helps small offices with setup, repairs, email, network, backups, and ongoing support in Sainte-Marthe-sur-le-Lac and nearby towns.">
+  <meta name="description" data-i18n-content="indexPage.metaDescription" content="Local IT support for small businesses in Saint-Eustache, Boisbriand, Blainville, Deux-Montagnes and Greater Montreal. Computer repair, network setup, email, backups and managed support. Call (514) 826-5351.">
   <link rel="canonical" href="https://www.atechsolutions.org/">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
@@ -17,14 +17,42 @@
 
   gtag('config', 'G-94YGNYY9HZ');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ATechSolutions",
+  "url": "https://www.atechsolutions.org",
+  "telephone": "+15148265351",
+  "email": "amartins@atechsolutions.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte-Marthe-sur-le-Lac",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    "Saint-Eustache", "Deux-Montagnes", "Boisbriand",
+    "Blainville", "Sainte-Thérèse", "Rosemère", "Greater Montreal"
+  ],
+  "openingHours": "Mo-Su 09:00-20:00",
+  "priceRange": "$$",
+  "description": "Local IT support for small businesses in Greater Montreal. Computer repair, network setup, email, backups and managed support."
+}
+</script>
 </head>
 <body class="home-page">
+  <div class="urgency-banner" id="urgency-banner" role="banner" aria-label="Announcement">
+    <span data-i18n="indexPage.bannerText">⚠️ Windows 10 support ends October 2025 — is your business ready?</span>
+    <a href="https://www.atechsolutions.org/booking" data-i18n="indexPage.bannerCta">Book a free 15-minute call →</a>
+    <button class="urgency-banner-dismiss" id="urgency-banner-dismiss" aria-label="Dismiss announcement">✕</button>
+  </div>
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
 
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
       <a class="brand" href="/" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
-        <img src="logo.png" alt="ATechSolutions logo">
+        <img src="logo.png" alt="ATechSolutions — Local IT Support">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
           <span data-i18n="nav.brandTag">Local IT support for small offices</span>
@@ -69,7 +97,10 @@
             <a class="button button-primary" href="contact" data-i18n="indexPage.getHelpNow">Get Help Now</a>
             <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
           </div>
-          <p class="hero-cta-note" data-i18n="indexPage.responseNote">Most requests get a reply within 1 business day.</p>
+          <div class="trust-badges">
+            <span class="trust-badge" data-i18n="indexPage.trustBadge1">📞 Call us and we pick up.</span>
+            <span class="trust-badge" data-i18n="indexPage.trustBadge2">📧 Email us and we reply the same day.</span>
+          </div>
           <p class="hero-audience-intro" data-i18n="indexPage.audienceIntro">Whether you're a home user or a business, we've got you covered.</p>
           <div class="audience-path-grid">
             <a class="service-card audience-path-card" href="residential">
@@ -95,17 +126,81 @@
       </div>
     </section>
 
+    <section class="reveal reviews-section">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.reviewsTitle">What clients say</h2>
+      </div>
+      <div class="reviews-placeholder">
+        <div class="reviews-stars" aria-label="5 stars">★★★★★</div>
+        <p class="reviews-placeholder-text" data-i18n="indexPage.reviewsPlaceholder">We're just getting started — be one of our first reviewers.</p>
+        <a class="button button-primary reviews-google-btn"
+           href="https://g.page/r/CRNsgEz_AP9QEBM/review"
+           target="_blank" rel="noopener"
+           data-i18n="indexPage.reviewsGoogleBtn">
+          Leave a Google Review
+        </a>
+        <p class="reviews-help-line" data-i18n="indexPage.reviewsHelpLine">Your honest feedback helps local businesses find reliable IT support.</p>
+      </div>
+      <!--
+        REAL REVIEW CARDS — uncomment and populate when reviews are available:
+        <div class="cards-grid three-col-grid reviews-grid">
+          <article class="service-card review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-body">"[Review text here]"</p>
+            <p class="review-author">— [Client name], [Business type]</p>
+          </article>
+        </div>
+      -->
+    </section>
+
+    <section class="reveal personal-trust-section">
+      <div class="personal-trust-inner">
+        <div class="personal-trust-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12l2 2 4-4" stroke="#0e4b87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="9" stroke="#0e4b87" stroke-width="1.8"/>
+          </svg>
+        </div>
+        <p class="personal-trust-body" data-i18n="indexPage.trustPersonBody">When you contact ATechSolutions, you're talking to Anthony — not a call centre, not a ticket system, not an outsourced team. I show up, explain things in plain English, and I don't disappear after the job is done. Local support. Real accountability.</p>
+        <a class="button button-primary" href="booking" data-i18n="indexPage.trustPersonCta">Book a Free Call</a>
+      </div>
+    </section>
+
     <section class="reveal">
       <div class="section-header compact">
         <h2 class="section-title" data-i18n="indexPage.problemsTitle">Problems we solve</h2>
       </div>
       <div class="cards-grid three-col-grid">
-        <article class="service-card"><p data-i18n="indexPage.problem1">"Our computers are slow and keep crashing."</p></article>
-        <article class="service-card"><p data-i18n="indexPage.problem2">"Email is unreliable and hard to manage."</p></article>
-        <article class="service-card"><p data-i18n="indexPage.problem3">"Wi-Fi is weak in half the office."</p></article>
-        <article class="service-card"><p data-i18n="indexPage.problem4">"We have no real backup plan."</p></article>
-        <article class="service-card"><p data-i18n="indexPage.problem5">"Nobody knows if our IT is secure."</p></article>
-        <article class="service-card"><p data-i18n="indexPage.problem6">"We need fast help when something breaks."</p></article>
+        <article class="service-card problem-card">
+          <p class="problem-quote" data-i18n="indexPage.problem1">"Our computers are slow and keep crashing."</p>
+          <p class="problem-solution" data-i18n="indexPage.problem1Solution">A quick IT Health Check tells you exactly why — and what to fix first.</p>
+          <a class="problem-cta" href="services" data-i18n="indexPage.problem1Cta">Book an IT Health Check →</a>
+        </article>
+        <article class="service-card problem-card">
+          <p class="problem-quote" data-i18n="indexPage.problem2">"Email is unreliable and hard to manage."</p>
+          <p class="problem-solution" data-i18n="indexPage.problem2Solution">We set up professional business email on Microsoft 365 — properly.</p>
+          <a class="problem-cta" href="services" data-i18n="indexPage.problem2Cta">See email setup →</a>
+        </article>
+        <article class="service-card problem-card">
+          <p class="problem-quote" data-i18n="indexPage.problem3">"Wi-Fi is weak in half the office."</p>
+          <p class="problem-solution" data-i18n="indexPage.problem3Solution">We configure your network so every device connects reliably.</p>
+          <a class="problem-cta" href="services" data-i18n="indexPage.problem3Cta">See network setup →</a>
+        </article>
+        <article class="service-card problem-card">
+          <p class="problem-quote" data-i18n="indexPage.problem4">"We have no real backup plan."</p>
+          <p class="problem-solution" data-i18n="indexPage.problem4Solution">We set up and verify your backups so your data is protected — not just assumed to be.</p>
+          <a class="problem-cta" href="services" data-i18n="indexPage.problem4Cta">See backup setup →</a>
+        </article>
+        <article class="service-card problem-card">
+          <p class="problem-quote" data-i18n="indexPage.problem5">"Nobody knows if our IT is secure."</p>
+          <p class="problem-solution" data-i18n="indexPage.problem5Solution">An IT Health Check gives you a clear picture of your risks in plain English.</p>
+          <a class="problem-cta" href="services" data-i18n="indexPage.problem5Cta">Book an IT Health Check →</a>
+        </article>
+        <article class="service-card problem-card">
+          <p class="problem-quote" data-i18n="indexPage.problem6">"We need fast help when something breaks."</p>
+          <p class="problem-solution" data-i18n="indexPage.problem6Solution">Call us and we pick up. Remote support from $110/hr — no long wait times.</p>
+          <a class="problem-cta" href="booking" data-i18n="indexPage.problem6Cta">Book a support call →</a>
+        </article>
       </div>
     </section>
 
@@ -117,26 +212,32 @@
         <article class="service-card">
           <h3 data-i18n="indexPage.service1Title">Computer Setup &amp; Repair</h3>
           <p data-i18n="indexPage.service1Price">from $150</p>
+          <p class="service-desc" data-i18n="indexPage.service1Desc">We configure new computers and fix existing ones so your team can work without interruptions. Includes setup, updates, and basic validation.</p>
         </article>
         <article class="service-card">
           <h3 data-i18n="indexPage.service2Title">Professional Email &amp; Domain</h3>
           <p data-i18n="indexPage.service2Price">from $200 + $40/user</p>
+          <p class="service-desc" data-i18n="indexPage.service2Desc">Get a proper business email address using your own domain — hosted on Microsoft 365 or Google Workspace. One-time setup, no ongoing management fees.</p>
         </article>
         <article class="service-card">
           <h3 data-i18n="indexPage.service3Title">Network &amp; Wi-Fi Setup</h3>
           <p data-i18n="indexPage.service3Price">from $250</p>
+          <p class="service-desc" data-i18n="indexPage.service3Desc">We configure your router, access points, and switches so every device connects reliably and securely. No dead zones, no guesswork.</p>
         </article>
         <article class="service-card">
           <h3 data-i18n="indexPage.service4Title">Data Backup Setup</h3>
           <p data-i18n="indexPage.service4Price">from $400</p>
+          <p class="service-desc" data-i18n="indexPage.service4Desc">We set up your backup solution and verify it is actually working — so if something goes wrong, your data is recoverable.</p>
         </article>
         <article class="service-card">
           <h3 data-i18n="indexPage.service5Title">IT Health Check</h3>
           <p data-i18n="indexPage.service5Price">from $250</p>
+          <p class="service-desc" data-i18n="indexPage.service5Desc">A structured review of your computers, email, network, and backups. You get a written report with clear priorities — no fixes during the check, just honest answers.</p>
         </article>
         <article class="service-card">
           <h3 data-i18n="indexPage.service6Title">Hourly Support</h3>
           <p data-i18n="indexPage.service6Price">from $110/hr</p>
+          <p class="service-desc" data-i18n="indexPage.service6Desc">On-demand remote or on-site IT support billed in 15-minute increments remotely and 30-minute increments on-site. No contracts required.</p>
         </article>
       </div>
     </section>
@@ -184,7 +285,7 @@
     <section class="booking-section reveal">
       <p class="section-label" data-i18n="bookingSection.label">Book Online</p>
       <h2 data-i18n="bookingSection.title">Schedule a Time That Works for You</h2>
-      <p class="booking-sub" data-i18n="bookingSection.subtitle">Pick the type of appointment you need and choose a time directly in your calendar. Available 7 days a week, 9am–8pm.</p>
+      <p class="booking-sub" data-i18n="bookingSection.bookingIntro">No forms, no waiting, no back-and-forth. Pick the session that fits your situation and book directly into my calendar — available 7 days a week, 9am to 8pm.</p>
 
       <div class="booking-cards">
 
@@ -253,6 +354,34 @@
       </p>
     </section>
 
+    <section class="reveal home-faq-section">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.faqTitle">Common questions</h2>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary data-i18n="indexPage.faq1Q">How quickly can you come on-site?</summary>
+          <p data-i18n="indexPage.faq1A">On-site visits are typically available within 1–2 business days depending on location and schedule.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="indexPage.faq2Q">Do I need to sign a contract?</summary>
+          <p data-i18n="indexPage.faq2A">No long-term contracts required. Monthly support plans have a 3-month minimum — everything else is billed per project or per hour.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="indexPage.faq3Q">What areas do you serve?</summary>
+          <p data-i18n="indexPage.faq3A">We serve Sainte-Marthe-sur-le-Lac, Saint-Eustache, Deux-Montagnes, Boisbriand, Blainville, Sainte-Thérèse, Rosemère and surrounding areas.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="indexPage.faq4Q">What if my problem isn't fixed?</summary>
+          <p data-i18n="indexPage.faq4A">We don't close a service until you're satisfied. If an issue persists, we come back at no extra charge.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="indexPage.faq5Q">How does billing work?</summary>
+          <p data-i18n="indexPage.faq5A">Project work is invoiced after completion. Hourly support is billed in 15-minute increments remotely and 30-minute increments on-site. No hidden fees.</p>
+        </details>
+      </div>
+    </section>
+
     <section class="cta-band reveal final-cta home-cta">
       <div>
         <h2 data-i18n="indexPage.finalCtaTitle">Need reliable IT support for your office?</h2>
@@ -282,6 +411,7 @@
           <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="contact" data-i18n="cta.contactUs">Contact Us</a></li>
           <li><a href="privacy" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="terms" data-i18n="footer.terms">Terms &amp; Conditions</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -297,7 +427,7 @@
     </div>
     <div class="footer-bottom">
       <p><span data-year></span> <span data-i18n="footer.businessName">ATechSolutions</span></p>
-      <p><a href="privacy" data-i18n="footer.privacy">Privacy Policy</a></p>
+      <p><a href="privacy" data-i18n="footer.privacy">Privacy Policy</a> · <a href="terms" data-i18n="footer.terms">Terms &amp; Conditions</a></p>
     </div>
   </footer>
 

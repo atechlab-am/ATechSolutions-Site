@@ -124,4 +124,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-year]').forEach((element) => {
     element.textContent = new Date().getFullYear();
   });
+
+  // Urgency banner dismiss
+  const urgencyBanner = document.getElementById('urgency-banner');
+  const urgencyDismiss = document.getElementById('urgency-banner-dismiss');
+  if (urgencyBanner && urgencyDismiss) {
+    if (localStorage.getItem('bannerDismissed') === '1') {
+      urgencyBanner.style.display = 'none';
+    }
+    urgencyDismiss.addEventListener('click', () => {
+      urgencyBanner.style.display = 'none';
+      localStorage.setItem('bannerDismissed', '1');
+    });
+  }
 });

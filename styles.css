@@ -2456,3 +2456,151 @@ textarea {
   text-decoration: underline;
 }
 
+/* === Urgency Banner (P7) === */
+.urgency-banner {
+  background: #F4A820;
+  color: #1A3A5C;
+  padding: 10px 48px 10px 20px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.urgency-banner a {
+  color: #1A3A5C;
+  font-weight: 700;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.urgency-banner-dismiss {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1A3A5C;
+  font-weight: 700;
+  padding: 4px 8px;
+  line-height: 1;
+}
+.urgency-banner-dismiss:hover { opacity: 0.7; }
+
+/* === Hero Trust Badges (P6) === */
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+.trust-badge {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* === Reviews Section (P2) === */
+.reviews-section { text-align: center; }
+.reviews-placeholder {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+.reviews-stars {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: #e8a020;
+  margin-bottom: var(--space-xs);
+}
+.reviews-placeholder-text {
+  color: var(--muted);
+  margin-bottom: var(--space-sm);
+}
+.reviews-google-btn { margin-bottom: var(--space-xs); }
+.reviews-help-line {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* === Personal Trust Section (P3) === */
+.personal-trust-section {
+  background: var(--surface-soft);
+  text-align: center;
+}
+.personal-trust-inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.personal-trust-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--brand-soft);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-sm);
+}
+.personal-trust-body {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--ink);
+  margin-bottom: var(--space-md);
+}
+
+/* === Problem Cards (P4) === */
+.problem-card { display: flex; flex-direction: column; gap: 8px; }
+.problem-quote { color: var(--ink); font-style: italic; margin: 0; }
+.problem-solution { color: var(--accent); font-weight: 600; margin: 0; }
+.problem-cta {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+.problem-cta:hover { text-decoration: underline; }
+
+/* === Service Descriptions (P5) === */
+.service-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+/* === Homepage FAQ (P9) === */
+.home-faq-section .faq-grid { max-width: 800px; margin: 0 auto; }
+
+/* === Legal Pages (Privacy, Terms) === */
+.legal-sections { max-width: 800px; margin: 0 auto; }
+.legal-section { margin-bottom: var(--space-lg); }
+.legal-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: var(--space-xs); color: var(--ink); }
+.legal-section p, .legal-section ul { color: var(--ink); line-height: 1.7; margin-bottom: var(--space-xs); }
+.legal-section ul { padding-left: 1.5rem; }
+.legal-section ul li { margin-bottom: 4px; }
+.legal-footnote {
+  max-width: 800px;
+  margin: var(--space-sm) auto 0;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--line);
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-style: italic;
+}
+.legal-footnote + .legal-footnote { border-top: none; padding-top: 0; margin-top: var(--space-xs); }
+
