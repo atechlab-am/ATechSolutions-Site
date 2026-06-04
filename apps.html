@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="thanks.heroTitle">Request Sent | ATechSolutions</title>
+  <title data-i18n-text="appsPage.metaTitle">Apps by ATechSolutions | Tether</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="thanks.heroText" content="Your ATechSolutions request has been sent successfully.">
-  <link rel="canonical" href="https://www.atechsolutions.org/thanks">
+  <meta name="description" data-i18n-content="appsPage.metaDescription" content="Discover Tether by ATechSolutions, an IT asset management app for MSPs and their clients.">
+  <link rel="canonical" href="https://www.atechsolutions.org/apps">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -18,8 +18,9 @@
   gtag('config', 'G-94YGNYY9HZ');
 </script>
 </head>
-<body class="home-page thanks-page">
+<body class="home-page apps-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
+
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
       <a class="brand" href="/" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
@@ -39,7 +40,7 @@
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
           <a href="services" data-i18n="nav.services">Services</a>
-          <a href="apps" data-i18n="nav.apps">Apps</a>
+          <a href="apps" class="active" data-i18n="nav.apps">Apps</a>
           <a href="residential" data-i18n="nav.homeUsers">Home Users</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
@@ -60,36 +61,68 @@
   </header>
 
   <main id="main-content">
-    <section class="hero reveal">
-      <div class="thanks-panel">
-        <span class="eyebrow" data-i18n="thanks.heroEyebrow">Request received</span>
-        <h1 data-i18n="thanks.heroTitle">Thanks. Your request has been submitted.</h1>
-        <p data-i18n="thanks.heroText">We have received your request. Here is what happens next.</p>
-        <ul class="subtle-list">
-          <li data-i18n="thanks.heroLi1">Business inquiries are reviewed within 1 business day</li>
-          <li data-i18n="thanks.heroLi2">Support requests are triaged based on urgency and scope</li>
-          <li data-i18n="thanks.heroLi3">Quote requests are reviewed based on the project or service need described</li>
-        </ul>
-        <div class="hero-actions">
-          <a class="button button-primary" href="/" data-i18n="thanks.backHome">Back to Home</a>
-          <a class="button button-secondary" href="services" data-i18n="thanks.viewServices">View Services</a>
+    <section class="hero reveal home-hero services-hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 data-i18n="appsPage.heroTitle">Apps by ATechSolutions</h1>
+          <p class="hero-subheadline" data-i18n="appsPage.heroSubtitle">We build practical software for IT teams and the businesses they support.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://tether.atechsolutions.org" target="_blank" rel="noopener" data-i18n="appsPage.openTether">Open Tether</a>
+            <a class="button button-secondary" href="https://github.com/atechlab-am/tether" target="_blank" rel="noopener" data-i18n="appsPage.viewGithub">View on GitHub</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <article class="service-card service-scope-card">
+        <div class="service-card-header">
+          <h2 data-i18n="appsPage.tetherTitle">Tether</h2>
+          <p class="service-price" data-i18n="appsPage.tetherTag">IT Asset Management for MSPs</p>
+        </div>
+        <p data-i18n="appsPage.tetherSummary">Tether helps MSPs and their clients track, manage, and report on IT assets from one platform. It is multi-tenant by design, supports QR labels, and includes client-facing branded portals.</p>
+        <h3 data-i18n="appsPage.keyFeatures">Key features</h3>
+        <ul>
+          <li data-i18n="appsPage.feature1">Multi-tenant architecture with isolated client workspaces</li>
+          <li data-i18n="appsPage.feature2">QR asset labels for quick scan-and-view in the field</li>
+          <li data-i18n="appsPage.feature3">CSV import/export for bulk onboarding and reporting</li>
+          <li data-i18n="appsPage.feature4">Role-based permissions with per-user overrides</li>
+          <li data-i18n="appsPage.feature5">Branded client portals with white-label subdomains</li>
+          <li data-i18n="appsPage.feature6">Warranty tracking, check-out/check-in, and request workflows</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="reveal">
+      <div class="cards-grid three-col-grid">
+        <article class="service-card">
+          <h3 data-i18n="appsPage.audience1Title">For MSPs</h3>
+          <p data-i18n="appsPage.audience1Text">Manage all clients from one dashboard with visibility on asset counts, values, and expiring warranties.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="appsPage.audience2Title">For Clients</h3>
+          <p data-i18n="appsPage.audience2Text">Each client gets a dedicated portal to view assets, assignments, and requests without MSP complexity.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="appsPage.audience3Title">Deployment Options</h3>
+          <p data-i18n="appsPage.audience3Text">Use hosted SaaS or self-host for full control. Tether is open source under the MIT license.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band reveal final-cta home-cta">
+      <div>
+        <h2 data-i18n="appsPage.finalCtaTitle">Want to see Tether in action?</h2>
+        <p data-i18n="appsPage.finalCtaText">Visit the live app to explore features, documentation, and setup options.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="button button-primary" href="https://tether.atechsolutions.org" target="_blank" rel="noopener" data-i18n="appsPage.openTether">Open Tether</a>
+        <a class="button button-secondary" href="https://tether.atechsolutions.org/tether-docs/" target="_blank" rel="noopener" data-i18n="appsPage.readDocs">Read Docs</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-top reveal is-visible">
-      <div>
-        <h2 data-i18n="thanks.footerTopTitle">Need to add more context?</h2>
-        <p data-i18n="thanks.footerTopText">Email support directly if you need to append details to your request.</p>
-      </div>
-      <div class="footer-actions">
-        <a class="button button-primary" href="mailto:support@atechsolutions.org" data-i18n="contactPage.emailSupport">Email Support</a>
-        <a class="button button-secondary" href="contact" data-i18n="thanks.submitAnother">Submit Another Request</a>
-      </div>
-    </div>
-
     <div class="footer-grid">
       <div class="footer-column">
         <h4 data-i18n="footer.businessName">ATechSolutions</h4>
@@ -120,7 +153,6 @@
         <p data-i18n="footer.responseNote">We respond within 1 business day.</p>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p><span data-year></span> <span data-i18n="footer.businessName">ATechSolutions</span></p>
       <p><a href="privacy" data-i18n="footer.privacy">Privacy Policy</a> · <a href="terms" data-i18n="footer.terms">Terms &amp; Conditions</a></p>
