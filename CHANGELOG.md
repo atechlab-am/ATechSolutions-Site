@@ -5,6 +5,14 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.8.0
+
+### Removed "small" from all business/office descriptions sitewide
+
+- Dropped "small" and "SMB"/"PME" everywhere referring to businesses/offices, across all 12 pages, both languages — copy now just says "business"/"office"
+- Renamed the "Small Business" monthly plan tier and contact form option to "Standard" (EN) / plan tier stays consistent in FR
+- Covers translation source strings, HTML fallback text, page titles, meta descriptions, and JSON-LD structured data
+
 ## 2.7.0
 
 ### Turned the services list into a carousel
