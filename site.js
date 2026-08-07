@@ -22,6 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.nav-dropdown-toggle').forEach((other) => {
+          other.setAttribute('aria-expanded', 'false');
+        });
+        toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && mobileMenuToggle.classList.contains('active')) {
         setMenuState(false);

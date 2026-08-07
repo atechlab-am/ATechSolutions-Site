@@ -438,6 +438,99 @@ main > section + section::before {
   color: var(--brand);
 }
 
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.93rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-dropdown-toggle::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-top: -3px;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-toggle.active {
+  color: var(--brand);
+}
+
+.nav-dropdown-menu a.active {
+  color: var(--brand);
+}
+
+.nav-dropdown-menu {
+  display: grid;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-dropdown-menu a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1201px) {
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 0;
+    min-width: 190px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(16, 32, 51, 0.08);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  .nav-dropdown-menu a {
+    padding: 8px 10px;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-dropdown-menu a:hover {
+    background: var(--surface-soft);
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu,
+  .nav-dropdown-toggle[aria-expanded="true"] + .nav-dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-dropdown:hover .nav-dropdown-toggle::after,
+  .nav-dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(225deg);
+    margin-top: 3px;
+  }
+}
+
 .nav-links a.active::after,
 .nav-links a:hover::after {
   content: "";
@@ -1513,6 +1606,30 @@ textarea {
 
   .nav-links a {
     width: 100%;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-dropdown-menu {
+    display: none;
+    padding-left: 14px;
+    margin-top: 8px;
+  }
+
+  .nav-dropdown-toggle[aria-expanded="true"] + .nav-dropdown-menu {
+    display: grid;
+  }
+
+  .nav-dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(225deg);
+    margin-top: 3px;
   }
 
   .nav-meta {

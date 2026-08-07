@@ -5,6 +5,15 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.4.0
+
+### Consolidated the main navigation into a submenu
+
+- Grouped Services, Service Area, and Apps under a new "For Business" dropdown, cutting the nav from 7 flat top-level links to 5
+- Desktop: dropdown opens on hover/focus; mobile: expands inline within the existing slide-down menu on tap
+- Renamed "Home Users" label to "For Home" across both languages
+- Applied identically across all 12 pages (nav markup is duplicated per-page, no shared header include)
+
 ## 2.3.0
 
 ### Simplified the homepage

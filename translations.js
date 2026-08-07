@@ -190,9 +190,10 @@ const translations = {
   nav: {
     en: {
       home: "Home",
+      forBusiness: "For Business",
       services: "Services",
       apps: "Apps",
-      homeUsers: "Home Users",
+      homeUsers: "For Home",
       about: "About",
       faq: "FAQ",
       contact: "Request IT Service",
@@ -203,6 +204,7 @@ const translations = {
     },
     fr: {
       home: "Accueil",
+      forBusiness: "Entreprises",
       services: "Services",
       apps: "Applications",
       homeUsers: "Particuliers",
