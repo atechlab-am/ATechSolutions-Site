@@ -5,6 +5,21 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.6.2
+
+### Reworded the homepage hero headline again
+
+- "IT support small offices can actually rely on" still read as generic marketing-speak — replaced with a concrete, fact-based headline: "One technician. Fast on-site response across the Deux-Montagnes area."
+- Widened the shared `.hero-copy h1` max-width (14ch → 32ch) to fit the longer headline without an awkward narrow wrap; verified it doesn't break the shorter headlines on apps/services/booking/residential pages
+- Updated in both languages, plus the HTML fallback text
+
+## 2.6.1
+
+### Reworded the homepage hero headline
+
+- Replaced "IT support that actually picks up the phone" (felt gimmicky/cliché) with "IT support small offices can actually rely on" — leads with reliability instead of responsiveness
+- Updated in both languages, plus the HTML fallback text
+
 ## 2.6.0
 
 ### Surfaced Monthly Support Plans & RMM more prominently

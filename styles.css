@@ -741,7 +741,7 @@ main > section + section::before {
 }
 
 .hero-copy h1 {
-  max-width: 14ch;
+  max-width: 32ch;
   text-wrap: balance;
   letter-spacing: -0.018em;
 }
