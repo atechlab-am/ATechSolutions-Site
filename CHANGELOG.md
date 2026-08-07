@@ -5,6 +5,19 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.5.0
+
+### Added RMM to Monthly Support Plans
+
+- Added a "What's included" checklist to the Monthly Support Plans service entry on services.html, leading with Remote Monitoring & Management (RMM)
+
+## 2.4.1
+
+### Fixed the "For Business" dropdown being unclickable
+
+- The submenu closed before the cursor could reach it, because the gap between the toggle button and the dropdown broke the CSS hover state
+- Added an invisible hover bridge over the gap so the dropdown stays open when moving the mouse down into it
+
 ## 2.4.0
 
 ### Consolidated the main navigation into a submenu
