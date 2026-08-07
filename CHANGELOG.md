@@ -5,6 +5,14 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.7.0
+
+### Turned the services list into a carousel
+
+- services.html's 9 service cards no longer stack for scrolling — one card shows at a time with prev/next arrow navigation
+- Auto-advances every 6 seconds, pauses on hover or keyboard focus, and stops auto-advancing once the user manually navigates
+- Wraps around at both ends (next from the last card returns to the first, and vice versa)
+
 ## 2.6.2
 
 ### Reworded the homepage hero headline again
