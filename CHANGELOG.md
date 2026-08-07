@@ -5,6 +5,13 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.6.0
+
+### Surfaced Monthly Support Plans & RMM more prominently
+
+- Moved Monthly Support Plans to the first service listed on services.html (was last of 9)
+- Added "Monthly Plans & RMM" as the lead tag in the homepage Services teaser
+
 ## 2.5.0
 
 ### Added RMM to Monthly Support Plans
