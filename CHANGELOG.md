@@ -5,6 +5,18 @@ All notable changes to this project are documented below, newest first.
 Versions prior to this file (1.0.0 through 2.1.0) were tagged in git history
 without recorded change notes and are not reconstructed here.
 
+## 2.3.0
+
+### Simplified the homepage
+
+- Cut "Problems we solve" (duplicated the Services section), the inline Monthly Plans grid, and the "Who we help" tag grid (condensed to one sentence)
+- Merged the Reviews and Personal-trust sections into one
+- Shrank the full 6-card Services section to a compact teaser + "View all services" link
+- Replaced the inline Booking widget (3 Calendly cards) with a single "Book a time" button linking to booking.html
+- Replaced the inline FAQ (5 Q&As) with a "See all FAQs" link to faq.html
+- Removed ~65 now-unused translation keys left behind by the above
+- Homepage went from 11 stacked sections to 7
+
 ## 2.2.0
 
 ### Removed sitewide pricing, flattened visual style

@@ -1829,6 +1829,22 @@ textarea {
   font-size: 0.9rem;
 }
 
+.service-teaser-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-teaser-tag {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
 .home-page .three-col-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
