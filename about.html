@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="aboutPage.heroTitle">About ATechSolutions | Professional IT Provider for Quebec SMBs</title>
+  <title data-i18n-text="aboutPage.heroTitle">About ATechSolutions | Professional IT Provider for Quebec Businesses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="aboutPage.heroText" content="Learn about ATechSolutions, a professional IT provider delivering managed IT services, networking expertise, Microsoft 365 support, and cloud services for Quebec small businesses.">
+  <meta name="description" data-i18n-content="aboutPage.heroText" content="Learn about ATechSolutions, a professional IT provider delivering managed IT services, networking expertise, Microsoft 365 support, and cloud services for Quebec businesses.">
   <link rel="canonical" href="https://www.atechsolutions.org/about">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
@@ -26,7 +26,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for small offices</span>
+          <span data-i18n="nav.brandTag">Local IT support for offices</span>
         </span>
       </a>
 
@@ -38,12 +38,17 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <a href="services" data-i18n="nav.services">Services</a>
-          <a href="apps" data-i18n="nav.apps">Apps</a>
-          <a href="residential" data-i18n="nav.homeUsers">Home Users</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
+            <ul class="nav-dropdown-menu">
+              <li><a href="services" data-i18n="nav.services">Services</a></li>
+              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
+            </ul>
+          </div>
+          <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" class="active" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
-          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="booking" data-i18n="nav.bookTime">Book a Time</a>
         </div>
         <div class="nav-meta">
@@ -64,7 +69,7 @@
       <div class="hero-compact">
         <span class="eyebrow" data-i18n="aboutPage.heroEyebrow">About the company</span>
         <h1 data-i18n="aboutPage.heroTitle">A professional IT provider for businesses that depend on stable infrastructure</h1>
-        <p data-i18n="aboutPage.heroText">ATechSolutions is a managed IT provider supporting Quebec small businesses with infrastructure reliability, Microsoft 365 administration, networking expertise, and practical cloud services.</p>
+        <p data-i18n="aboutPage.heroText">ATechSolutions is a managed IT provider supporting Quebec businesses with infrastructure reliability, Microsoft 365 administration, networking expertise, and practical cloud services.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="contact" data-i18n="cta.requestService">Request IT Service</a>
         </div>
@@ -76,9 +81,9 @@
         <article class="info-card">
           <div class="section-header compact">
             <span class="eyebrow" data-i18n="aboutPage.positioningEyebrow">Positioning</span>
-            <h2 data-i18n="aboutPage.positioningTitle">Built for small business environments</h2>
+            <h2 data-i18n="aboutPage.positioningTitle">Built for business environments</h2>
           </div>
-          <p data-i18n="aboutPage.positioningText1">ATechSolutions supports small businesses that rely on dependable networks, secure cloud tools, stable endpoints, and responsive IT support without maintaining a large internal IT team.</p>
+          <p data-i18n="aboutPage.positioningText1">ATechSolutions supports businesses that rely on dependable networks, secure cloud tools, stable endpoints, and responsive IT support without maintaining a large internal IT team.</p>
           <p data-i18n="aboutPage.positioningText2">Our model is long-term operational support: clear priorities, documented execution, and practical technical decision-making.</p>
         </article>
         <article class="support-note">
@@ -128,7 +133,7 @@
           <p data-i18n="aboutPage.detail2Text">Most issues are resolved quickly through remote support, with on-site service for networking, hardware, and physical infrastructure work.</p>
         </article>
         <article class="detail-card">
-          <h3 data-i18n="aboutPage.detail3Title">Strong fit for SMBs</h3>
+          <h3 data-i18n="aboutPage.detail3Title">Strong fit for growing teams</h3>
           <p data-i18n="aboutPage.detail3Text">Best aligned with businesses supporting 1 to 50 users, cloud systems, and evolving infrastructure requirements.</p>
         </article>
         <article class="detail-card">
@@ -149,7 +154,7 @@
             <li data-i18n="aboutPage.industriesLi1">Legal offices that need secure collaboration and dependable devices</li>
             <li data-i18n="aboutPage.industriesLi2">Accounting firms that depend on uptime and reliable access</li>
             <li data-i18n="aboutPage.industriesLi3">Medical and professional offices that cannot tolerate avoidable disruption</li>
-            <li data-i18n="aboutPage.industriesLi4">SMBs that need external managed IT services and clear project support</li>
+            <li data-i18n="aboutPage.industriesLi4">Businesses that need external managed IT services and clear project support</li>
           </ul>
         </article>
         <article class="info-card">
@@ -157,7 +162,7 @@
             <span class="eyebrow" data-i18n="aboutPage.areaEyebrow">Service area</span>
             <h2 data-i18n="aboutPage.areaTitle">Deux-Montagnes, Laval, Montreal</h2>
           </div>
-          <p data-i18n="aboutPage.areaText">ATechSolutions focuses on Quebec small businesses across Deux-Montagnes, Laval, and Montreal, while keeping home-user support as a secondary offer for select requests.</p>
+          <p data-i18n="aboutPage.areaText">ATechSolutions focuses on Quebec businesses across Deux-Montagnes, Laval, and Montreal, while keeping home-user support as a secondary offer for select requests.</p>
         </article>
       </div>
     </section>

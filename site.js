@@ -22,6 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.nav-dropdown-toggle').forEach((other) => {
+          other.setAttribute('aria-expanded', 'false');
+        });
+        toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && mobileMenuToggle.classList.contains('active')) {
         setMenuState(false);
@@ -136,5 +155,64 @@ document.addEventListener('DOMContentLoaded', () => {
       urgencyBanner.style.display = 'none';
       localStorage.setItem('bannerDismissed', '1');
     });
+  }
+
+  // Services carousel
+  const carousel = document.getElementById('services-carousel');
+  if (carousel) {
+    const cards = Array.from(carousel.querySelectorAll('.service-scope-card'));
+    const prevButton = carousel.querySelector('.carousel-arrow-prev');
+    const nextButton = carousel.querySelector('.carousel-arrow-next');
+    let activeIndex = 0;
+    let autoAdvanceTimer = null;
+
+    function showCard(index) {
+      cards[activeIndex].classList.remove('carousel-active');
+      activeIndex = (index + cards.length) % cards.length;
+      cards[activeIndex].classList.add('carousel-active');
+    }
+
+    function startAutoAdvance() {
+      stopAutoAdvance();
+      autoAdvanceTimer = window.setInterval(() => {
+        showCard(activeIndex + 1);
+      }, 6000);
+    }
+
+    function stopAutoAdvance() {
+      if (autoAdvanceTimer) {
+        window.clearInterval(autoAdvanceTimer);
+        autoAdvanceTimer = null;
+      }
+    }
+
+    if (cards.length > 0) {
+      cards[activeIndex].classList.add('carousel-active');
+    }
+
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        showCard(activeIndex - 1);
+        startAutoAdvance();
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        showCard(activeIndex + 1);
+        startAutoAdvance();
+      });
+    }
+
+    carousel.addEventListener('mouseenter', stopAutoAdvance);
+    carousel.addEventListener('mouseleave', startAutoAdvance);
+    carousel.addEventListener('focusin', stopAutoAdvance);
+    carousel.addEventListener('focusout', (event) => {
+      if (!carousel.contains(event.relatedTarget)) {
+        startAutoAdvance();
+      }
+    });
+
+    startAutoAdvance();
   }
 });

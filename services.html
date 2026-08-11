@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title data-i18n-text="servicesPage.metaTitle">Our Services | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="servicesPage.metaDescription" content="Clear starting-price IT services for small professional offices.">
+  <meta name="description" data-i18n-content="servicesPage.metaDescription" content="IT services for professional offices.">
   <link rel="canonical" href="https://www.atechsolutions.org/services">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
@@ -27,7 +27,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for small offices</span>
+          <span data-i18n="nav.brandTag">Local IT support for offices</span>
         </span>
       </a>
 
@@ -39,12 +39,17 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <a href="services" class="active" data-i18n="nav.services">Services</a>
-          <a href="apps" data-i18n="nav.apps">Apps</a>
-          <a href="residential" data-i18n="nav.homeUsers">Home Users</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle active" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
+            <ul class="nav-dropdown-menu">
+              <li><a href="services" class="active" data-i18n="nav.services">Services</a></li>
+              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
+            </ul>
+          </div>
+          <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
-          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="booking" data-i18n="nav.bookTime">Book a Time</a>
         </div>
         <div class="nav-meta">
@@ -65,23 +70,57 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <h1 data-i18n="servicesPage.heroTitle">Our Services</h1>
-          <p class="hero-subheadline" data-i18n="servicesPage.heroSubtitle">We offer clear starting prices with no surprises.</p>
+          <p class="hero-subheadline" data-i18n="servicesPage.heroSubtitle">Contact us for a quote — no hidden fees, no surprises.</p>
         </div>
       </div>
     </section>
 
     <section class="reveal">
       <div class="service-intro service-card">
-        <p data-i18n="servicesPage.introText">Every service has a clear starting price. You'll always know roughly what to expect before we start. No hidden fees, no surprise bills.</p>
+        <p data-i18n="servicesPage.introText">Every service is scoped to your needs. You'll always know what to expect before we start. No hidden fees, no surprise bills.</p>
       </div>
     </section>
 
     <section class="reveal">
-      <div class="services-stack">
+      <div class="services-carousel" id="services-carousel">
+        <button type="button" class="carousel-arrow carousel-arrow-prev" aria-label="Previous service" data-i18n-aria-label="servicesPage.carouselPrev">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="services-stack">
+        <article class="service-card service-scope-card">
+          <div class="service-card-header">
+            <h2 data-i18n="servicesPage.service9Title">Monthly Support Plans</h2>
+            <p class="service-price" data-i18n="servicesPage.service9Price">Contact us for a quote</p>
+          </div>
+          <p data-i18n="servicesPage.service9Desc">Want predictable IT costs and priority access when something goes wrong? A monthly plan gives you included support hours, regular check-ins, and peace of mind.</p>
+          <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
+          <ul>
+            <li data-i18n="servicesPage.service9Inc1">Remote Monitoring &amp; Management (RMM) — we watch your devices for issues and catch problems before they cause downtime</li>
+            <li data-i18n="servicesPage.service9Inc2">Included support hours and priority response</li>
+            <li data-i18n="servicesPage.service9Inc3">Regular check-ins and IT review</li>
+          </ul>
+          <h3 data-i18n="servicesPage.plansLabel">Plans</h3>
+          <div class="plan-grid-mini">
+            <article class="plan-mini">
+              <h4 data-i18n="servicesPage.service9Plan1Title">Starter</h4>
+              <p data-i18n="servicesPage.service9Plan1Desc">Best for solo professionals and home offices - priority response and monthly check-in included.</p>
+            </article>
+            <article class="plan-mini">
+              <h4 data-i18n="servicesPage.service9Plan2Title">Standard</h4>
+              <p data-i18n="servicesPage.service9Plan2Desc">Best for offices with 2-5 users - priority response and monthly IT review included.</p>
+            </article>
+            <article class="plan-mini">
+              <h4 data-i18n="servicesPage.service9Plan3Title">Growing Business</h4>
+              <p data-i18n="servicesPage.service9Plan3Desc">Best for offices with 5-15 users - priority response and quarterly IT review included.</p>
+            </article>
+          </div>
+          <p class="scope-note" data-i18n="servicesPage.service9Not">3-month minimum, 30-day cancellation notice, project work quoted separately.</p>
+        </article>
+
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service1Title">IT Health Check</h2>
-            <p class="service-price" data-i18n="servicesPage.service1Price">Starting from $250</p>
+            <p class="service-price" data-i18n="servicesPage.service1Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service1Desc">Not sure what shape your IT is in? We review your computers, email, network, and backups and give you a clear written report with honest recommendations - no fixes included, just a clear picture.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -97,7 +136,7 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service2Title">Professional Email &amp; Custom Domain</h2>
-            <p class="service-price" data-i18n="servicesPage.service2Price">Starting from $200 + from $40/mailbox</p>
+            <p class="service-price" data-i18n="servicesPage.service2Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service2Desc">Get a proper business email address like you@yourcompany.com set up on Microsoft 365 or Google Workspace. Looks professional, works reliably, and you own it.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -113,7 +152,7 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service3Title">Email Migration</h2>
-            <p class="service-price" data-i18n="servicesPage.service3Price">Starting from $150 per mailbox</p>
+            <p class="service-price" data-i18n="servicesPage.service3Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service3Desc">Moving from an old email system to a new one? We transfer your existing emails, folders, and contacts with minimal disruption to your business.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -129,7 +168,7 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service4Title">Computer Setup &amp; Data Migration</h2>
-            <p class="service-price" data-i18n="servicesPage.service4Price">Starting from $300 per device</p>
+            <p class="service-price" data-i18n="servicesPage.service4Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service4Desc">New computer for you or a new employee? We set it up properly, install what you need, and transfer your files so you can get back to work immediately.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -145,7 +184,7 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service5Title">Windows 11 Upgrade</h2>
-            <p class="service-price" data-i18n="servicesPage.service5Price">Starting from $75 assessment, from $200 upgrade</p>
+            <p class="service-price" data-i18n="servicesPage.service5Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service5Desc">Windows 10 is reaching end of support. We check if your computers are compatible and upgrade the ones that qualify - keeping your files and programs intact.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -160,7 +199,7 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service6Title">Network &amp; Wi-Fi Setup</h2>
-            <p class="service-price" data-i18n="servicesPage.service6Price">Starting from $250 basic, from $500 advanced</p>
+            <p class="service-price" data-i18n="servicesPage.service6Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service6Desc">Whether you need a basic office network or something more advanced with multiple access points and better security, we set it up properly so it works reliably.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -174,9 +213,9 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service7Title">Backup Setup &amp; Verification</h2>
-            <p class="service-price" data-i18n="servicesPage.service7Price">Starting from $400 per system</p>
+            <p class="service-price" data-i18n="servicesPage.service7Price">Contact us for a quote</p>
           </div>
-          <p data-i18n="servicesPage.service7Desc">Most small businesses don't have a proper backup. We set one up and verify it's actually working so you're protected if something goes wrong.</p>
+          <p data-i18n="servicesPage.service7Desc">Most businesses don't have a proper backup. We set one up and verify it's actually working so you're protected if something goes wrong.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
           <ul>
             <li data-i18n="servicesPage.service7Inc1">Backup solution setup (cloud, local, or hybrid)</li>
@@ -189,7 +228,7 @@
         <article class="service-card service-scope-card">
           <div class="service-card-header">
             <h2 data-i18n="servicesPage.service8Title">Hourly IT Support</h2>
-            <p class="service-price" data-i18n="servicesPage.service8Price">Starting from $110/hr remote, from $130/hr on-site</p>
+            <p class="service-price" data-i18n="servicesPage.service8Price">Contact us for a quote</p>
           </div>
           <p data-i18n="servicesPage.service8Desc">Have a one-off problem you need solved? We handle it remotely or on-site, billed by the hour with no contract required.</p>
           <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
@@ -200,30 +239,10 @@
           </ul>
           <p class="scope-note" data-i18n="servicesPage.service8Not">Not included: Guaranteed resolution, project-sized work, or server/infrastructure changes.</p>
         </article>
-
-        <article class="service-card service-scope-card">
-          <div class="service-card-header">
-            <h2 data-i18n="servicesPage.service9Title">Monthly Support Plans</h2>
-            <p class="service-price" data-i18n="servicesPage.service9Price">Starting from $150/month</p>
-          </div>
-          <p data-i18n="servicesPage.service9Desc">Want predictable IT costs and priority access when something goes wrong? A monthly plan gives you included support hours, regular check-ins, and peace of mind.</p>
-          <h3 data-i18n="servicesPage.plansLabel">Plans</h3>
-          <div class="plan-grid-mini">
-            <article class="plan-mini">
-              <h4 data-i18n="servicesPage.service9Plan1Title">Starter</h4>
-              <p data-i18n="servicesPage.service9Plan1Desc">Best for solo professionals and home offices - priority response and monthly check-in included.</p>
-            </article>
-            <article class="plan-mini">
-              <h4 data-i18n="servicesPage.service9Plan2Title">Small Business</h4>
-              <p data-i18n="servicesPage.service9Plan2Desc">Best for offices with 2-5 users - priority response and monthly IT review included.</p>
-            </article>
-            <article class="plan-mini">
-              <h4 data-i18n="servicesPage.service9Plan3Title">Growing Business</h4>
-              <p data-i18n="servicesPage.service9Plan3Desc">Best for offices with 5-15 users - priority response and quarterly IT review included.</p>
-            </article>
-          </div>
-          <p class="scope-note" data-i18n="servicesPage.service9Not">Starting from $150/month - 3-month minimum, 30-day cancellation notice, project work quoted separately.</p>
-        </article>
+        </div>
+        <button type="button" class="carousel-arrow carousel-arrow-next" aria-label="Next service" data-i18n-aria-label="servicesPage.carouselNext">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
     </section>
 

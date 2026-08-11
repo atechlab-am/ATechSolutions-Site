@@ -27,7 +27,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for small offices</span>
+          <span data-i18n="nav.brandTag">Local IT support for offices</span>
         </span>
       </a>
 
@@ -39,12 +39,17 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <a href="services" data-i18n="nav.services">Services</a>
-          <a href="apps" data-i18n="nav.apps">Apps</a>
-          <a href="residential" class="active" data-i18n="nav.homeUsers">Home Users</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
+            <ul class="nav-dropdown-menu">
+              <li><a href="services" data-i18n="nav.services">Services</a></li>
+              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
+            </ul>
+          </div>
+          <a href="residential" class="active" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
-          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="booking" data-i18n="nav.bookTime">Book a Time</a>
           </div>
           <div class="nav-meta">
@@ -121,7 +126,7 @@
       </div>
       <article class="service-card residential-pricing-card">
         <ul class="subtle-list">
-          <li data-i18n="residentialPage.price1">Starting from $85/hr</li>
+          <li data-i18n="residentialPage.price1">Contact us for a quote</li>
           <li data-i18n="residentialPage.price2">Remote or on-site, same rate</li>
           <li data-i18n="residentialPage.price3">Billed in 15-minute increments</li>
           <li data-i18n="residentialPage.price4">No contracts, no monthly fees</li>
@@ -150,7 +155,7 @@
         </article>
         <article class="service-card">
           <h3 data-i18n="residentialPage.step4Title">4. You pay only for time spent</h3>
-          <p data-i18n="residentialPage.step4Body">Starting from $85/hr, billed in 15-minute increments.</p>
+          <p data-i18n="residentialPage.step4Body">Contact us for a quote — billed in 15-minute increments.</p>
         </article>
       </div>
     </section>
