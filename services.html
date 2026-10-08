@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="servicesPage.metaTitle">Our Services | ATechSolutions</title>
+  <title data-i18n-text="servicesPage.metaTitle">Managed IT Plans for Professional Offices | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="servicesPage.metaDescription" content="IT services for professional offices.">
+  <meta name="description" data-i18n-content="servicesPage.metaDescription" content="Three managed IT plans for clinics, law firms, accounting firms and other professional offices in Greater Montreal. Compare Essentials, Managed, and Complete. Request a quote.">
   <link rel="canonical" href="https://www.atechsolutions.org/services">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/services">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/services">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/services">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -17,6 +20,27 @@
 
   gtag('config', 'G-94YGNYY9HZ');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ATechSolutions",
+  "url": "https://www.atechsolutions.org/services",
+  "telephone": "+15148265351",
+  "email": "info@atechsolutions.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte-Marthe-sur-le-Lac",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
+    "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
+  ],
+  "description": "Managed IT plans and add-on IT services for professional offices in Greater Montreal."
+}
+</script>
 </head>
 <body class="home-page services-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
@@ -27,7 +51,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for offices</span>
+          <span data-i18n="nav.brandTag">Managed IT for professional offices</span>
         </span>
       </a>
 
@@ -39,14 +63,8 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle active" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
-            <ul class="nav-dropdown-menu">
-              <li><a href="services" class="active" data-i18n="nav.services">Services</a></li>
-              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
-              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
-            </ul>
-          </div>
+          <a href="services" class="active" data-i18n="nav.services">Services</a>
+          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
@@ -59,7 +77,7 @@
             <span class="separator">|</span>
             <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
           </div>
-          <a class="nav-cta nav-cta-solid" href="contact" data-i18n="cta.contactUs">Contact Us</a>
+          <a class="nav-cta nav-cta-solid" href="health-check" data-i18n="indexPage.navHealthCheck">IT Health Check</a>
         </div>
       </div>
     </nav>
@@ -69,69 +87,135 @@
     <section class="hero reveal home-hero services-hero">
       <div class="hero-grid">
         <div class="hero-copy">
-          <h1 data-i18n="servicesPage.heroTitle">Our Services</h1>
-          <p class="hero-subheadline" data-i18n="servicesPage.heroSubtitle">Contact us for a quote — no hidden fees, no surprises.</p>
+          <h1 data-i18n="servicesPage.heroTitle">Managed IT Plans</h1>
+          <p class="hero-subheadline" data-i18n="servicesPage.heroSubtitle">Three plans for professional offices. Request a quote — no hidden fees, no surprises.</p>
         </div>
       </div>
     </section>
 
     <section class="reveal">
       <div class="service-intro service-card">
-        <p data-i18n="servicesPage.introText">Every service is scoped to your needs. You'll always know what to expect before we start. No hidden fees, no surprise bills.</p>
+        <p data-i18n="servicesPage.introText">Every plan is scoped to your office's size and needs. You'll always know what's included before we start. No hidden fees, no surprise bills.</p>
       </div>
     </section>
 
     <section class="reveal">
-      <div class="services-carousel" id="services-carousel">
-        <button type="button" class="carousel-arrow carousel-arrow-prev" aria-label="Previous service" data-i18n-aria-label="servicesPage.carouselPrev">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="services-stack">
-        <article class="service-card service-scope-card">
-          <div class="service-card-header">
-            <h2 data-i18n="servicesPage.service9Title">Monthly Support Plans</h2>
-            <p class="service-price" data-i18n="servicesPage.service9Price">Contact us for a quote</p>
-          </div>
-          <p data-i18n="servicesPage.service9Desc">Want predictable IT costs and priority access when something goes wrong? A monthly plan gives you included support hours, regular check-ins, and peace of mind.</p>
-          <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
-          <ul>
-            <li data-i18n="servicesPage.service9Inc1">Remote Monitoring &amp; Management (RMM) — we watch your devices for issues and catch problems before they cause downtime</li>
-            <li data-i18n="servicesPage.service9Inc2">Included support hours and priority response</li>
-            <li data-i18n="servicesPage.service9Inc3">Regular check-ins and IT review</li>
-          </ul>
-          <h3 data-i18n="servicesPage.plansLabel">Plans</h3>
-          <div class="plan-grid-mini">
-            <article class="plan-mini">
-              <h4 data-i18n="servicesPage.service9Plan1Title">Starter</h4>
-              <p data-i18n="servicesPage.service9Plan1Desc">Best for solo professionals and home offices - priority response and monthly check-in included.</p>
-            </article>
-            <article class="plan-mini">
-              <h4 data-i18n="servicesPage.service9Plan2Title">Standard</h4>
-              <p data-i18n="servicesPage.service9Plan2Desc">Best for offices with 2-5 users - priority response and monthly IT review included.</p>
-            </article>
-            <article class="plan-mini">
-              <h4 data-i18n="servicesPage.service9Plan3Title">Growing Business</h4>
-              <p data-i18n="servicesPage.service9Plan3Desc">Best for offices with 5-15 users - priority response and quarterly IT review included.</p>
-            </article>
-          </div>
-          <p class="scope-note" data-i18n="servicesPage.service9Not">3-month minimum, 30-day cancellation notice, project work quoted separately.</p>
-        </article>
+      <article class="service-card service-scope-card is-featured-service">
+        <div class="service-card-header">
+          <span class="eyebrow" data-i18n="servicesPage.healthCheckEyebrow">Start here</span>
+          <h2 data-i18n="servicesPage.healthCheckTitle">IT Health Check</h2>
+        </div>
+        <p data-i18n="servicesPage.healthCheckDesc">Not sure what shape your IT is in? We review your computers, email, network, and backups and give you a clear written report with honest recommendations — no fixes included, just a clear picture.</p>
+        <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
+        <ul>
+          <li data-i18n="servicesPage.healthCheckInc1">Review of all devices and users</li>
+          <li data-i18n="servicesPage.healthCheckInc2">Email and domain check</li>
+          <li data-i18n="servicesPage.healthCheckInc3">Network overview</li>
+          <li data-i18n="servicesPage.healthCheckInc4">Backup status and written recommendations</li>
+        </ul>
+        <p class="scope-note" data-i18n="servicesPage.healthCheckNot">Not included: Any fixes or changes — those are quoted separately.</p>
+        <a class="button button-primary" href="health-check" data-i18n="servicesPage.healthCheckCta">Book an IT Health Check</a>
+      </article>
+    </section>
 
-        <article class="service-card service-scope-card">
-          <div class="service-card-header">
-            <h2 data-i18n="servicesPage.service1Title">IT Health Check</h2>
-            <p class="service-price" data-i18n="servicesPage.service1Price">Contact us for a quote</p>
-          </div>
-          <p data-i18n="servicesPage.service1Desc">Not sure what shape your IT is in? We review your computers, email, network, and backups and give you a clear written report with honest recommendations - no fixes included, just a clear picture.</p>
-          <h3 data-i18n="servicesPage.whatsIncluded">What's included</h3>
-          <ul>
-            <li data-i18n="servicesPage.service1Inc1">Review of all devices and users</li>
-            <li data-i18n="servicesPage.service1Inc2">Email and domain check</li>
-            <li data-i18n="servicesPage.service1Inc3">Network overview</li>
-            <li data-i18n="servicesPage.service1Inc4">Backup status and written recommendations</li>
-          </ul>
-          <p class="scope-note" data-i18n="servicesPage.service1Not">Not included: Any fixes or changes - those are quoted separately.</p>
-        </article>
+    <section class="reveal">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="servicesPage.compareTitle">Compare managed IT plans</h2>
+        <p class="section-subtitle" data-i18n="servicesPage.compareIntro">All three plans include monitoring, helpdesk support, and a quarterly review. They differ in response priority, included hours, and review cadence.</p>
+      </div>
+      <div class="plan-comparison-wrap">
+        <table class="plan-comparison-table">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="servicesPage.rowFeature">Feature</th>
+              <th scope="col">
+                <span class="plan-comparison-name" data-i18n="servicesPage.tierEssentialsName">Essentials</span>
+                <span class="plan-comparison-for" data-i18n="servicesPage.tierEssentialsFor">Best for solo professionals and small offices</span>
+              </th>
+              <th scope="col">
+                <span class="plan-comparison-name" data-i18n="servicesPage.tierManagedName">Managed</span>
+                <span class="plan-comparison-for" data-i18n="servicesPage.tierManagedFor">Best for offices with 2–5 users</span>
+              </th>
+              <th scope="col">
+                <span class="plan-comparison-name" data-i18n="servicesPage.tierCompleteName">Complete</span>
+                <span class="plan-comparison-for" data-i18n="servicesPage.tierCompleteFor">Best for offices with 5–15 users</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowMonitoring">Remote monitoring &amp; management (RMM)</th>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowPatching">Automatic patching &amp; updates</th>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowBackups">Backup monitoring</th>
+              <td aria-label="Not included">—</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowHelpdesk">Helpdesk support</th>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowResponse">Response priority</th>
+              <td data-i18n="servicesPage.rowResponseEssentials">Standard</td>
+              <td data-i18n="servicesPage.rowResponseManaged">Priority</td>
+              <td data-i18n="servicesPage.rowResponseComplete">Priority</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowSecurity">Security basics (MFA, endpoint protection)</th>
+              <td aria-label="Not included">—</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowDocs">Documentation</th>
+              <td aria-label="Not included">—</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowReport">Monthly report</th>
+              <td aria-label="Not included">—</td>
+              <td aria-label="Included">✓</td>
+              <td aria-label="Included">✓</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="servicesPage.rowReview">IT review cadence</th>
+              <td data-i18n="servicesPage.rowReviewEssentials">Monthly check-in</td>
+              <td data-i18n="servicesPage.rowReviewManaged">Monthly review</td>
+              <td data-i18n="servicesPage.rowReviewComplete">Quarterly strategic review</td>
+            </tr>
+            <tr class="plan-comparison-cta-row">
+              <th scope="row"></th>
+              <td><a class="button button-secondary" href="contact" data-i18n="servicesPage.requestQuote">Request a Quote</a></td>
+              <td><a class="button button-primary" href="contact" data-i18n="servicesPage.requestQuote">Request a Quote</a></td>
+              <td><a class="button button-secondary" href="contact" data-i18n="servicesPage.requestQuote">Request a Quote</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="scope-note" data-i18n="servicesPage.tiersNote">3-month minimum, 30-day cancellation notice. Project and add-on work is quoted separately.</p>
+    </section>
+
+    <section class="reveal">
+      <div class="section-header compact">
+        <span class="eyebrow" data-i18n="servicesPage.addonsEyebrow">Add-on services</span>
+        <h2 class="section-title" data-i18n="servicesPage.addonsTitle">One-time and project work</h2>
+        <p class="section-subtitle" data-i18n="servicesPage.addonsIntro">Need something outside a managed plan? These are quoted individually, whether or not you're on a plan.</p>
+      </div>
+      <div class="services-stack">
 
         <article class="service-card service-scope-card">
           <div class="service-card-header">
@@ -239,20 +323,17 @@
           </ul>
           <p class="scope-note" data-i18n="servicesPage.service8Not">Not included: Guaranteed resolution, project-sized work, or server/infrastructure changes.</p>
         </article>
-        </div>
-        <button type="button" class="carousel-arrow carousel-arrow-next" aria-label="Next service" data-i18n-aria-label="servicesPage.carouselNext">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+
       </div>
     </section>
 
     <section class="cta-band reveal final-cta home-cta">
       <div>
-        <h2 data-i18n="servicesPage.finalCtaTitle">Not sure which service you need?</h2>
+        <h2 data-i18n="servicesPage.finalCtaTitle">Not sure which plan is right for your office?</h2>
         <p data-i18n="servicesPage.finalCtaText">Tell us what is happening and we will recommend the right next step for your office.</p>
       </div>
       <div class="cta-actions">
-        <a class="button button-primary" href="contact" data-i18n="servicesPage.getHelpNow">Get Help Now</a>
+        <a class="button button-primary" href="health-check" data-i18n="servicesPage.healthCheckCta">Book an IT Health Check</a>
         <a class="button button-secondary" href="tel:+15148265351" data-i18n="servicesPage.callButton">Call (514) 826-5351</a>
       </div>
     </section>
@@ -262,7 +343,7 @@
     <div class="footer-grid">
       <div class="footer-column">
         <h4 data-i18n="footer.businessName">ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="footer.companyDesc">Managed IT for professional offices.</p>
         <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
         <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
       </div>
@@ -270,6 +351,9 @@
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="services" data-i18n="nav.services">Services</a></li>
+          <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+          <li><a href="residential" data-i18n="nav.homeUsers">For Home</a></li>
+          <li><a href="field-service" data-i18n="nav.fieldService">Field Service</a></li>
           <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
           <li><a href="about" data-i18n="nav.about">About</a></li>
           <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>

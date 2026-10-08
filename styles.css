@@ -1972,6 +1972,20 @@ textarea {
   font-size: 0.9rem;
 }
 
+.service-teaser-tag.is-featured {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+  color: var(--brand-strong);
+}
+
+.service-teaser-featured-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
 .home-page .three-col-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2120,66 +2134,73 @@ textarea {
   color: #5c5c6a;
 }
 
-.services-carousel {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-
 .services-page .services-stack {
-  flex: 1 1 auto;
-  min-width: 0;
+  display: grid;
+  gap: var(--space-sm);
 }
 
-.services-page .services-stack .service-scope-card {
-  display: none;
+.services-page .is-featured-service {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px var(--brand-soft);
 }
 
-.services-page .services-stack .service-scope-card.carousel-active {
-  display: block;
+.plan-comparison-wrap {
+  overflow-x: auto;
 }
 
-.carousel-arrow {
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-top: 24px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
+.plan-comparison-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
   background: #ffffff;
-  color: var(--ink);
-  cursor: pointer;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  border: 1px solid rgba(214, 222, 232, 0.9);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
-.carousel-arrow svg {
-  width: 16px;
-  height: 16px;
+.plan-comparison-table th,
+.plan-comparison-table td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #e4ebf3;
+  font-size: 0.92rem;
 }
 
-.carousel-arrow:hover {
-  border-color: rgba(15, 77, 138, 0.3);
-  background: var(--surface-soft);
+.plan-comparison-table thead th {
+  background: #f6f9fc;
+  vertical-align: top;
 }
 
-.carousel-arrow:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
+.plan-comparison-table th[scope="row"] {
+  text-align: left;
+  font-weight: 600;
+  color: #0b1f3a;
 }
 
-@media (max-width: 680px) {
-  .services-carousel {
-    gap: 8px;
-  }
+.plan-comparison-name {
+  display: block;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--brand);
+}
 
-  .carousel-arrow {
-    width: 34px;
-    height: 34px;
-    margin-top: 16px;
-  }
+.plan-comparison-for {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #5c5c6a;
+}
+
+.plan-comparison-cta-row td {
+  border-bottom: none;
+  padding-top: 18px;
+}
+
+.plan-comparison-cta-row .button {
+  width: 100%;
+  min-width: 0;
 }
 
 .services-page .service-scope-card {
