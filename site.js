@@ -157,62 +157,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Services carousel
-  const carousel = document.getElementById('services-carousel');
-  if (carousel) {
-    const cards = Array.from(carousel.querySelectorAll('.service-scope-card'));
-    const prevButton = carousel.querySelector('.carousel-arrow-prev');
-    const nextButton = carousel.querySelector('.carousel-arrow-next');
-    let activeIndex = 0;
-    let autoAdvanceTimer = null;
-
-    function showCard(index) {
-      cards[activeIndex].classList.remove('carousel-active');
-      activeIndex = (index + cards.length) % cards.length;
-      cards[activeIndex].classList.add('carousel-active');
-    }
-
-    function startAutoAdvance() {
-      stopAutoAdvance();
-      autoAdvanceTimer = window.setInterval(() => {
-        showCard(activeIndex + 1);
-      }, 6000);
-    }
-
-    function stopAutoAdvance() {
-      if (autoAdvanceTimer) {
-        window.clearInterval(autoAdvanceTimer);
-        autoAdvanceTimer = null;
-      }
-    }
-
-    if (cards.length > 0) {
-      cards[activeIndex].classList.add('carousel-active');
-    }
-
-    if (prevButton) {
-      prevButton.addEventListener('click', () => {
-        showCard(activeIndex - 1);
-        startAutoAdvance();
-      });
-    }
-
-    if (nextButton) {
-      nextButton.addEventListener('click', () => {
-        showCard(activeIndex + 1);
-        startAutoAdvance();
-      });
-    }
-
-    carousel.addEventListener('mouseenter', stopAutoAdvance);
-    carousel.addEventListener('mouseleave', startAutoAdvance);
-    carousel.addEventListener('focusin', stopAutoAdvance);
-    carousel.addEventListener('focusout', (event) => {
-      if (!carousel.contains(event.relatedTarget)) {
-        startAutoAdvance();
-      }
+  // Testimonials: only render the section when real testimonials exist (see testimonials-data.js)
+  const testimonialsSection = document.getElementById('testimonials-section');
+  const testimonialsGrid = document.getElementById('testimonials-grid');
+  if (testimonialsSection && testimonialsGrid && typeof window.testimonials !== 'undefined' && window.testimonials.length > 0) {
+    window.testimonials.forEach((item) => {
+      const card = document.createElement('article');
+      card.className = 'testimonial-card quote-card';
+      const quote = document.createElement('p');
+      quote.textContent = item.quote;
+      const author = document.createElement('p');
+      author.innerHTML = '<strong>' + item.author + '</strong>' + (item.company ? ' — ' + item.company : '');
+      card.appendChild(quote);
+      card.appendChild(author);
+      testimonialsGrid.appendChild(card);
     });
-
-    startAutoAdvance();
+    testimonialsSection.hidden = false;
   }
 });

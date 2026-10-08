@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="indexPage.metaTitle">ATechSolutions | Local IT Support for Businesses in Greater Montreal</title>
+  <title data-i18n-text="indexPage.metaTitle">ATechSolutions | Managed IT for Professional Offices in Greater Montreal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="indexPage.metaDescription" content="Local IT support for businesses in Saint-Eustache, Boisbriand, Blainville, Deux-Montagnes and Greater Montreal. Computer repair, network setup, email, backups and managed support. Call (514) 826-5351.">
+  <meta name="description" data-i18n-content="indexPage.metaDescription" content="Managed IT services for clinics, law firms, accounting firms and other professional offices across Sainte-Marthe-sur-le-Lac, Saint-Eustache, Deux-Montagnes and Greater Montreal. Book an IT health check.">
   <link rel="canonical" href="https://www.atechsolutions.org/">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -20,11 +23,11 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   "name": "ATechSolutions",
   "url": "https://www.atechsolutions.org",
   "telephone": "+15148265351",
-  "email": "amartins@atechsolutions.org",
+  "email": "info@atechsolutions.org",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Sainte-Marthe-sur-le-Lac",
@@ -32,19 +35,18 @@
     "addressCountry": "CA"
   },
   "areaServed": [
-    "Saint-Eustache", "Deux-Montagnes", "Boisbriand",
-    "Blainville", "Sainte-Thérèse", "Rosemère", "Greater Montreal"
+    "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
+    "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
   ],
   "openingHours": "Mo-Su 09:00-20:00",
-  "priceRange": "$$",
-  "description": "Local IT support for businesses in Greater Montreal. Computer repair, network setup, email, backups and managed support."
+  "description": "Managed IT services for clinics, law firms, accounting firms and other professional offices across Greater Montreal."
 }
 </script>
 </head>
 <body class="home-page">
   <div class="urgency-banner" id="urgency-banner" role="banner" aria-label="Announcement">
-    <span data-i18n="indexPage.bannerText">⚠️ Windows 10 support ends October 2025 — is your business ready?</span>
-    <a href="https://www.atechsolutions.org/booking" data-i18n="indexPage.bannerCta">Book a free 15-minute call →</a>
+    <span data-i18n="indexPage.bannerText">🩺 IT health check for professional offices — see exactly where you stand.</span>
+    <a href="health-check" data-i18n="indexPage.bannerCta">Book one →</a>
     <button class="urgency-banner-dismiss" id="urgency-banner-dismiss" aria-label="Dismiss announcement">✕</button>
   </div>
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
@@ -52,10 +54,10 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
       <a class="brand" href="/" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
-        <img src="logo.png" alt="ATechSolutions — Local IT Support">
+        <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for offices</span>
+          <span data-i18n="nav.brandTag">Managed IT for professional offices</span>
         </span>
       </a>
 
@@ -67,101 +69,146 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
-            <ul class="nav-dropdown-menu">
-              <li><a href="services" data-i18n="nav.services">Services</a></li>
-              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
-              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
-            </ul>
-          </div>
+          <a href="services" data-i18n="nav.services">Services</a>
+          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
           <a href="booking" data-i18n="nav.bookTime">Book a Time</a>
-          </div>
-          <div class="nav-meta">
-            <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
-            <div class="lang-toggle">
-              <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
-              <span class="separator">|</span>
-              <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
-            </div>
-            <a class="nav-cta nav-cta-solid" href="contact" data-i18n="cta.contactUs">Contact Us</a>
-          </div>
         </div>
-      </nav>
-    </header>
+        <div class="nav-meta">
+          <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+          <div class="lang-toggle">
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
+            <span class="separator">|</span>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
+          </div>
+          <a class="nav-cta nav-cta-solid" href="health-check" data-i18n="indexPage.navHealthCheck">IT Health Check</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main id="main-content">
-      <section class="hero reveal home-hero">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1 data-i18n="indexPage.heroTitle">One technician. Fast on-site response across the Deux-Montagnes area.</h1>
-          <p class="hero-subheadline" data-i18n="indexPage.heroSubheadline">We set up, fix, and maintain your computers, email, network, and backups so your team can keep working.</p>
+  <main id="main-content">
+    <section class="hero reveal home-hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 data-i18n="indexPage.heroTitle">Your IT department, without the hire.</h1>
+          <p class="hero-subheadline" data-i18n="indexPage.heroSubheadline">Managed IT for clinics, law firms, accounting firms and other professional offices across Greater Montreal — monitoring, backups, security basics, and a helpdesk that picks up.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="contact" data-i18n="indexPage.getHelpNow">Get Help Now</a>
+            <a class="button button-primary" href="health-check" data-i18n="indexPage.bookHealthCheck">Book an IT Health Check</a>
             <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
           </div>
-          <p class="hero-audience-intro" data-i18n="indexPage.audienceIntro">Whether you're a home user or a business, we've got you covered.</p>
-          <div class="audience-path-grid">
-            <a class="service-card audience-path-card" href="residential">
-              <h3 data-i18n="indexPage.homeUserCardTitle">Home User</h3>
-              <p data-i18n="indexPage.homeUserCardText">Friendly support for home computers, Wi-Fi, printers, and everyday tech issues.</p>
-            </a>
-            <a class="service-card audience-path-card" href="services">
-              <h3 data-i18n="indexPage.businessCardTitle">Business Owner</h3>
-              <p data-i18n="indexPage.businessCardText">Professional IT services for offices that need reliable systems and fast support.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reveal trust-bar-section">
-      <div class="trust-bar">
-        <span data-i18n="indexPage.trust1">Local team in Quebec</span>
-        <span data-i18n="indexPage.trust2">Bilingual service (EN/FR)</span>
-        <span data-i18n="indexPage.trust3">Free quotes</span>
-        <span data-i18n="indexPage.trust4">Remote and on-site support</span>
-        <span data-i18n="indexPage.trust5">No long contracts</span>
-      </div>
-    </section>
-
-    <section class="reveal personal-trust-section">
-      <div class="personal-trust-inner">
-        <div class="personal-trust-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 12l2 2 4-4" stroke="#0e4b87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="12" cy="12" r="9" stroke="#0e4b87" stroke-width="1.8"/>
-          </svg>
-        </div>
-        <p class="personal-trust-body" data-i18n="indexPage.trustPersonBody">When you contact ATechSolutions, you're talking to Anthony — not a call centre, not a ticket system, not an outsourced team. I show up, explain things in plain English, and I don't disappear after the job is done. Local support. Real accountability.</p>
-        <div class="reviews-stars" aria-label="5 stars">★★★★★</div>
-        <p class="reviews-help-line" data-i18n="indexPage.reviewsHelpLine">Your honest feedback helps local businesses find reliable IT support.</p>
-        <div class="cta-actions">
-          <a class="button button-primary" href="booking" data-i18n="indexPage.trustPersonCta">Book a Free Call</a>
-          <a class="button button-secondary" href="https://g.page/r/CRNsgEz_AP9QEBM/review" target="_blank" rel="noopener" data-i18n="indexPage.reviewsGoogleBtn">Leave a Google Review</a>
         </div>
       </div>
     </section>
 
     <section class="reveal">
       <div class="section-header compact">
-        <h2 class="section-title" data-i18n="indexPage.servicesTitle">Services</h2>
-        <p class="section-subtitle" data-i18n="indexPage.whoInline">We support clinics, law firms, accounting firms, and other professional offices.</p>
+        <span class="eyebrow" data-i18n="indexPage.howEyebrow">How it works</span>
+        <h2 class="section-title" data-i18n="indexPage.howTitle">Three steps to IT that stays out of your way</h2>
+      </div>
+      <div class="cards-grid three-col-grid">
+        <article class="service-card">
+          <h3 data-i18n="indexPage.howStep1Title">1. Assess</h3>
+          <p data-i18n="indexPage.howStep1Body">An IT health check reviews your devices, email, network, and backups, and tells you exactly where you stand.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.howStep2Title">2. Stabilize</h3>
+          <p data-i18n="indexPage.howStep2Body">We fix what's broken, put real monitoring and verified backups in place, and close the obvious security gaps.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.howStep3Title">3. Manage</h3>
+          <p data-i18n="indexPage.howStep3Body">Ongoing monitoring, patching, and helpdesk support keep it that way — with a quarterly review so nothing drifts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-header compact">
+        <span class="eyebrow" data-i18n="indexPage.includedEyebrow">What's included</span>
+        <h2 class="section-title" data-i18n="indexPage.includedTitle">The six things every managed plan covers</h2>
+      </div>
+      <div class="cards-grid three-col-grid">
+        <article class="service-card">
+          <h3 data-i18n="indexPage.inc1Title">Monitoring &amp; patching</h3>
+          <p data-i18n="indexPage.inc1Body">Your devices are watched for issues and kept up to date, so small problems get caught before they become downtime.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.inc2Title">Verified backups</h3>
+          <p data-i18n="indexPage.inc2Body">Backups are set up and checked — not just running, but actually restorable if you ever need them.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.inc3Title">Helpdesk support</h3>
+          <p data-i18n="indexPage.inc3Body">A real person to call when something isn't working, with priority response for managed plan clients.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.inc4Title">Security basics</h3>
+          <p data-i18n="indexPage.inc4Body">Multi-factor authentication, endpoint protection, and account hardening — the fundamentals most offices are missing.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.inc5Title">Documentation</h3>
+          <p data-i18n="indexPage.inc5Body">Your systems, accounts, and configurations are documented, so you're never dependent on one person's memory.</p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="indexPage.inc6Title">Quarterly review</h3>
+          <p data-i18n="indexPage.inc6Body">A regular check-in on what's working, what's changed, and what your office needs next.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <article class="support-note">
+        <div class="section-header compact">
+          <span class="eyebrow" data-i18n="indexPage.reportEyebrow">Transparency</span>
+          <h2 data-i18n="indexPage.reportTitle">A real monthly report, not a sales pitch</h2>
+        </div>
+        <p data-i18n="indexPage.reportText">Every managed plan includes a monthly report covering what we monitored, what we fixed, and what's coming up next — so you always know the state of your IT without having to ask.</p>
+        <p class="scope-note" data-i18n="indexPage.reportPlaceholder">Each report covers what was monitored, what was fixed, what's pending, and backup status — in plain language, not a spreadsheet dump.</p>
+      </article>
+    </section>
+
+    <section class="reveal" id="testimonials-section" hidden>
+      <div class="section-header compact">
+        <span class="eyebrow" data-i18n="indexPage.testimonialsEyebrow">What clients say</span>
+        <h2 class="section-title" data-i18n="indexPage.testimonialsTitle">Client feedback</h2>
+      </div>
+      <div class="cards-grid three-col-grid testimonials-grid" id="testimonials-grid"></div>
+    </section>
+
+    <section class="reveal">
+      <article class="support-note">
+        <div class="section-header compact">
+          <span class="eyebrow" data-i18n="indexPage.credibilityEyebrow">Why clients trust the work</span>
+          <h2 data-i18n="indexPage.credibilityTitle">Owner-operated, so you deal directly with the person doing the work</h2>
+        </div>
+        <p data-i18n="indexPage.credibilityText">When you work with ATechSolutions, you're talking to Anthony — not a call centre, not a ticket queue, not an outsourced team. Every engagement is backed by liability insurance.</p>
+      </article>
+    </section>
+
+    <section class="reveal trust-bar-section">
+      <div class="trust-bar">
+        <span data-i18n="indexPage.trust1">Local team in Quebec</span>
+        <span data-i18n="indexPage.trust2">Bilingual service (EN/FR)</span>
+        <span data-i18n="indexPage.trust3">IT health check available</span>
+        <span data-i18n="indexPage.trust4">Remote and on-site support</span>
+        <span data-i18n="indexPage.trust5">Flexible engagement options</span>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="indexPage.servicesTitle">Managed IT plans</h2>
+        <p class="section-subtitle" data-i18n="indexPage.whoInline">Built for clinics, law firms, accounting firms, and other professional offices.</p>
       </div>
       <div class="service-teaser-list">
-        <span class="service-teaser-tag" data-i18n="indexPage.service7Title">Monthly Plans &amp; RMM</span>
-        <span class="service-teaser-tag" data-i18n="indexPage.service1Title">Computer Setup &amp; Repair</span>
-        <span class="service-teaser-tag" data-i18n="indexPage.service2Title">Professional Email &amp; Domain</span>
-        <span class="service-teaser-tag" data-i18n="indexPage.service3Title">Network &amp; Wi-Fi Setup</span>
-        <span class="service-teaser-tag" data-i18n="indexPage.service4Title">Data Backup Setup</span>
-        <span class="service-teaser-tag" data-i18n="indexPage.service5Title">IT Health Check</span>
-        <span class="service-teaser-tag" data-i18n="indexPage.service6Title">Hourly Support</span>
+        <span class="service-teaser-tag is-featured"><span class="service-teaser-featured-label" data-i18n="indexPage.servicesFeaturedLabel">Start Here</span> <span data-i18n="indexPage.serviceHealthCheckTitle">IT Health Check</span></span>
+        <span class="service-teaser-tag" data-i18n="indexPage.serviceEssentialsTitle">Essentials Plan</span>
+        <span class="service-teaser-tag" data-i18n="indexPage.serviceManagedTitle">Managed Plan</span>
+        <span class="service-teaser-tag" data-i18n="indexPage.serviceCompleteTitle">Complete Plan</span>
       </div>
       <div class="section-actions">
-        <a class="button button-secondary" href="services" data-i18n="indexPage.viewAllServices">View all services →</a>
+        <a class="button button-secondary" href="services" data-i18n="indexPage.viewAllServices">Compare plans →</a>
       </div>
     </section>
 
@@ -186,14 +233,14 @@
 
     <section class="cta-band reveal final-cta home-cta">
       <div>
-        <h2 data-i18n="indexPage.finalCtaTitle">Need reliable IT support for your office?</h2>
-        <p data-i18n="indexPage.finalCtaText">Tell us what is not working and we will recommend the fastest next step.</p>
+        <h2 data-i18n="indexPage.finalCtaTitle">Not sure where your office's IT stands?</h2>
+        <p data-i18n="indexPage.finalCtaText">Start with an IT health check — no pressure, no obligation, just a clear picture.</p>
       </div>
       <div class="cta-actions">
-        <a class="button button-primary" href="contact" data-i18n="indexPage.getHelpNow">Get Help Now</a>
+        <a class="button button-primary" href="health-check" data-i18n="indexPage.bookHealthCheck">Book an IT Health Check</a>
         <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
       </div>
-      <p class="cta-meta" data-i18n="indexPage.ctaMeta">Email: info@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemere, and neighboring boroughs</p>
+      <p class="cta-meta" data-i18n="indexPage.ctaMeta">Email: info@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs</p>
     </section>
   </main>
 
@@ -201,7 +248,7 @@
     <div class="footer-grid">
       <div class="footer-column">
         <h4 data-i18n="footer.businessName">ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="footer.companyDesc">Managed IT for professional offices.</p>
         <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
         <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
       </div>
@@ -209,6 +256,9 @@
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="services" data-i18n="nav.services">Services</a></li>
+          <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+          <li><a href="residential" data-i18n="nav.homeUsers">For Home</a></li>
+          <li><a href="field-service" data-i18n="nav.fieldService">Field Service</a></li>
           <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
           <li><a href="about" data-i18n="nav.about">About</a></li>
           <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>
@@ -218,6 +268,12 @@
         </ul>
       </div>
       <div class="footer-column">
+        <h4 data-i18n="footer.industriesTitle">Industries</h4>
+        <ul>
+          <li><a href="industries-clinics" data-i18n="footer.industriesClinics">Clinics</a></li>
+          <li><a href="industries-law-firms" data-i18n="footer.industriesLaw">Law Firms</a></li>
+          <li><a href="industries-accounting" data-i18n="footer.industriesAccounting">Accounting Firms</a></li>
+        </ul>
         <h4 data-i18n="footer.serviceAreaTitle">Service Area</h4>
         <p data-i18n="footer.serviceAreaText">Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère and neighboring boroughs.</p>
       </div>
@@ -226,6 +282,7 @@
         <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
         <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
         <p data-i18n="footer.responseNote">We respond within 1 business day.</p>
+        <p><a href="https://g.page/r/CRNsgEz_AP9QEBM/review" target="_blank" rel="noopener" data-i18n="indexPage.reviewsGoogleBtn">Leave a Google Review</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -234,6 +291,7 @@
     </div>
   </footer>
 
+  <script src="testimonials-data.js" defer></script>
   <script src="translations.js" defer></script>
   <script src="site.js" defer></script>
 </body>

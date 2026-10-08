@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n-text="appsPage.metaTitle">Apps by ATechSolutions | Tether</title>
+  <title data-i18n-text="townPagese.metaTitle">IT Support in Saint-Eustache | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" data-i18n-content="appsPage.metaDescription" content="Discover Tether by ATechSolutions, an IT asset management app for MSPs and their clients.">
-  <link rel="canonical" href="https://www.atechsolutions.org/apps">
-  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/apps">
-  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/apps">
-  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/apps">
+  <meta name="description" data-i18n-content="townPagese.metaDescription" content="Managed IT support for clinics, law firms, and accounting firms in Saint-Eustache. IT health check, no pricing surprises.">
+  <link rel="canonical" href="https://www.atechsolutions.org/it-support-saint-eustache">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/it-support-saint-eustache">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/it-support-saint-eustache">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/it-support-saint-eustache">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -25,7 +25,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "ATechSolutions",
-  "url": "https://www.atechsolutions.org/apps",
+  "url": "https://www.atechsolutions.org/it-support-saint-eustache",
   "telephone": "+15148265351",
   "email": "info@atechsolutions.org",
   "address": {
@@ -38,11 +38,11 @@
     "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
     "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
   ],
-  "description": "Apps built by ATechSolutions for MSPs and the businesses they support."
+  "description": "Managed IT support for clinics, law firms, and accounting firms in Saint-Eustache. IT health check, no pricing surprises."
 }
 </script>
 </head>
-<body class="home-page apps-page">
+<body class="home-page town-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
 
   <header class="site-header">
@@ -64,7 +64,7 @@
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
           <a href="services" data-i18n="nav.services">Services</a>
-          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
+          <a href="local" class="active" data-i18n="nav.serviceArea">Service Area</a>
           <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
@@ -77,71 +77,59 @@
             <span class="separator">|</span>
             <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
           </div>
-          <a class="nav-cta nav-cta-solid" href="contact" data-i18n="cta.contactUs">Contact Us</a>
+          <a class="nav-cta nav-cta-solid" href="health-check" data-i18n="indexPage.navHealthCheck">IT Health Check</a>
         </div>
       </div>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="hero reveal home-hero services-hero">
+    <section class="hero reveal home-hero">
       <div class="hero-grid">
         <div class="hero-copy">
-          <h1 data-i18n="appsPage.heroTitle">Apps by ATechSolutions</h1>
-          <p class="hero-subheadline" data-i18n="appsPage.heroSubtitle">We build practical software for IT teams and the businesses they support.</p>
+          <h1 data-i18n="townPagese.heroTitle">IT Support in Saint-Eustache</h1>
+          <p class="hero-subheadline" data-i18n="townPagese.heroBody">Saint-Eustache has a dense mix of medical clinics, accounting firms, and professional offices along boulevard Arthur-Sauvé and around the downtown core — exactly the kind of office that depends on reliable systems and can't afford a half-day wait for a technician from the city. We're a short drive away in Sainte-Marthe-sur-le-Lac.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://tether.atechsolutions.org" target="_blank" rel="noopener" data-i18n="appsPage.openTether">Open Tether</a>
-            <a class="button button-secondary" href="https://github.com/atechlab-am/tether" target="_blank" rel="noopener" data-i18n="appsPage.viewGithub">View on GitHub</a>
+            <a class="button button-primary" href="health-check" data-i18n="indexPage.bookHealthCheck">Book an IT Health Check</a>
+            <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="reveal">
-      <article class="service-card service-scope-card">
-        <div class="service-card-header">
-          <h2 data-i18n="appsPage.tetherTitle">Tether</h2>
-          <p class="service-price" data-i18n="appsPage.tetherTag">IT Asset Management for MSPs</p>
-        </div>
-        <p data-i18n="appsPage.tetherSummary">Tether helps MSPs and their clients track, manage, and report on IT assets from one platform. It is multi-tenant by design, supports QR labels, and includes client-facing branded portals.</p>
-        <h3 data-i18n="appsPage.keyFeatures">Key features</h3>
-        <ul>
-          <li data-i18n="appsPage.feature1">Multi-tenant architecture with isolated client workspaces</li>
-          <li data-i18n="appsPage.feature2">QR asset labels for quick scan-and-view in the field</li>
-          <li data-i18n="appsPage.feature3">CSV import/export for bulk onboarding and reporting</li>
-          <li data-i18n="appsPage.feature4">Role-based permissions with per-user overrides</li>
-          <li data-i18n="appsPage.feature5">Branded client portals with white-label subdomains</li>
-          <li data-i18n="appsPage.feature6">Warranty tracking, check-out/check-in, and request workflows</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="reveal">
+      <div class="section-header compact">
+        <h2 class="section-title" data-i18n="townPagese.servicesTitle">Managed IT for Saint-Eustache offices</h2>
+      </div>
       <div class="cards-grid three-col-grid">
         <article class="service-card">
-          <h3 data-i18n="appsPage.audience1Title">For MSPs</h3>
-          <p data-i18n="appsPage.audience1Text">Manage all clients from one dashboard with visibility on asset counts, values, and expiring warranties.</p>
+          <h3 data-i18n="townPagese.card1Title">Monitoring &amp; backups</h3>
+          <p data-i18n="townPagese.card1Body">Devices watched for issues, backups set up and verified, so small problems get caught before they become downtime.</p>
         </article>
         <article class="service-card">
-          <h3 data-i18n="appsPage.audience2Title">For Clients</h3>
-          <p data-i18n="appsPage.audience2Text">Each client gets a dedicated portal to view assets, assignments, and requests without MSP complexity.</p>
+          <h3 data-i18n="townPagese.card2Title">Helpdesk that answers</h3>
+          <p data-i18n="townPagese.card2Body">A real person to call when something isn't working — not a ticket queue.</p>
         </article>
         <article class="service-card">
-          <h3 data-i18n="appsPage.audience3Title">Deployment Options</h3>
-          <p data-i18n="appsPage.audience3Text">Use hosted SaaS or self-host for full control. Tether is open source under the MIT license.</p>
+          <h3 data-i18n="townPagese.card3Title">On-site when it matters</h3>
+          <p data-i18n="townPagese.card3Body">Most issues are resolved remotely. On-site visits are arranged quickly when hardware or networking needs hands on the ground.</p>
         </article>
+      </div>
+      <div class="section-actions">
+        <a class="button button-secondary" href="services" data-i18n="localPage.viewServices">View all services</a>
       </div>
     </section>
 
     <section class="cta-band reveal final-cta home-cta">
       <div>
-        <h2 data-i18n="appsPage.finalCtaTitle">Want to see Tether in action?</h2>
-        <p data-i18n="appsPage.finalCtaText">Visit the live app to explore features, documentation, and setup options.</p>
+        <h2 data-i18n="townPagese.ctaTitle">Ready for IT support in Saint-Eustache?</h2>
+        <p data-i18n="townPagese.ctaBody">Start with an IT health check — no pressure, no obligation.</p>
       </div>
       <div class="cta-actions">
-        <a class="button button-primary" href="https://tether.atechsolutions.org" target="_blank" rel="noopener" data-i18n="appsPage.openTether">Open Tether</a>
-        <a class="button button-secondary" href="https://tether.atechsolutions.org/tether-docs/" target="_blank" rel="noopener" data-i18n="appsPage.readDocs">Read Docs</a>
+        <a class="button button-primary" href="health-check" data-i18n="indexPage.bookHealthCheck">Book an IT Health Check</a>
+        <a class="button button-secondary" href="tel:+15148265351" data-i18n="indexPage.callButton">Call (514) 826-5351</a>
       </div>
+      <p class="cta-meta" data-i18n="indexPage.ctaMeta">Email: info@atechsolutions.org | Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs</p>
     </section>
   </main>
 

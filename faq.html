@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" data-i18n-content="faqPage.heroText" content="Frequently asked questions about managed IT services, Microsoft 365 support, network setup, backup planning, and business IT support from ATechSolutions.">
   <link rel="canonical" href="https://www.atechsolutions.org/faq">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/faq">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/faq">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/faq">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -17,6 +20,27 @@
 
   gtag('config', 'G-94YGNYY9HZ');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ATechSolutions",
+  "url": "https://www.atechsolutions.org/faq",
+  "telephone": "+15148265351",
+  "email": "info@atechsolutions.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte-Marthe-sur-le-Lac",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
+    "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
+  ],
+  "description": "Frequently asked questions about managed IT services from ATechSolutions."
+}
+</script>
 </head>
 <body class="home-page faq-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
@@ -26,7 +50,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for offices</span>
+          <span data-i18n="nav.brandTag">Managed IT for professional offices</span>
         </span>
       </a>
 
@@ -38,14 +62,8 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
-            <ul class="nav-dropdown-menu">
-              <li><a href="services" data-i18n="nav.services">Services</a></li>
-              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
-              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
-            </ul>
-          </div>
+          <a href="services" data-i18n="nav.services">Services</a>
+          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" class="active" data-i18n="nav.faq">FAQ</a>
@@ -135,6 +153,27 @@
         </details>
       </div>
     </section>
+
+    <section class="reveal">
+      <div class="section-header">
+        <span class="eyebrow" data-i18n="faqPage.managedEyebrow">Managed IT</span>
+        <h2 class="section-title" data-i18n="faqPage.managedTitle">Plans and getting started</h2>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary data-i18n="faqPage.q10">What does managed IT include?</summary>
+          <p data-i18n="faqPage.a10">Monitoring and patching, verified backups, helpdesk support, security basics like MFA and endpoint protection, documentation of your systems, and a regular review. Exact inclusions vary by plan — see the services page for a full comparison.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faqPage.q11">Do I need a long contract?</summary>
+          <p data-i18n="faqPage.a11">Managed plans run on a 3-month minimum with 30 days' cancellation notice afterward. One-time and project work has no contract at all.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faqPage.q12">What happens in the IT health check?</summary>
+          <p data-i18n="faqPage.a12">We review all your devices and users, check your email and domain setup, look over your network, and assess your backup status. You get a clear written report with honest recommendations — no fixes are included, and there's no obligation to continue.</p>
+        </details>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -151,7 +190,7 @@
     <div class="footer-grid">
       <div class="footer-column">
         <h4 data-i18n="footer.businessName">ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="footer.companyDesc">Managed IT for professional offices.</p>
         <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
         <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
       </div>
@@ -159,6 +198,9 @@
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="services" data-i18n="nav.services">Services</a></li>
+          <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+          <li><a href="residential" data-i18n="nav.homeUsers">For Home</a></li>
+          <li><a href="field-service" data-i18n="nav.fieldService">Field Service</a></li>
           <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
           <li><a href="about" data-i18n="nav.about">About</a></li>
           <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>

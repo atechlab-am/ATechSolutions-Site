@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" data-i18n-content="residentialPage.metaDescription" content="Friendly local IT support for home users across the North Shore and Laurentians.">
   <link rel="canonical" href="https://www.atechsolutions.org/residential">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/residential">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/residential">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/residential">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -17,6 +20,27 @@
 
   gtag('config', 'G-94YGNYY9HZ');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ATechSolutions",
+  "url": "https://www.atechsolutions.org/residential",
+  "telephone": "+15148265351",
+  "email": "info@atechsolutions.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte-Marthe-sur-le-Lac",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
+    "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
+  ],
+  "description": "Friendly local IT support for home users across the North Shore and Laurentians."
+}
+</script>
 </head>
 <body class="home-page residential-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
@@ -27,7 +51,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for offices</span>
+          <span data-i18n="nav.brandTag">Managed IT for professional offices</span>
         </span>
       </a>
 
@@ -39,20 +63,14 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
-            <ul class="nav-dropdown-menu">
-              <li><a href="services" data-i18n="nav.services">Services</a></li>
-              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
-              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
-            </ul>
-          </div>
+          <a href="services" data-i18n="nav.services">Services</a>
+          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="residential" class="active" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
           <a href="booking" data-i18n="nav.bookTime">Book a Time</a>
-          </div>
-          <div class="nav-meta">
+        </div>
+        <div class="nav-meta">
             <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
             <div class="lang-toggle">
               <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
@@ -241,7 +259,7 @@
         <a class="button button-primary" href="tel:+15148265351" data-i18n="residentialPage.callButton">Call (514) 826-5351</a>
         <a class="button button-secondary" href="mailto:info@atechsolutions.org" data-i18n="residentialPage.emailButton">Email info@atechsolutions.org</a>
       </div>
-      <p class="cta-meta" data-i18n="residentialPage.ctaMeta">Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemere, and neighboring boroughs.</p>
+      <p class="cta-meta" data-i18n="residentialPage.ctaMeta">Service area: Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère, and neighboring boroughs.</p>
     </section>
   </main>
 
@@ -249,7 +267,7 @@
     <div class="footer-grid">
       <div class="footer-column">
         <h4 data-i18n="footer.businessName">ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="footer.companyDesc">Managed IT for professional offices.</p>
         <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
         <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
       </div>
@@ -257,6 +275,9 @@
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="services" data-i18n="nav.services">Services</a></li>
+          <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+          <li><a href="residential" data-i18n="nav.homeUsers">For Home</a></li>
+          <li><a href="field-service" data-i18n="nav.fieldService">Field Service</a></li>
           <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
           <li><a href="about" data-i18n="nav.about">About</a></li>
           <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>

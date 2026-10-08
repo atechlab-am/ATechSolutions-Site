@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n-text="healthCheckPage.metaTitle">IT Health Check | ATechSolutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" data-i18n-content="healthCheckPage.metaDescription" content="Book an IT health check for your professional office. We review your devices, email, network, and backups and send you a clear written report.">
+  <link rel="canonical" href="https://www.atechsolutions.org/health-check">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/health-check">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/health-check">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/health-check">
+  <link rel="icon" type="image/png" href="thumbnail.png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-94YGNYY9HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-94YGNYY9HZ');
+  </script>
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ATechSolutions",
+  "url": "https://www.atechsolutions.org/health-check",
+  "telephone": "+15148265351",
+  "email": "info@atechsolutions.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte-Marthe-sur-le-Lac",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
+    "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
+  ],
+  "description": "IT health check for professional offices in Greater Montreal."
+}
+</script>
+</head>
+<body class="home-page contact-page health-check-page">
+  <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="ui.mainNavigation">
+      <a class="brand" href="/" aria-label="ATechSolutions home" data-i18n-aria-label="ui.homeAria">
+        <img src="logo.png" alt="ATechSolutions logo">
+        <span class="brand-copy">
+          <strong data-i18n="footer.businessName">ATechSolutions</strong>
+          <span data-i18n="nav.brandTag">Managed IT for professional offices</span>
+        </span>
+      </a>
+
+      <a class="nav-phone nav-phone-static" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" data-i18n-aria-label="ui.toggleMenu" aria-expanded="false" aria-controls="site-navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-panel" id="site-navigation">
+        <div class="nav-links">
+          <a href="services" data-i18n="nav.services">Services</a>
+          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
+          <a href="residential" data-i18n="nav.homeUsers">For Home</a>
+          <a href="about" data-i18n="nav.about">About</a>
+          <a href="faq" data-i18n="nav.faq">FAQ</a>
+          <a href="booking" data-i18n="nav.bookTime">Book a Time</a>
+        </div>
+        <div class="nav-meta">
+          <a class="nav-phone" href="tel:+15148265351" data-i18n="nav.phoneDisplay">(514) 826-5351</a>
+          <div class="lang-toggle">
+            <button data-lang="en" class="active" aria-pressed="true" onclick="switchLanguage('en')" data-i18n="ui.langEn">EN</button>
+            <span class="separator">|</span>
+            <button data-lang="fr" aria-pressed="false" onclick="switchLanguage('fr')" data-i18n="ui.langFr">FR</button>
+          </div>
+          <a class="nav-cta nav-cta-solid" href="contact" data-i18n="cta.contactUs">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="reveal contact-section-shell">
+      <div class="contact-section">
+        <h1 data-i18n="healthCheckPage.heroTitle">Book an IT Health Check</h1>
+        <p class="subtitle" data-i18n="healthCheckPage.heroSubtitle">A structured review of your devices, email, network, and backups — with a clear written report and honest recommendations. No fixes included, no pressure, no obligation.</p>
+
+        <hr class="divider">
+
+        <form id="health-check-form" novalidate>
+          <div class="form-group">
+            <label for="hc-company" data-i18n="healthCheckPage.companyLabel">Company Name</label>
+            <input type="text" id="hc-company" name="company" placeholder="Your company" data-i18n="healthCheckPage.companyPlaceholder" required autocomplete="organization">
+          </div>
+
+          <div class="form-group">
+            <label for="hc-name" data-i18n="healthCheckPage.nameLabel">Your Name</label>
+            <input type="text" id="hc-name" name="name" placeholder="Your name" data-i18n="healthCheckPage.namePlaceholder" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="hc-email" data-i18n="healthCheckPage.emailLabel">Email Address</label>
+            <input type="email" id="hc-email" name="email" placeholder="you@example.com" data-i18n="healthCheckPage.emailPlaceholder" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="hc-phone">
+              <span data-i18n="healthCheckPage.phoneLabel">Phone</span>
+              <span class="optional" data-i18n="contactPage.phoneOptional">(optional)</span>
+            </label>
+            <input type="tel" id="hc-phone" name="phone" placeholder="(514) 000-0000" data-i18n="healthCheckPage.phonePlaceholder" autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="hc-users" data-i18n="healthCheckPage.usersLabel">Number of Users</label>
+            <select id="hc-users" name="users" required>
+              <option value="" disabled selected data-i18n="healthCheckPage.usersOptionDefault">Select one...</option>
+              <option value="1" data-i18n="healthCheckPage.usersOption1">Just me</option>
+              <option value="2-5" data-i18n="healthCheckPage.usersOption2">2–5</option>
+              <option value="6-15" data-i18n="healthCheckPage.usersOption3">6–15</option>
+              <option value="16+" data-i18n="healthCheckPage.usersOption4">16+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hc-setup" data-i18n="healthCheckPage.setupLabel">Current IT Setup</label>
+            <textarea id="hc-setup" name="setup" placeholder="e.g. Microsoft 365, local file server, no formal backups..." data-i18n="healthCheckPage.setupPlaceholder" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="hc-problem" data-i18n="healthCheckPage.problemLabel">Biggest IT Problem Right Now</label>
+            <textarea id="hc-problem" name="problem" placeholder="What's not working, or what are you worried about?" data-i18n="healthCheckPage.problemPlaceholder" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="hc-lang" data-i18n="healthCheckPage.langLabel">Preferred Language</label>
+            <select id="hc-lang" name="preferredLang">
+              <option value="English" data-i18n="healthCheckPage.langOptionEn">English</option>
+              <option value="Français" data-i18n="healthCheckPage.langOptionFr">Français</option>
+            </select>
+          </div>
+
+          <!-- Cloudflare Turnstile widget -->
+          <div class="form-group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADMHd3IVo_GGivCA" data-theme="light"></div>
+          </div>
+
+          <button type="submit" class="submit-btn" id="health-check-submit" data-i18n="healthCheckPage.submitButton">Request My Health Check</button>
+          <div class="status-msg" id="health-check-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <p class="booking-note" data-i18n="healthCheckPage.altNote">Prefer to just pick a time? <a href="https://calendly.com/amartins-atechsolutions/it-health-check" target="_blank" rel="noopener" data-i18n="healthCheckPage.altLink">Book directly on the calendar instead →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4 data-i18n="footer.businessName">ATechSolutions</h4>
+        <p data-i18n="footer.companyDesc">Managed IT for professional offices.</p>
+        <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
+        <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
+      </div>
+      <div class="footer-column">
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+        <ul>
+          <li><a href="services" data-i18n="nav.services">Services</a></li>
+          <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+          <li><a href="residential" data-i18n="nav.homeUsers">For Home</a></li>
+          <li><a href="field-service" data-i18n="nav.fieldService">Field Service</a></li>
+          <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
+          <li><a href="about" data-i18n="nav.about">About</a></li>
+          <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="contact" data-i18n="cta.contactUs">Contact Us</a></li>
+          <li><a href="privacy" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="terms" data-i18n="footer.terms">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 data-i18n="footer.serviceAreaTitle">Service Area</h4>
+        <p data-i18n="footer.serviceAreaText">Sainte-Marthe-sur-le-Lac, Sainte-Joseph-du-Lac, Deux-Montagnes, Saint-Eustache, Mirabel, Boisbriand, Rosemère and neighboring boroughs.</p>
+      </div>
+      <div class="footer-column">
+        <h4 data-i18n="footer.contactTitle">Contact</h4>
+        <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
+        <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
+        <p data-i18n="footer.responseNote">We respond within 1 business day.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span data-year></span> <span data-i18n="footer.businessName">ATechSolutions</span></p>
+      <p><a href="privacy" data-i18n="footer.privacy">Privacy Policy</a> · <a href="terms" data-i18n="footer.terms">Terms &amp; Conditions</a></p>
+    </div>
+  </footer>
+
+  <script src="translations.js" defer></script>
+  <script src="site.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form         = document.getElementById('health-check-form');
+      const submitButton = document.getElementById('health-check-submit');
+      const status       = document.getElementById('health-check-status');
+
+      if (!form || !submitButton || !status) return;
+
+      function getText(key, fallback) {
+        if (typeof getI18nValue === 'function') {
+          return getI18nValue(currentLang, key) || fallback;
+        }
+        return fallback;
+      }
+
+      function showStatus(message, type) {
+        status.className = 'status-msg ' + type;
+        status.textContent = message;
+      }
+
+      function hideStatus() {
+        status.className = 'status-msg';
+        status.textContent = '';
+      }
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        const turnstileToken = document.querySelector('[name="cf-turnstile-response"]')?.value;
+        if (!turnstileToken) {
+          showStatus(
+            getText('contactPage.turnstileError', 'Please complete the security check before submitting.'),
+            'error'
+          );
+          return;
+        }
+
+        hideStatus();
+        submitButton.disabled = true;
+        submitButton.textContent = getText('healthCheckPage.sendingButton', 'Sending...');
+
+        // The health-check form reuses the existing contact form backend, which only
+        // accepts {name, email, phone, clientType, service, message, turnstileToken}.
+        // Health-check-specific fields are folded into a structured message string
+        // rather than adding new fields the backend does not expect.
+        const company = document.getElementById('hc-company').value.trim();
+        const users = document.getElementById('hc-users').value;
+        const setup = document.getElementById('hc-setup').value.trim();
+        const problem = document.getElementById('hc-problem').value.trim();
+        const preferredLang = document.getElementById('hc-lang').value;
+
+        const message = [
+          'IT Health Check request',
+          'Company: ' + company,
+          'Number of users: ' + users,
+          'Current IT setup: ' + setup,
+          'Biggest problem: ' + problem,
+          'Preferred language: ' + preferredLang
+        ].join('\n');
+
+        try {
+          const response = await fetch('https://form-handler.martins-anthony.workers.dev', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json'
+            },
+            body: JSON.stringify({
+              name:           document.getElementById('hc-name').value.trim(),
+              email:          document.getElementById('hc-email').value.trim(),
+              phone:          document.getElementById('hc-phone').value.trim(),
+              clientType:     'Business',
+              service:        'IT Health Check',
+              message:        message,
+              turnstileToken: turnstileToken
+            })
+          });
+
+          let result = null;
+          try { result = await response.json(); } catch (e) { result = null; }
+
+          if (!response.ok || (result && result.success === false)) {
+            throw new Error('Request failed');
+          }
+
+          window.location.href = '/thanks';
+
+        } catch (error) {
+          showStatus(
+            getText('contactPage.errorMessage', 'Could not send your request. Please call us at (514) 826-5351.'),
+            'error'
+          );
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = getText('healthCheckPage.submitButton', 'Request My Health Check');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

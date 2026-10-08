@@ -5,8 +5,11 @@
   <title data-i18n-text="privacyPage.metaTitle">Privacy Policy | ATechSolutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" data-i18n-content="privacyPage.metaDesc"
-    content="ATechSolutions privacy policy — Law 25 compliant. How we collect, use, and protect your personal information in Greater Montreal.">
+    content="ATechSolutions privacy policy. How we collect, use, and protect your personal information in Greater Montreal, in line with Quebec's Law 25.">
   <link rel="canonical" href="https://www.atechsolutions.org/privacy">
+  <link rel="alternate" hreflang="en" href="https://www.atechsolutions.org/privacy">
+  <link rel="alternate" hreflang="fr" href="https://www.atechsolutions.org/privacy">
+  <link rel="alternate" hreflang="x-default" href="https://www.atechsolutions.org/privacy">
   <link rel="icon" type="image/png" href="thumbnail.png">
   <link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
@@ -18,6 +21,27 @@
 
   gtag('config', 'G-94YGNYY9HZ');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ATechSolutions",
+  "url": "https://www.atechsolutions.org/privacy",
+  "telephone": "+15148265351",
+  "email": "info@atechsolutions.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sainte-Marthe-sur-le-Lac",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    "Sainte-Marthe-sur-le-Lac", "Sainte-Joseph-du-Lac", "Deux-Montagnes",
+    "Saint-Eustache", "Mirabel", "Boisbriand", "Rosemère", "Greater Montreal"
+  ],
+  "description": "ATechSolutions privacy policy."
+}
+</script>
 </head>
 <body class="home-page privacy-page">
   <a class="skip-link" href="#main-content" data-i18n="ui.skipToContent">Skip to main content</a>
@@ -27,7 +51,7 @@
         <img src="logo.png" alt="ATechSolutions logo">
         <span class="brand-copy">
           <strong data-i18n="footer.businessName">ATechSolutions</strong>
-          <span data-i18n="nav.brandTag">Local IT support for offices</span>
+          <span data-i18n="nav.brandTag">Managed IT for professional offices</span>
         </span>
       </a>
 
@@ -39,14 +63,8 @@
 
       <div class="nav-panel" id="site-navigation">
         <div class="nav-links">
-          <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-i18n="nav.forBusiness">For Business</button>
-            <ul class="nav-dropdown-menu">
-              <li><a href="services" data-i18n="nav.services">Services</a></li>
-              <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
-              <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
-            </ul>
-          </div>
+          <a href="services" data-i18n="nav.services">Services</a>
+          <a href="local" data-i18n="nav.serviceArea">Service Area</a>
           <a href="residential" data-i18n="nav.homeUsers">For Home</a>
           <a href="about" data-i18n="nav.about">About</a>
           <a href="faq" data-i18n="nav.faq">FAQ</a>
@@ -70,7 +88,7 @@
       <div class="hero-compact">
         <span class="eyebrow" data-i18n="privacyPage.eyebrow">Privacy policy</span>
         <h1 data-i18n="privacyPage.heroTitle">How we handle your personal information</h1>
-        <p data-i18n="privacyPage.heroText">This policy applies to all contact, booking, and service requests submitted through the ATechSolutions website, in compliance with Quebec's Law 25.</p>
+        <p data-i18n="privacyPage.heroText">This policy applies to all contact, booking, and service requests submitted through the ATechSolutions website, and is designed to support your readiness under Quebec's Law 25.</p>
       </div>
     </section>
 
@@ -149,7 +167,7 @@
     <div class="footer-grid">
       <div class="footer-column">
         <h4 data-i18n="footer.businessName">ATechSolutions</h4>
-        <p data-i18n="footer.companyDesc">Business-focused IT support for small and growing teams.</p>
+        <p data-i18n="footer.companyDesc">Managed IT for professional offices.</p>
         <p><a href="tel:+15148265351" data-i18n="footer.phoneDisplay">(514) 826-5351</a></p>
         <p><a href="mailto:info@atechsolutions.org" data-i18n="footer.emailDisplay">info@atechsolutions.org</a></p>
       </div>
@@ -157,6 +175,9 @@
         <h4 data-i18n="footer.quickLinks">Quick Links</h4>
         <ul>
           <li><a href="services" data-i18n="nav.services">Services</a></li>
+          <li><a href="local" data-i18n="nav.serviceArea">Service Area</a></li>
+          <li><a href="residential" data-i18n="nav.homeUsers">For Home</a></li>
+          <li><a href="field-service" data-i18n="nav.fieldService">Field Service</a></li>
           <li><a href="apps" data-i18n="nav.apps">Apps</a></li>
           <li><a href="about" data-i18n="nav.about">About</a></li>
           <li><a href="faq" data-i18n="nav.faq">FAQ</a></li>
